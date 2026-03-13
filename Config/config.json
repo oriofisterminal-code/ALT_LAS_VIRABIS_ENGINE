@@ -1,0 +1,39 @@
+{
+    "window": {
+        "width": 80,
+        "height": 25,
+        "title": "ALT_LAS: Under",
+        "fps": 30
+    },
+    "font": {
+        "name": "default",
+        "size": 16
+    },
+    "layers": {
+        "MAP": 0,
+        "ENTITIES": 1,
+        "EFFECTS": 2,
+        "UI": 3
+    },
+    "colors": {
+        "default_fg": "white",
+        "default_bg": "black",
+        "wall": "#808080",
+        "floor": "#333333",
+        "water": "#4444ff",
+        "npc": "#00ff00",
+        "player": "#ffff00",
+        "enemy": "#ff0000",
+        "item": "#ff00ff",
+        "trigger": "transparent",
+        "ui_border": "#aaaaaa",
+        "ui_bg": "#111111",
+        "dialogue_text": "#ffffff",
+        "dialogue_highlight": "#ffff00"
+    },
+    "gameplay": {
+        "player_speed": 1,
+        "dialogue_speed": 0.03,
+        "save_file": "save_data.json"
+    }
+}

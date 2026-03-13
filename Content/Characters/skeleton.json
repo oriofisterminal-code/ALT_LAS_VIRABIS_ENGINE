@@ -1,0 +1,12 @@
+{
+  "name": "Skeleton",
+  "char": "S",
+  "color": "#ffffff",
+  "hp": 30,
+  "attack": 5,
+  "defense": 2,
+  "exp_reward": 15,
+  "gold_reward": 10,
+  "dialogue_id": "skeleton_battle",
+  "battle_patterns": ["rain", "wave"]
+}
