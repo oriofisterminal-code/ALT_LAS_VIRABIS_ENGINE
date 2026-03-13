@@ -1,0 +1,25 @@
+{
+  "id": "guide_hint",
+  "nodes": {
+    "start": {
+      "speaker": "Guide",
+      "text": "Careful, traveler. The end of this corridor holds danger.",
+      "condition": {
+        "flag": "flowey_helped",
+        "value": true,
+        "else_node": "no_help"
+      },
+      "next": "advice"
+    },
+    "no_help": {
+      "speaker": "Guide",
+      "text": "You seem lost. Perhaps you should have asked for directions back there...",
+      "next": null
+    },
+    "advice": {
+      "speaker": "Guide",
+      "text": "The skeleton at the end can be defeated... or shown mercy. The choice is yours.",
+      "next": null
+    }
+  }
+}

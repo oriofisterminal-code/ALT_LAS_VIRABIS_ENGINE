@@ -1,0 +1,22 @@
+{
+    "movement": {
+        "up": ["TK_UP", "TK_W"],
+        "down": ["TK_DOWN", "TK_S"],
+        "left": ["TK_LEFT", "TK_A"],
+        "right": ["TK_RIGHT", "TK_D"]
+    },
+    "actions": {
+        "interact": "TK_Z",
+        "cancel": "TK_X",
+        "menu": "TK_ESCAPE",
+        "confirm": "TK_RETURN",
+        "inventory": "TK_I",
+        "save": "TK_F5",
+        "load": "TK_F9"
+    },
+    "debug": {
+        "toggle_debug": "TK_F1",
+        "toggle_collision": "TK_F2",
+        "reload_map": "TK_F3"
+    }
+}
