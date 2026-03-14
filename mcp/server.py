@@ -11,8 +11,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, BASE_DIR)
 
-from Source.Core.content_loader import ContentLoader
-from MCP.tool_defs import TOOLS
+from src.core.loader import ContentLoader
+from mcp.tools import TOOLS
 
 content = ContentLoader()
 content.load_all()
@@ -252,7 +252,7 @@ def handle_set_npc_sprite(params):
 
 def handle_list_sprites(params):
     """List all available sprites in Content/Textures/."""
-    textures_dir = os.path.join(BASE_DIR, "Content", "Textures")
+    textures_dir = os.path.join(BASE_DIR, "assets", "textures")
     category = params.get("category", "")
 
     result = {"sprites": [], "categories": {}}
@@ -286,7 +286,7 @@ def handle_validate_sprite(params):
     sprite_path = params["sprite_path"]
     expected_size = params.get("expected_size", "any")
 
-    full_path = os.path.join(BASE_DIR, "Content", "Textures", sprite_path)
+    full_path = os.path.join(BASE_DIR, "assets", "textures", sprite_path)
 
     if not os.path.exists(full_path):
         return {"status": "error", "message": f"Sprite '{sprite_path}' not found"}
@@ -346,7 +346,7 @@ def handle_create_sprite_placeholder(params):
     color = params.get("color", "#ff00ff")
     style = params.get("style", "solid")
 
-    full_path = os.path.join(BASE_DIR, "Content", "Textures", sprite_path)
+    full_path = os.path.join(BASE_DIR, "assets", "textures", sprite_path)
 
     # Ensure directory exists
     os.makedirs(os.path.dirname(full_path), exist_ok=True)
@@ -402,7 +402,7 @@ def handle_set_ambient_light(params):
     b = params.get("b", 0.4)
 
     try:
-        from Source.Rendering.layer_manager import get_layer_manager
+        from src.render.layers import get_layer_manager
         lm = get_layer_manager()
         lm.set_ambient_light(r, g, b)
         return {
@@ -429,7 +429,7 @@ def handle_add_point_light(params):
     color = (r, g, b)
 
     try:
-        from Source.Rendering.layer_manager import get_layer_manager
+        from src.render.layers import get_layer_manager
         lm = get_layer_manager()
         light_id = lm.add_point_light(x, y, radius, color, intensity)
         return {
@@ -452,7 +452,7 @@ def handle_remove_point_light(params):
     name = params["name"]
 
     try:
-        from Source.Rendering.layer_manager import get_layer_manager
+        from src.render.layers import get_layer_manager
         lm = get_layer_manager()
         if lm.effects:
             lm.effects.remove_effect(name)
@@ -465,7 +465,7 @@ def handle_remove_point_light(params):
 def handle_list_lights(params):
     """List all active point lights."""
     try:
-        from Source.Rendering.layer_manager import get_layer_manager
+        from src.render.layers import get_layer_manager
         lm = get_layer_manager()
         if lm.effects:
             lights = lm.effects.get_lights()
@@ -485,7 +485,7 @@ def handle_set_glow_effect(params):
     intensity = params.get("intensity", 1.0)
 
     try:
-        from Source.Rendering.layer_manager import get_layer_manager
+        from src.render.layers import get_layer_manager
         lm = get_layer_manager()
         if lm.effects:
             lm.effects.set_glow_enabled(enabled, intensity)
@@ -505,7 +505,7 @@ def handle_set_water_effect(params):
     speed = params.get("speed", 1.0)
 
     try:
-        from Source.Rendering.layer_manager import get_layer_manager
+        from src.render.layers import get_layer_manager
         lm = get_layer_manager()
         if lm.effects:
             lm.effects.set_water_enabled(enabled, speed)
@@ -534,7 +534,7 @@ def handle_spawn_particles(params):
     color = (r, g, b, 255)
 
     try:
-        from Source.Rendering.layer_manager import get_layer_manager
+        from src.render.layers import get_layer_manager
         lm = get_layer_manager()
         lm.spawn_particles(x, y, count, color=color, lifetime=lifetime)
         return {
@@ -549,8 +549,8 @@ def handle_spawn_particles(params):
 def handle_get_render_info(params):
     """Get current render backend and capabilities info."""
     try:
-        from Source.Rendering.terminal_detect import get_terminal_capability
-        from Source.Rendering.layer_manager import get_layer_manager
+        from src.render.terminal_detect import get_terminal_capability
+        from src.render.layers import get_layer_manager
 
         cap = get_terminal_capability()
         lm = get_layer_manager()
@@ -583,7 +583,7 @@ def handle_set_shader_quality(params):
     # This would update the config
     try:
         import json
-        config_path = os.path.join(BASE_DIR, "Config", "config.json")
+        config_path = os.path.join(BASE_DIR, "config", "settings.json")
         with open(config_path, "r") as f:
             config = json.load(f)
 
