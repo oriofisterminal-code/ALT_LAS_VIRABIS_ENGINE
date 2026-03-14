@@ -1,0 +1,23 @@
+{
+  "name": "MCP",
+  "version": "1.0.0",
+  "author": "Virabis Team",
+  "description": "Model Context Protocol integration",
+  "capabilities": ["mcp", "memory", "search"],
+  "dependencies": [],
+  "resources": {
+    "init_time_ms": 200,
+    "memory_mb": 20,
+    "cpu_percent": 10
+  },
+  "lifecycle": {
+    "async_init": true,
+    "lazy_load": true,
+    "auto_shutdown": true,
+    "priority": 30
+  },
+  "events": {
+    "publishes": ["MCPConnected", "MCPDisconnected"],
+    "subscribes": ["SystemReady"]
+  }
+}

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="dd9e5eb7-9344-4af6-a582-8878b707b1f4" name="ozgur@DESKTOP-PTV99OM 2026-02-28 08:28:56" runUser="DESKTOP-PTV99OM\ozgur" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-02-28T08:28:56.0990262+01:00" queuing="2026-02-28T08:28:56.0990263+01:00" start="2026-02-28T08:28:55.6306702+01:00" finish="2026-02-28T08:28:56.1338244+01:00" />
+  <TestSettings name="default" id="3174ac65-8d9e-4181-8ed6-4473a7394bcb">
+    <Deployment runDeploymentRoot="ozgur_DESKTOP-PTV99OM_2026-02-28_08_28_56" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="ac315aad-0630-4196-8b55-ff03d5899cbd" testId="3c81bd9a-3a2c-619f-4e8e-48e77db8aac1" testName="Virabis.Core.Nexus.EventChannelTests.Publish_ShouldNotifySubscribers" computerName="DESKTOP-PTV99OM" duration="00:00:00.0003096" startTime="2026-02-28T08:28:56.0632595+01:00" endTime="2026-02-28T08:28:56.0632595+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ac315aad-0630-4196-8b55-ff03d5899cbd" />
+    <UnitTestResult executionId="aec9f388-0105-4218-9053-2ed7724f629c" testId="1959b45f-a020-2326-bbb0-38c2f587931d" testName="Virabis.Core.Nexus.EventChannelTests.Unsubscribe_ShouldStopNotifications" computerName="DESKTOP-PTV99OM" duration="00:00:00.0023183" startTime="2026-02-28T08:28:56.0632149+01:00" endTime="2026-02-28T08:28:56.0632150+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aec9f388-0105-4218-9053-2ed7724f629c" />
+    <UnitTestResult executionId="42c77f56-fcf8-4aef-a49f-b1509774d70e" testId="23bd0511-1e2b-7996-421f-b1f146a0dbbd" testName="Virabis.Core.Nexus.Tests.FeatureRegistryTests.Unregister_ExistingFeature_Success" computerName="DESKTOP-PTV99OM" duration="00:00:00.0000984" startTime="2026-02-28T08:28:56.0630546+01:00" endTime="2026-02-28T08:28:56.0630548+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42c77f56-fcf8-4aef-a49f-b1509774d70e" />
+    <UnitTestResult executionId="151e884e-d359-4a0f-a1ba-d451bdc0380e" testId="f793e3d0-25c9-158e-b4fa-31fa812ef440" testName="Virabis.Core.Nexus.Tests.CapabilitySystemTests.CapabilityValidator_ValidateFeature_ShouldPassWhenAllCapabilitiesDeclared" computerName="DESKTOP-PTV99OM" duration="00:00:00.0018891" startTime="2026-02-28T08:28:56.0631997+01:00" endTime="2026-02-28T08:28:56.0631998+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="151e884e-d359-4a0f-a1ba-d451bdc0380e" />
+    <UnitTestResult executionId="693d1611-cfb5-4158-aaac-55ea5eea0780" testId="a2fb5ffe-cfd1-6e51-14f5-bad52b296de8" testName="Virabis.Core.Nexus.EventChannelTests.Subscribe_ShouldReturnDisposable" computerName="DESKTOP-PTV99OM" duration="00:00:00.0025374" startTime="2026-02-28T08:28:56.0342616+01:00" endTime="2026-02-28T08:28:56.0342617+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="693d1611-cfb5-4158-aaac-55ea5eea0780" />
+    <UnitTestResult executionId="749ecc5a-a336-4c52-87eb-94dc657552ea" testId="20ae430c-0dca-c553-a900-57d4b9b7e794" testName="Virabis.Core.Nexus.Tests.FeatureRegistryTests.Register_ValidFeature_Success" computerName="DESKTOP-PTV99OM" duration="00:00:00.0049822" startTime="2026-02-28T08:28:56.0352725+01:00" endTime="2026-02-28T08:28:56.0352725+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="749ecc5a-a336-4c52-87eb-94dc657552ea" />
+    <UnitTestResult executionId="c382787b-82de-49dc-8807-df51aff70271" testId="23184c33-b6ea-7b34-dd36-cc08b38c69d8" testName="Virabis.Core.Nexus.Tests.CapabilitySystemTests.CapabilityRegistry_Register_ShouldStoreCapabilities" computerName="DESKTOP-PTV99OM" duration="00:00:00.0025403" startTime="2026-02-28T08:28:56.0324386+01:00" endTime="2026-02-28T08:28:56.0324510+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c382787b-82de-49dc-8807-df51aff70271" />
+    <UnitTestResult executionId="875f26b2-baed-49a8-b75d-a678bee8b359" testId="1801d65c-bf79-723f-cab1-af0c517278a7" testName="Virabis.Core.Nexus.Tests.Manifest.FeatureManifestTests.Load_CombatManifest_Success" computerName="DESKTOP-PTV99OM" duration="00:00:00.0622287" startTime="2026-02-28T08:28:56.0901736+01:00" endTime="2026-02-28T08:28:56.0901738+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="875f26b2-baed-49a8-b75d-a678bee8b359" />
+    <UnitTestResult executionId="153f5420-d37f-4a61-be83-93e550e8304c" testId="9ee78ffb-85de-f2bd-809f-9a9082dc525d" testName="Virabis.Core.Nexus.Tests.FeatureRegistryTests.IsHealthy_HealthyFeature_ReturnsTrue" computerName="DESKTOP-PTV99OM" duration="00:00:00.0002227" startTime="2026-02-28T08:28:56.0353118+01:00" endTime="2026-02-28T08:28:56.0353118+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="153f5420-d37f-4a61-be83-93e550e8304c" />
+    <UnitTestResult executionId="3939379e-35fd-488b-9756-586672ff8104" testId="e35245c7-3341-1178-731a-5051ba7d4251" testName="Virabis.Core.Nexus.Tests.FeatureDiscoveryTests.GetMetadata_ExtractsAttributeData" computerName="DESKTOP-PTV99OM" duration="00:00:00.0446962" startTime="2026-02-28T08:28:56.0726474+01:00" endTime="2026-02-28T08:28:56.0726478+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3939379e-35fd-488b-9756-586672ff8104" />
+    <UnitTestResult executionId="f2b0b571-6966-413d-bdce-11b7ba49aded" testId="9c60cdd0-6bf6-bcd1-32c5-1f878af498dd" testName="Virabis.Core.Nexus.Tests.Manifest.FeatureManifestTests.Load_ValidManifest_ParsesResourceBudget" computerName="DESKTOP-PTV99OM" duration="00:00:00.0003236" startTime="2026-02-28T08:28:56.0905333+01:00" endTime="2026-02-28T08:28:56.0905334+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2b0b571-6966-413d-bdce-11b7ba49aded" />
+    <UnitTestResult executionId="c4ff74d8-3a9b-4cb1-bfc6-e3a5c300675a" testId="1ef8e069-5a5a-ccec-148f-16424865fc22" testName="Virabis.Core.Nexus.Tests.FeatureDiscoveryTests.DiscoverFeatures_FindsCombatFeature" computerName="DESKTOP-PTV99OM" duration="00:00:00.0016999" startTime="2026-02-28T08:28:56.0744044+01:00" endTime="2026-02-28T08:28:56.0744045+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c4ff74d8-3a9b-4cb1-bfc6-e3a5c300675a" />
+    <UnitTestResult executionId="e1b6681b-5eca-4f1c-af43-2c957ccb3113" testId="06b142f8-ef90-14c0-8d02-9ed029a204ba" testName="Virabis.Core.Nexus.Tests.CapabilitySystemTests.CapabilityRegistry_EnforceCapability_ShouldThrowIfMissing" computerName="DESKTOP-PTV99OM" duration="00:00:00.0003424" startTime="2026-02-28T08:28:56.0352369+01:00" endTime="2026-02-28T08:28:56.0352370+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e1b6681b-5eca-4f1c-af43-2c957ccb3113" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Virabis.Core.Nexus.Tests.Manifest.FeatureManifestTests.Load_ValidManifest_ParsesResourceBudget" storage="c:\virabis\core\virabis.core.nexus.tests\bin\release\net8.0\virabis.core.nexus.tests.dll" id="9c60cdd0-6bf6-bcd1-32c5-1f878af498dd">
+      <Execution id="f2b0b571-6966-413d-bdce-11b7ba49aded" />
+      <TestMethod codeBase="C:\virabis\core\Virabis.Core.Nexus.Tests\bin\Release\net8.0\Virabis.Core.Nexus.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Virabis.Core.Nexus.Tests.Manifest.FeatureManifestTests" name="Load_ValidManifest_ParsesResourceBudget" />
+    </UnitTest>
+    <UnitTest name="Virabis.Core.Nexus.Tests.FeatureRegistryTests.IsHealthy_HealthyFeature_ReturnsTrue" storage="c:\virabis\core\virabis.core.nexus.tests\bin\release\net8.0\virabis.core.nexus.tests.dll" id="9ee78ffb-85de-f2bd-809f-9a9082dc525d">
+      <Execution id="153f5420-d37f-4a61-be83-93e550e8304c" />
+      <TestMethod codeBase="C:\virabis\core\Virabis.Core.Nexus.Tests\bin\Release\net8.0\Virabis.Core.Nexus.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Virabis.Core.Nexus.Tests.FeatureRegistryTests" name="IsHealthy_HealthyFeature_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="Virabis.Core.Nexus.Tests.CapabilitySystemTests.CapabilityRegistry_Register_ShouldStoreCapabilities" storage="c:\virabis\core\virabis.core.nexus.tests\bin\release\net8.0\virabis.core.nexus.tests.dll" id="23184c33-b6ea-7b34-dd36-cc08b38c69d8">
+      <Execution id="c382787b-82de-49dc-8807-df51aff70271" />
+      <TestMethod codeBase="C:\virabis\core\Virabis.Core.Nexus.Tests\bin\Release\net8.0\Virabis.Core.Nexus.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Virabis.Core.Nexus.Tests.CapabilitySystemTests" name="CapabilityRegistry_Register_ShouldStoreCapabilities" />
+    </UnitTest>
+    <UnitTest name="Virabis.Core.Nexus.EventChannelTests.Subscribe_ShouldReturnDisposable" storage="c:\virabis\core\virabis.core.nexus.tests\bin\release\net8.0\virabis.core.nexus.tests.dll" id="a2fb5ffe-cfd1-6e51-14f5-bad52b296de8">
+      <Execution id="693d1611-cfb5-4158-aaac-55ea5eea0780" />
+      <TestMethod codeBase="C:\virabis\core\Virabis.Core.Nexus.Tests\bin\Release\net8.0\Virabis.Core.Nexus.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Virabis.Core.Nexus.EventChannelTests" name="Subscribe_ShouldReturnDisposable" />
+    </UnitTest>
+    <UnitTest name="Virabis.Core.Nexus.Tests.Manifest.FeatureManifestTests.Load_CombatManifest_Success" storage="c:\virabis\core\virabis.core.nexus.tests\bin\release\net8.0\virabis.core.nexus.tests.dll" id="1801d65c-bf79-723f-cab1-af0c517278a7">
+      <Execution id="875f26b2-baed-49a8-b75d-a678bee8b359" />
+      <TestMethod codeBase="C:\virabis\core\Virabis.Core.Nexus.Tests\bin\Release\net8.0\Virabis.Core.Nexus.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Virabis.Core.Nexus.Tests.Manifest.FeatureManifestTests" name="Load_CombatManifest_Success" />
+    </UnitTest>
+    <UnitTest name="Virabis.Core.Nexus.Tests.CapabilitySystemTests.CapabilityRegistry_EnforceCapability_ShouldThrowIfMissing" storage="c:\virabis\core\virabis.core.nexus.tests\bin\release\net8.0\virabis.core.nexus.tests.dll" id="06b142f8-ef90-14c0-8d02-9ed029a204ba">
+      <Execution id="e1b6681b-5eca-4f1c-af43-2c957ccb3113" />
+      <TestMethod codeBase="C:\virabis\core\Virabis.Core.Nexus.Tests\bin\Release\net8.0\Virabis.Core.Nexus.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Virabis.Core.Nexus.Tests.CapabilitySystemTests" name="CapabilityRegistry_EnforceCapability_ShouldThrowIfMissing" />
+    </UnitTest>
+    <UnitTest name="Virabis.Core.Nexus.Tests.FeatureDiscoveryTests.DiscoverFeatures_FindsCombatFeature" storage="c:\virabis\core\virabis.core.nexus.tests\bin\release\net8.0\virabis.core.nexus.tests.dll" id="1ef8e069-5a5a-ccec-148f-16424865fc22">
+      <Execution id="c4ff74d8-3a9b-4cb1-bfc6-e3a5c300675a" />
+      <TestMethod codeBase="C:\virabis\core\Virabis.Core.Nexus.Tests\bin\Release\net8.0\Virabis.Core.Nexus.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Virabis.Core.Nexus.Tests.FeatureDiscoveryTests" name="DiscoverFeatures_FindsCombatFeature" />
+    </UnitTest>
+    <UnitTest name="Virabis.Core.Nexus.Tests.FeatureRegistryTests.Register_ValidFeature_Success" storage="c:\virabis\core\virabis.core.nexus.tests\bin\release\net8.0\virabis.core.nexus.tests.dll" id="20ae430c-0dca-c553-a900-57d4b9b7e794">
+      <Execution id="749ecc5a-a336-4c52-87eb-94dc657552ea" />
+      <TestMethod codeBase="C:\virabis\core\Virabis.Core.Nexus.Tests\bin\Release\net8.0\Virabis.Core.Nexus.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Virabis.Core.Nexus.Tests.FeatureRegistryTests" name="Register_ValidFeature_Success" />
+    </UnitTest>
+    <UnitTest name="Virabis.Core.Nexus.EventChannelTests.Unsubscribe_ShouldStopNotifications" storage="c:\virabis\core\virabis.core.nexus.tests\bin\release\net8.0\virabis.core.nexus.tests.dll" id="1959b45f-a020-2326-bbb0-38c2f587931d">
+      <Execution id="aec9f388-0105-4218-9053-2ed7724f629c" />
+      <TestMethod codeBase="C:\virabis\core\Virabis.Core.Nexus.Tests\bin\Release\net8.0\Virabis.Core.Nexus.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Virabis.Core.Nexus.EventChannelTests" name="Unsubscribe_ShouldStopNotifications" />
+    </UnitTest>
+    <UnitTest name="Virabis.Core.Nexus.EventChannelTests.Publish_ShouldNotifySubscribers" storage="c:\virabis\core\virabis.core.nexus.tests\bin\release\net8.0\virabis.core.nexus.tests.dll" id="3c81bd9a-3a2c-619f-4e8e-48e77db8aac1">
+      <Execution id="ac315aad-0630-4196-8b55-ff03d5899cbd" />
+      <TestMethod codeBase="C:\virabis\core\Virabis.Core.Nexus.Tests\bin\Release\net8.0\Virabis.Core.Nexus.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Virabis.Core.Nexus.EventChannelTests" name="Publish_ShouldNotifySubscribers" />
+    </UnitTest>
+    <UnitTest name="Virabis.Core.Nexus.Tests.FeatureRegistryTests.Unregister_ExistingFeature_Success" storage="c:\virabis\core\virabis.core.nexus.tests\bin\release\net8.0\virabis.core.nexus.tests.dll" id="23bd0511-1e2b-7996-421f-b1f146a0dbbd">
+      <Execution id="42c77f56-fcf8-4aef-a49f-b1509774d70e" />
+      <TestMethod codeBase="C:\virabis\core\Virabis.Core.Nexus.Tests\bin\Release\net8.0\Virabis.Core.Nexus.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Virabis.Core.Nexus.Tests.FeatureRegistryTests" name="Unregister_ExistingFeature_Success" />
+    </UnitTest>
+    <UnitTest name="Virabis.Core.Nexus.Tests.FeatureDiscoveryTests.GetMetadata_ExtractsAttributeData" storage="c:\virabis\core\virabis.core.nexus.tests\bin\release\net8.0\virabis.core.nexus.tests.dll" id="e35245c7-3341-1178-731a-5051ba7d4251">
+      <Execution id="3939379e-35fd-488b-9756-586672ff8104" />
+      <TestMethod codeBase="C:\virabis\core\Virabis.Core.Nexus.Tests\bin\Release\net8.0\Virabis.Core.Nexus.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Virabis.Core.Nexus.Tests.FeatureDiscoveryTests" name="GetMetadata_ExtractsAttributeData" />
+    </UnitTest>
+    <UnitTest name="Virabis.Core.Nexus.Tests.CapabilitySystemTests.CapabilityValidator_ValidateFeature_ShouldPassWhenAllCapabilitiesDeclared" storage="c:\virabis\core\virabis.core.nexus.tests\bin\release\net8.0\virabis.core.nexus.tests.dll" id="f793e3d0-25c9-158e-b4fa-31fa812ef440">
+      <Execution id="151e884e-d359-4a0f-a1ba-d451bdc0380e" />
+      <TestMethod codeBase="C:\virabis\core\Virabis.Core.Nexus.Tests\bin\Release\net8.0\Virabis.Core.Nexus.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Virabis.Core.Nexus.Tests.CapabilitySystemTests" name="CapabilityValidator_ValidateFeature_ShouldPassWhenAllCapabilitiesDeclared" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="3c81bd9a-3a2c-619f-4e8e-48e77db8aac1" executionId="ac315aad-0630-4196-8b55-ff03d5899cbd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1959b45f-a020-2326-bbb0-38c2f587931d" executionId="aec9f388-0105-4218-9053-2ed7724f629c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="23bd0511-1e2b-7996-421f-b1f146a0dbbd" executionId="42c77f56-fcf8-4aef-a49f-b1509774d70e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f793e3d0-25c9-158e-b4fa-31fa812ef440" executionId="151e884e-d359-4a0f-a1ba-d451bdc0380e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2fb5ffe-cfd1-6e51-14f5-bad52b296de8" executionId="693d1611-cfb5-4158-aaac-55ea5eea0780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="20ae430c-0dca-c553-a900-57d4b9b7e794" executionId="749ecc5a-a336-4c52-87eb-94dc657552ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="23184c33-b6ea-7b34-dd36-cc08b38c69d8" executionId="c382787b-82de-49dc-8807-df51aff70271" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1801d65c-bf79-723f-cab1-af0c517278a7" executionId="875f26b2-baed-49a8-b75d-a678bee8b359" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ee78ffb-85de-f2bd-809f-9a9082dc525d" executionId="153f5420-d37f-4a61-be83-93e550e8304c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e35245c7-3341-1178-731a-5051ba7d4251" executionId="3939379e-35fd-488b-9756-586672ff8104" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9c60cdd0-6bf6-bcd1-32c5-1f878af498dd" executionId="f2b0b571-6966-413d-bdce-11b7ba49aded" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ef8e069-5a5a-ccec-148f-16424865fc22" executionId="c4ff74d8-3a9b-4cb1-bfc6-e3a5c300675a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06b142f8-ef90-14c0-8d02-9ed029a204ba" executionId="e1b6681b-5eca-4f1c-af43-2c957ccb3113" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Bir Listede Olmayan Sonuçlar" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Yüklenen Tüm Sonuçlar" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="13" executed="13" passed="13" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.8)&#xD;
+[xUnit.net 00:00:00.04]   Discovering: Virabis.Core.Nexus.Tests&#xD;
+[xUnit.net 00:00:00.07]   Discovered:  Virabis.Core.Nexus.Tests&#xD;
+[xUnit.net 00:00:00.08]   Starting:    Virabis.Core.Nexus.Tests&#xD;
+[Nexus] Registered feature: TestFeature1&#xD;
+[Nexus] Unregistered feature: TestFeature1&#xD;
+[Nexus] Registered feature: HealthyTest&#xD;
+[Nexus] Unregistered feature: HealthyTest&#xD;
+[Nexus] Registered feature: UnregisterTest&#xD;
+[Nexus] Unregistered feature: UnregisterTest&#xD;
+[xUnit.net 00:00:00.18]   Finished:    Virabis.Core.Nexus.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

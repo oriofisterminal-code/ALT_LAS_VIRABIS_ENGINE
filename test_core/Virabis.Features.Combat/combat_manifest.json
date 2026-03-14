@@ -1,0 +1,23 @@
+{
+  "name": "Combat",
+  "version": "1.0.0",
+  "author": "Virabis Team",
+  "description": "Core combat system with damage calculation",
+  "capabilities": ["damage", "entity", "combat"],
+  "dependencies": [],
+  "resources": {
+    "init_time_ms": 50,
+    "memory_mb": 5,
+    "cpu_percent": 3
+  },
+  "lifecycle": {
+    "async_init": false,
+    "lazy_load": false,
+    "auto_shutdown": false,
+    "priority": 100
+  },
+  "events": {
+    "publishes": ["DamageDealt", "EntityDied"],
+    "subscribes": ["EntitySpawned"]
+  }
+}
