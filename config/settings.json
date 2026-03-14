@@ -1,0 +1,93 @@
+{
+    "window": {
+        "width": 80,
+        "height": 25,
+        "title": "ALT_LAS: Under",
+        "fps": 30
+    },
+    "render": {
+        "resolution": {
+            "width": 960,
+            "height": 544
+        },
+        "tile_size": 16,
+        "grid": {
+            "width": 60,
+            "height": 34
+        },
+        "backend": "auto",
+        "fallback_order": ["gpu_shader", "prerender", "ascii"],
+        "vsync": false
+    },
+    "gpu": {
+        "enabled": true,
+        "opengl_version": "3.3",
+        "min_vram_mb": 128,
+        "shader_effects": {
+            "point_lights": true,
+            "ambient_light": true,
+            "glow_bloom": false,
+            "water_wave": true
+        },
+        "max_lights": 8,
+        "sprite_batch_size": 1000
+    },
+    "font": {
+        "name": "default",
+        "size": 16
+    },
+    "layers": {
+        "MAP": 0,
+        "ENTITIES": 1,
+        "EFFECTS": 2,
+        "UI": 3
+    },
+    "colors": {
+        "default_fg": "white",
+        "default_bg": "black",
+        "wall": "#808080",
+        "floor": "#333333",
+        "water": "#4444ff",
+        "npc": "#00ff00",
+        "player": "#ffff00",
+        "enemy": "#ff0000",
+        "item": "#ff00ff",
+        "trigger": "transparent",
+        "ui_border": "#aaaaaa",
+        "ui_bg": "#111111",
+        "dialogue_text": "#ffffff",
+        "dialogue_highlight": "#ffff00"
+    },
+    "gameplay": {
+        "player_speed": 1,
+        "dialogue_speed": 0.03,
+        "save_file": "save_data.json"
+    },
+    "effects": {
+        "ambient_light": {
+            "r": 0.3,
+            "g": 0.3,
+            "b": 0.4
+        },
+        "default_light_radius": 150,
+        "default_light_intensity": 1.0,
+        "glow_intensity": 1.0,
+        "water_wave_speed": 1.0,
+        "water_wave_amplitude": 0.02
+    },
+    "performance": {
+        "target_fps": 60,
+        "min_fps": 30,
+        "particle_limit": 500,
+        "shader_quality": "medium"
+    },
+    "api": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 8080,
+        "api_key": "",
+        "rate_limit": 60,
+        "rate_window": 60,
+        "cors_origins": ["*"]
+    }
+}

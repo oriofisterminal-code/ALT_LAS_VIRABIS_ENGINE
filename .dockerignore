@@ -1,0 +1,80 @@
+# ALT_LAS Engine - Docker Ignore
+# Files to exclude from Docker build context
+
+# Git
+.git
+.gitignore
+.gitattributes
+.github
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info
+dist
+build
+.eggs
+*.egg
+
+# Virtual Environment
+venv
+env
+.venv
+.env
+ENV
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings
+
+# Testing
+.pytest_cache
+.coverage
+htmlcov
+.tox
+.nox
+
+# Documentation
+docs
+*.md
+!README.md
+
+# Development files
+*.bak
+*.tmp
+*.temp
+*.log
+
+# Saves (runtime)
+saves
+Saves
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+.docker
+
+# CI/CD
+.travis.yml
+.gitlab-ci.yml
+Jenkinsfile
+
+# Misc
+*.pdf
+*.docx
+download
