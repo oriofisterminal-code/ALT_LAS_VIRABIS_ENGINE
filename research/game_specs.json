@@ -1,0 +1,92 @@
+[
+  {
+    "url": "http://forums.stardewvalley.net/threads/sprite-size-first-time-modding-sv.7128",
+    "name": "Sprite size (First time modding SV)",
+    "snippet": "Apr 20, 2564 BE — Stardew sprites are (mostly) 16x16 yes, with things like an NPC overworld sprite being 16x32, or individual portrait frames being 64x64. Read more\n20-Apr-2021 — Stardew sprites are (mostly) 16x16 yes, with things like an NPC overworld sprite being 16x32, or individual portrait frames being 64x64.",
+    "host_name": "forums.stardewvalley.net",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/PixelArt/comments/13qmu7v/size_of_stardew_valley_frame_pixels",
+    "name": "Size of Stardew Valley frame pixels? : r/PixelArt",
+    "snippet": "Therefore pixel art needs to be multipled per pixel to a higher resolution so that 1 pixel becomes a 2x2, 3x3, 4x4 pixel block. This preserves ... Read more",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.sprite-ai.art/blog/2d-pixel-art-style-guide",
+    "name": "2D pixel art for games: complete style guide - Sprite-AI",
+    "snippet": "Feb 16, 2569 BE — The Stardew Valley zone. Sprites from 16x16 to 32x32 , palettes of 16-32 colors per sprite, basic anti-aliasing on curves, dithering for ... Read more",
+    "host_name": "www.sprite-ai.art",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/1212162308859822/posts/4257193181023371",
+    "name": "Pixel game design tips and tutorials needed",
+    "snippet": "Also I think most classic tiles are 16x16 pixels ? (I don't know how much I'm overthinking this.) It's probably going to have grid based combat ... Read more",
+    "host_name": "www.facebook.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://gamedev.stackexchange.com/questions/141609/understanding-pixel-art-in-unity-2d",
+    "name": "Understanding pixel art in Unity 2d",
+    "snippet": "May 25, 2560 BE — If we think of the size of the plant as one tile / one unit of world space, we can see this unit spans 16 pixels horizontally and vertically. Read more",
+    "host_name": "gamedev.stackexchange.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/godotengine/godot-proposals/discussions/9256",
+    "name": "Pixel perfect games in Godot #9256",
+    "snippet": "You would toggle the 2D stretch mode, set your project resolution to something like 1920 x 1080, and throw your game inside a viewport node at a desired base ... Read more",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.pinterest.com/pin/703756189001777",
+    "name": "Stardew Valley tile size",
+    "snippet": "Dust Sprites Stardew Valley · Stardew Valley Pixel Art Characters ... Stardew Valley tile size ... Read more\nStardew Valley Pixel Art ... Stardew Valley tile size | Pixel art characters, Pixel art games, Pixel art.",
+    "host_name": "www.pinterest.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://community.aseprite.org/t/sprites-sizing-help/1082",
+    "name": "Sprites sizing help!",
+    "snippet": "Mar 4, 2561 BE — I want to make a game like stardew valley what size should I edit my sprites in 16x16 32x32 or 64x64 help?!",
+    "host_name": "community.aseprite.org",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "http://forums.stardewvalley.net/threads/sprite-sizes-character-sheets-pixel-art.5597",
+    "name": "Art Help - Sprite Sizes? Character Sheets? [Pixel Art]",
+    "snippet": "15-Feb-2021 — Most sprites for inventory are 16x16 pixels for one tile ., but then animal sprite sheets vary. Like chicken for instance is one 'frame' of the chicken is a 16x ...",
+    "host_name": "forums.stardewvalley.net",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://community.playstarbound.com/threads/what-is-the-native-resolution-of-stardew-valley.110800",
+    "name": "what is the native resolution of stardew valley?",
+    "snippet": "19-Mar-2016 — It doesn't have a native resolution , not in the common sense. It scales its canvas according to your resolution and the zoom level you have chosen.",
+    "host_name": "community.playstarbound.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

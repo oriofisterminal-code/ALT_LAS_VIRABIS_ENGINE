@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.reddit.com/r/VoxelGameDev/comments/1re68nj/a_pixel_art_styled_lightingshadow_system_in_my",
+    "name": "A pixel art styled lighting+shadow system in my game engine (and a minor description how it was achieved, and optimized) : r/VoxelGameDev - Reddit",
+    "snippet": "Currently, I haven't yet implemented an angled light source, but what you see here, is basically point lights. I will be working a bit later on ...",
+    "host_name": "www.reddit.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=cXuiPMRq8yY",
+    "name": "Devlog 2024 | 2D Light in Pixelated Games | The Making of Moons of Darsalon | EP4",
+    "snippet": "... shader techniques crucial for achieving the unique visual style of this pixel art game. In the previous dev log, I explored the 2D lighting ... Missing: point | Show results with: point",
+    "host_name": "www.youtube.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.godotengine.org/en/4.4/tutorials/2d/2d_lights_and_shadows.html",
+    "name": "2D lights and shadows — Godot Engine (4.4) documentation in English",
+    "snippet": "Godot provides the ability to use real-time 2D lighting and shadows, which can greatly enhance the sense of depth in your project.",
+    "host_name": "docs.godotengine.org",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://learnopengl.com/Advanced-Lighting/SSAO",
+    "name": "LearnOpenGL - SSAO",
+    "snippet": "One type of indirect lighting approximation is called ambient occlusion that tries to approximate indirect lighting by darkening creases, holes, and surfaces ...",
+    "host_name": "learnopengl.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/GraphicsProgramming/comments/fwtnvn/ambient_occlusion_and_global_illumination",
+    "name": "Ambient Occlusion and Global Illumination : r/GraphicsProgramming - Reddit",
+    "snippet": "In offline and real-time graphics, ambient occlusion (AO) [18] is used to improve near field rendering, where the general global illumination solution fails.",
+    "host_name": "www.reddit.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ogldev.org/www/tutorial45/tutorial45.html",
+    "name": "Tutorial 45 - Screen Space Ambient Occlusion - OGLdev",
+    "snippet": "In the following tutorials we implemented diffuse and specular lighting which contributed to the overall quality of the scene but the basic ambient light ...",
+    "host_name": "ogldev.org",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://foxyofjungle.itch.io/crystal-2d-lighting-engine/comments",
+    "name": "Comments 54 to 15 of 54 - Crystal - 2D Lighting Engine by Foxy Of Jungle",
+    "snippet": "1) I might have missed this, but does this light engine implement ambient occlusion for objects? For a top-down perspective, this is pretty relevant.I want ...",
+    "host_name": "foxyofjungle.itch.io",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/IndieGameDevs/posts/10154741544606573",
+    "name": "2D pixel perfect lights/shadows experiments with OpenGL and shaders on my own light engine - Facebook",
+    "snippet": "Benjamin here's the Shader Code and a mini tutorial on how to set it up. This method only works with pixelart textures. \"Perfect PixelArt ( ... Good evening. #research When creating a Pixel Art game, is there a light rendering ... - Facebook camera zoom in/out while moving between elevations, -players dynamic shadow. (I want to ... More results from www.facebook.com",
+    "host_name": "www.facebook.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://forum.gamemaker.io/index.php?threads/current-preferred-workflow-for-dynamic-lighting-volymetric-combined-with-normal-maps.117789",
+    "name": "GML - Current preferred workflow for dynamic lighting (Volymetric combined with Normal Maps) | GameMaker Community",
+    "snippet": "Unless I do combine these two some way the shader lighting could be implemented and turned on and off per desired object or all together to save ...",
+    "host_name": "forum.gamemaker.io",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pixelfranek.itch.io/free-textures-of-light",
+    "name": "Textures for 2D Light (round gradients) by PixelFranek - Itch.io",
+    "snippet": "Collection of animated and static light textures. 694 different light textures in PNG format . 58 different light animation textures in GIF , PNG and ASE ...",
+    "host_name": "pixelfranek.itch.io",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]
