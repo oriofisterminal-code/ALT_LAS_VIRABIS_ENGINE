@@ -1,0 +1,159 @@
+# ALT_LAS Engine - Docker Compose
+# Multi-service container orchestration
+
+version: '3.8'
+
+services:
+  # === MAIN GAME SERVICE ===
+  game:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: alt_las_game
+    restart: unless-stopped
+    
+    # Terminal support
+    stdin_open: true
+    tty: true
+    
+    # Environment
+    environment:
+      - TERM=xterm-256color
+      - DISPLAY=${DISPLAY:-:0}
+      - PYTHONUNBUFFERED=1
+    
+    # Volumes
+    volumes:
+      # Persist saves
+      - ./saves:/app/saves
+      # Config (editable)
+      - ./config:/app/config:ro
+      # Assets (editable)
+      - ./assets:/app/assets:ro
+      # X11 socket for GPU support
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    
+    # GPU Support (NVIDIA)
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    
+    # Network
+    networks:
+      - alt_las_network
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys; sys.exit(0)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # === MCP SERVER (AI Integration) ===
+  mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: alt_las_mcp
+    restart: unless-stopped
+    
+    # Command override - Run MCP server
+    command: ["python", "-m", "mcp.server"]
+    
+    # Environment
+    environment:
+      - PYTHONUNBUFFERED=1
+      - MCP_PORT=8080
+    
+    # Ports
+    ports:
+      - "8080:8080"
+    
+    # Volumes
+    volumes:
+      - ./mcp:/app/mcp:ro
+      - ./config:/app/config:ro
+      - ./assets:/app/assets:rw
+    
+    # Network
+    networks:
+      - alt_las_network
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # === DEVELOPMENT SERVICE ===
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: alt_las_dev
+    profiles:
+      - dev
+    
+    # Command override - Interactive shell
+    command: ["/bin/bash"]
+    
+    # Terminal support
+    stdin_open: true
+    tty: true
+    
+    # Environment
+    environment:
+      - TERM=xterm-256color
+      - PYTHONUNBUFFERED=1
+      - DEBUG=1
+    
+    # Full source mount for development
+    volumes:
+      - ./src:/app/src
+      - ./assets:/app/assets
+      - ./config:/app/config
+      - ./mcp:/app/mcp
+      - ./tools:/app/tools
+      - ./saves:/app/saves
+    
+    # Network
+    networks:
+      - alt_las_network
+
+  # === MAP EDITOR SERVICE ===
+  editor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: alt_las_editor
+    profiles:
+      - tools
+    
+    # Terminal support
+    stdin_open: true
+    tty: true
+    
+    # Command override - Run editor
+    command: ["python", "-m", "tools.editor"]
+    
+    # Volumes
+    volumes:
+      - ./assets:/app/assets:rw
+      - ./config:/app/config:ro
+    
+    # Network
+    networks:
+      - alt_las_network
+
+networks:
+  alt_las_network:
+    driver: bridge
+
+volumes:
+  saves:

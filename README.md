@@ -4,6 +4,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)
 
 ## Features
 
@@ -35,7 +36,26 @@ ALT_LAS_ENGINE/
 └── docs/                   # Documentation
 ```
 
-## Quick Start
+---
+
+## 🚀 Quick Start
+
+### Option 1: Docker (Recommended)
+
+```bash
+# Clone
+git clone https://github.com/evpozipo-arch/ALT_LAS_ENGINE.git
+cd ALT_LAS_ENGINE
+
+# Run with Docker
+docker-compose run game
+
+# Or build and run manually
+docker build -t alt_las_engine .
+docker run -it --rm alt_las_engine
+```
+
+### Option 2: Local Installation
 
 ```bash
 # Clone
@@ -51,6 +71,32 @@ pip install -r requirements.txt
 python main.py
 ```
 
+---
+
+## 🐳 Docker Commands
+
+| Command | Description |
+|---------|-------------|
+| `docker-compose run game` | Run main game |
+| `docker-compose up mcp` | Start MCP server |
+| `docker-compose run dev` | Development shell |
+| `docker-compose run editor` | Map editor |
+| `docker-compose build` | Rebuild images |
+| `docker-compose down` | Stop all services |
+
+### Docker with GPU Support
+
+```bash
+# NVIDIA GPU
+docker-compose run --gpu all game
+
+# With X11 forwarding (Linux)
+xhost +local:docker
+docker-compose run game
+```
+
+---
+
 ## Requirements
 
 | Package | Version |
@@ -58,6 +104,8 @@ python main.py
 | Python | 3.10+ |
 | Pillow | 10.0+ |
 | ModernGL | 5.8+ |
+
+---
 
 ## Controls
 
@@ -68,6 +116,8 @@ python main.py
 | X | Cancel |
 | ESC | Menu |
 
+---
+
 ## MCP Tools (24)
 
 | Category | Tools |
@@ -76,6 +126,8 @@ python main.py
 | Sprites | set_sprite, list_sprites, create_placeholder |
 | Effects | add_light, set_glow, spawn_particles |
 | Content | create_dialogue, create_character |
+
+---
 
 ## License
 
