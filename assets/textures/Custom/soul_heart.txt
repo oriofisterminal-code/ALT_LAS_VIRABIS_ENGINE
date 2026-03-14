@@ -1,0 +1,69 @@
+# SOUL HEART - Player Character Sprite
+# ALT_LAS Engine Custom ASCII Art
+# Format: Each frame separated by "---"
+
+# Frame 1: Idle
+  ♥
+ ♥♥♥
+  ♥
+
+---
+
+# Frame 2: Hurt
+  ♡
+ ♡♡♡
+  ♡
+
+---
+
+# Frame 3: Determination (Battle)
+  ❤
+ ❤❤❤
+  ❤
+
+---
+
+# Frame 4: Damage Flash
+  ◇
+ ◇◇◇
+  ◇
+
+---
+
+# Animation: Movement
+# Direction: UP
+  ▲
+ ███
+  ░
+
+---
+
+# Direction: DOWN
+  ░
+ ███
+  ▼
+
+---
+
+# Direction: LEFT
+  ◄
+ ███
+  ◄
+
+---
+
+# Direction: RIGHT
+  ►
+ ███
+  ►
+
+---
+
+# Soul Colors:
+# RED     = ♥ (Determination)
+# CYAN    = ♣ (Patience)
+# ORANGE  = ♦ (Bravery)
+# BLUE    = ♠ (Integrity)
+# PURPLE  = ✧ (Perseverance)
+# GREEN   = ★ (Kindness)
+# YELLOW  = ◆ (Justice)
