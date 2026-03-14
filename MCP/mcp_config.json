@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "alt-las-engine": {
+      "command": "python",
+      "args": ["MCP/server.py"],
+      "cwd": ".",
+      "env": {}
+    }
+  }
+}
