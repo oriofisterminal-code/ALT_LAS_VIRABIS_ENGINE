@@ -150,6 +150,45 @@ SİSTEM HATALARI (E300-E399):
 
 ## v0.5.0 - Enhanced Graphics
 
+### Graphics Evolution Roadmap
+
+| Seviye | Referans Oyun | Özellikler | Durum |
+|--------|---------------|------------|-------|
+| **Base** | Undertale | Pixel art, 2D rendering | ✅ Tamamlandı |
+| **+ Lights** | Hyper Light Drifter | Dinamik ışıklandırma | 🔄 Kısmen hazır |
+| **+ Glow** | Celeste | Bloom/post-processing | 📋 Planlanıyor |
+| **+ Particles** | Stardew Valley | Parçacık efektleri | 🔄 Kısmen hazır |
+| **+ Shadows** | Hollow Knight | Gölge sistemi | 📋 Planlanıyor |
+
+### Detaylı Özellikler
+
+**v0.5.1 - Dynamic Lighting** (Hyper Light Drifter tarzı)
+- [ ] Point lights with radius falloff
+- [ ] Colored lighting support
+- [ ] Light occlusion by walls
+- [ ] Day/night cycle support
+
+**v0.5.2 - Post-Processing** (Celeste tarzı)
+- [ ] Bloom/glow effect
+- [ ] Screen-space ambient occlusion
+- [ ] Color grading
+- [ ] Chromatic aberration
+- [ ] Vignette effect
+
+**v0.5.3 - Particle System** (Stardew Valley tarzı)
+- [ ] Particle emitters
+- [ ] Weather effects (rain, snow)
+- [ ] Ambient particles (dust, leaves)
+- [ ] Interactive particles
+
+**v0.5.4 - Shadow System** (Hollow Knight tarzı)
+- [ ] Dynamic shadows
+- [ ] Soft shadow edges
+- [ ] Character shadows
+- [ ] Environmental shadows
+
+### Diğer v0.5 Özellikler
+
 - [ ] Sprite animation system
 - [ ] Tile-based auto-tiling
 - [ ] Parallax backgrounds
