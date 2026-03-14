@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/hpjansson/chafa",
+    "name": "hpjansson/chafa: 📺🗿 Terminal graphics for the 21st century.",
+    "snippet": "Chafa is a command-line utility that converts image data, including animated GIFs, into graphics formats or ANSI/Unicode character art suitable for display ... Read more\nChafa is a command-line utility that converts image data, including animated GIFs, into graphics formats or ANSI/Unicode character art suitable for display in a terminal.",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ubos.tech/news/chafa-high%E2%80%91quality-terminal-graphics-library",
+    "name": "Chafa – High‑Quality Terminal Graphics Library - UBOS.tech",
+    "snippet": "15 Dec 2025 — Performance Optimizations: SIMD‑ accelerated processing and optional multithreading make rendering large images near‑instantaneous. Cross ... Read more",
+    "host_name": "ubos.tech",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://hpjansson.org/chafa",
+    "name": "Chafa: Terminal Graphics for the 21st Century",
+    "snippet": "With chafa , you can now view very, very reasonable approximations of pictures and animations in the comfort of your favorite terminal emulator. Read more\nYou can get fair results by using only U+2580 (upper halfblock). Pixterm, catimg and a few other terminal graphics printers do this,and so can Chafa with chafa --symbols vhalf. However, Chafauses more symbols by default, greatly improving quality. There are more examples in the gallery!",
+    "host_name": "hpjansson.org",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=46278208",
+    "name": "Chafa: Terminal Graphics for the 21st Century",
+    "snippet": "16 Dec 2025 — Most popular terminals now have support for `kitty` graphics protocol which can smoothly and efficiently render raster images . So chafa is a ... Read more",
+    "host_name": "news.ycombinator.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.x-cmd.com/install/chafa",
+    "name": "Chafa: Need Multimedia in CLI? One-Stop Tool",
+    "snippet": "Chafa is a command-line utility that converts image data, including animated GIFs, into graphics formats or ANSI/Unicode character art suitable for display in a ... Read more",
+    "host_name": "www.x-cmd.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linuxlinks.com/chafa-terminal-graphics-image-viewer",
+    "name": "Chafa - terminal graphics image viewer",
+    "snippet": "22 Jun 2022 — This review looks at a third terminal -based image viewer that supports the Kitty Graphics Protocol. It's named Chafa , shorthand for Character Art Facsimile. Read more",
+    "host_name": "www.linuxlinks.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://sw.kovidgoyal.net/kitty/graphics-protocol",
+    "name": "Terminal graphics protocol - kitty",
+    "snippet": "A flexible and performant protocol that allows the program running in the terminal , hereafter called the client, to render arbitrary pixel (raster) graphics to ... Read more",
+    "host_name": "sw.kovidgoyal.net",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/terminal_porn/comments/pp7k90/chafa_18_terminal_graphics_with_a_side_of",
+    "name": "Chafa 1.8: Terminal graphics with a side of everything",
+    "snippet": "It runs on Unix/Linux/OSX and supports pretty much every level of graphics capability , from ancient/rudimentary text modes to modern protocols like sixels, ... Read more",
+    "host_name": "www.reddit.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://codeberg.org/hpj/chafa",
+    "name": "hpj/chafa: Terminal graphics for the 21st century, Codeberg",
+    "snippet": "Chafa is a command-line utility that converts image data, including animated GIFs, into graphics formats or ANSI/Unicode character art suitable for display in a terminal. It has broad feature support, allowing it to be used on devices ranging from historical teleprinters to modern terminal emulators and everything in between.",
+    "host_name": "codeberg.org",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/hpjansson/chafa/blob/master/README",
+    "name": "chafa/README at master · hpjansson/chafa · GitHub",
+    "snippet": "Chafa ===== Chafa is a command-line utility that converts image data, including animated GIFs, into graphics formats or ANSI/Unicode character art suitable for display in a terminal.",
+    "host_name": "github.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

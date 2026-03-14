@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://tianyaschool.medium.com/combining-webassembly-with-webgl-high-performance-graphics-processing-387f7a633b5c",
+    "name": "Combining WebAssembly with WebGL High-Performance Graphics Processing | by Kevin",
+    "snippet": "Typical use cases for WebAssembly include game engines, physics simulations, image processing, and cryptographic algorithms. Introduction to ...",
+    "host_name": "tianyaschool.medium.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/lume/glas",
+    "name": "lume/glas: WebGL in WebAssembly with AssemblyScript - GitHub",
+    "snippet": "A high-performing WebGL engine that runs in the web via WebAssembly and is written in a language that web developers are already familiar with: JavaScript.",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://forums.unrealengine.com/t/asm-js-webgl-and-game-engine-ue4/34693",
+    "name": "Asm.js, WebGL, and game engine (UE4) - Epic Developer Community Forums",
+    "snippet": "I wrote a detailed post about how game engines take advantage of asm.js and WebGL to take your compiled C++ code and run in the browser at near native speed. Missing: terminal | Show results with: terminal",
+    "host_name": "forums.unrealengine.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to/okoye_ndidiamaka_5e3b7d30/building-browser-based-games-a-developers-guide-to-creating-engaging-web-games-hcc",
+    "name": "Building Browser-Based Games: A Developer's Guide to Creating Engaging Web Games",
+    "snippet": "Final Thoughts: The Future of Browser Gaming. With 5G, WebGL advancements, and cloud-based game engines, browser gaming is only getting better.",
+    "host_name": "dev.to",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ianjk.com/game-engine-in-rust",
+    "name": "Tutorial: Writing a Tiny Rust Game Engine for Web - ianjk",
+    "snippet": "In this tutorial we'll use the Rust programming language to code a tiny game engine. Our game engine will respond to key presses, draw rectangles, and define a ...",
+    "host_name": "ianjk.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://phaser.io",
+    "name": "Phaser - A fast, fun and free open source HTML5 game framework",
+    "snippet": "Desktop and Mobile HTML5 game framework. A fast, free and fun open source framework for Canvas and WebGL powered browser games.",
+    "host_name": "phaser.io",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://rust-tutorials.github.io/triangle-from-scratch/web_stuff/web_gl_with_bare_wasm.html",
+    "name": "WebGL with bare WASM - Triangle From Scratch - GitHub Pages",
+    "snippet": "A tutorial for drawing a triangle without any outside crates. Missing: game | Show results with: game",
+    "host_name": "rust-tutorials.github.io",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://app.cinevva.com/guides/web-game-engines-comparison.html",
+    "name": "Web Game Engines Comparison (2026) - Cinevva",
+    "snippet": "A detailed comparison of game engines capable of producing web games—from full-featured engines to lightweight frameworks.",
+    "host_name": "app.cinevva.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=30021915",
+    "name": "Gaming, the combination of WASM and WebGPU will be the perfect platform for cr | Hacker News",
+    "snippet": "> Gaming, the combination of WASM and WebGPU will be the perfect platform for cross platform game development. That storm already happened. It was called Unity.",
+    "host_name": "news.ycombinator.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=FsF7EfyyomA",
+    "name": "Making a Wasm GPU runtime - Now both browser & native! - YouTube",
+    "snippet": "Source: https://github.com/contextfreeinfo/taca 0:00 Intro & survey 1:26 Taca focus 2:52 Shader translation 4:01 Zig demo app 5:34 Shader ... Missing: terminal | Show results with: terminal",
+    "host_name": "www.youtube.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

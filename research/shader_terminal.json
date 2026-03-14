@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.reddit.com/r/opengl/comments/1b6ijij/postprocessing_in_games",
+    "name": "Post-processing in games : r/opengl - Reddit",
+    "snippet": "All postprocessing involves is running some calculation on each pixel of the framebuffer and writing the result to another framebuffer. What engine to use on a 2D game which uses heavy post processing : r/gamedev Testing shaders and post-processing in our 2D games, what do you think? More results from www.reddit.com Missing: terminal | Show results with: terminal",
+    "host_name": "www.reddit.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=wav3YUcqUCA",
+    "name": "20 advanced 2D shader effects - part 1 - YouTube",
+    "snippet": "... Shader Graph effects for your 2D game. This two-part series will cover over 20 different effects using the Camera Sorting Layer Texture and ... Missing: terminal emulation",
+    "host_name": "www.youtube.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://discussions.unity.com/t/post-processing-like-effects-in-surface-shaders/497388",
+    "name": "Post-processing-like effects in surface shaders? - Unity Discussions",
+    "snippet": "As I'm stuck with Unity Free for the time being, I'm looking into doing some cool shader effects that would usually be done as ... Add a postprocess effect on just the 2D lighting Post Processing works in Editor, but not in build More results from discussions.unity.com Missing: terminal emulation 2D",
+    "host_name": "discussions.unity.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://learnopengl.com/In-Practice/2D-Game/Postprocessing",
+    "name": "Postprocessing - LearnOpenGL",
+    "snippet": "The postprocessing shader allows for three type of effects: shake, confuse, and chaos. Below is a glimpse of what these effects are going to look like.",
+    "host_name": "learnopengl.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@gabe-gomez/2d-game-dev-journey-day-10-post-processing-51b303be434c",
+    "name": "2D Game Dev Journey — Day 10: Post Processing | by Gabe Gomez | Medium",
+    "snippet": "Welcome to 2D Game Dev Journey — Day 10: Post Processing. Today I will be adding some post-processing effects to really help our game stand out. Missing: terminal emulation shader",
+    "host_name": "medium.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/study-game-engines/gunnell-post-processing-unity",
+    "name": "study-game-engines/gunnell-post-processing-unity - GitHub",
+    "snippet": "This is a collection of post processing shaders I've authored for future use in other projects. Effects include gamma correction, brightness, contrast, ...",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.godotengine.org/en/stable/tutorials/shaders/custom_postprocessing.html",
+    "name": "Custom post-processing — Godot Engine (stable) documentation in English",
+    "snippet": "This article explains how to write your own custom effects. The easiest way to implement a custom post-processing shader is to use Godot's built-in ability to ...",
+    "host_name": "docs.godotengine.org",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=-myXuS3t1W4",
+    "name": "Single Shader 2D Renderer | Game Engine series - YouTube",
+    "snippet": "Single Shader 2D Renderer | Game Engine series. 27K views · 6 years ago ...more. The Cherno. 741K. Subscribe. Missing: terminal emulation post processing effects",
+    "host_name": "www.youtube.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/IndieGameDevs/posts/10155570114006573",
+    "name": "Shader experiments with post processing techniques - Facebook",
+    "snippet": "This is a prototype tutorial level. Mostly I'm messing around with Unity's Cinemachine and Post Processing stack, which let me do a cool rack ... Missing: terminal emulation 2D",
+    "host_name": "www.facebook.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.theseus.fi/bitstream/10024/817035/2/Lehtio_Iiro.pdf",
+    "name": "[PDF] Utilizing shaders in 2D games - Theseus",
+    "snippet": "Post processing process of applying effects to an image before it is drawn on screen. Shader. Compact program that manipulates the drawing of images on screen ...",
+    "host_name": "www.theseus.fi",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

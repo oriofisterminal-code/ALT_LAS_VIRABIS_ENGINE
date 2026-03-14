@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/xtermjs/xterm.js",
+    "name": "xtermjs/xterm.js: A terminal for the web",
+    "snippet": "Performant: Xterm.js is really fast and includes an optional GPU-accelerated renderer . Rich Unicode support: Supports CJK, emojis, and IMEs. Self-contained ...",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/ysl2/alacritty-sixel",
+    "name": "ysl2/alacritty-sixel: A cross-platform, GPU-accelerated",
+    "snippet": "Alacritty is a modern terminal emulator that comes with sensible defaults, but allows for extensive configuration. By integrating with other applications, ...",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/mikeroyal/GPU-Guide",
+    "name": "mikeroyal/GPU-Guide: Graphics Processing Unit",
+    "snippet": "GPUS can rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device. They are used in ...",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/programming/comments/rjdqgj/wezterm_a_gpuaccelerated_terminal_emulator_and",
+    "name": "WezTerm – a GPU-accelerated terminal emulator and",
+    "snippet": "I built a custom 2D ECS Game Engine in Rust & ...",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/semos-labs/attyx",
+    "name": "semos-labs/attyx: Fast and beautiful GPU-accelerated",
+    "snippet": "Attyx is a GPU-accelerated, VT-compatible terminal emulator built from scratch in Zig. It uses Metal on macOS and OpenGL 3.3 on Linux, with a deterministic ...",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/tale/trap2",
+    "name": "tale/trap2: A \"suckless-inspired\" GPU accelerated terminal",
+    "snippet": "trap2 is a terminal emulator that uses the GPU to render the terminal. It's built with OpenGL 3.3 Core Profile, GLFW 3, and libvterm , with a focus on ...",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://developer.android.com/studio/run/emulator-acceleration",
+    "name": "Configure hardware acceleration for the Android Emulator",
+    "snippet": "This page describes how you can configure graphics and virtual machine (VM) acceleration to get higher performance from the emulator.",
+    "host_name": "developer.android.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=26633708",
+    "name": "Wezterm – A GPU-accelerated cross-platform terminal",
+    "snippet": "1 Apr 2021 — A GPU-accelerated terminal with much less polish, less unicode/ligature support and less portability, but one that takes fundamental correctness very seriously.",
+    "host_name": "news.ycombinator.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/cdleon/awesome-terminals",
+    "name": "cdleon/awesome-terminals: Terminal Emulators",
+    "snippet": "Alacritty - A cross-platform, GPU-accelerated terminal emulator . Bobcat - A modern, feature-rich, cross-platform terminal emulator built with U++ framework.",
+    "host_name": "github.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://linuxblog.io/linux-terminal-emulators",
+    "name": "30 Linux Terminal Emulators",
+    "snippet": "11 Jul 2025 — Alacritty – GPU-accelerated terminal emulator , focuses on performance and simplicity. Contour – Terminal emulator with GPU-accelerated rendering ...",
+    "host_name": "linuxblog.io",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

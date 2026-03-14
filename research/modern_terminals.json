@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/alacritty/alacritty",
+    "name": "alacritty/alacritty: A cross-platform, OpenGL terminal",
+    "snippet": "Alacritty is a modern terminal emulator that comes with sensible defaults, but allows for extensive configuration.",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/wezterm/wezterm/discussions/2999",
+    "name": "What makes wezterm bad? #2999 - GitHub",
+    "snippet": "I think wezterm might be the best terminal emulator currently and surprised it hasn't gained more attention, I was wondering what are the biggest limitations ... Features in a terminal · wezterm wezterm · Discussion #652 How does Wezterm compare to Alacritty #1769 More results from github.com",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/cdleon/awesome-terminals/blob/master/README.md",
+    "name": "awesome-terminals/README.md at master - GitHub",
+    "snippet": "Alacritty - A cross-platform, GPU-accelerated terminal emulator. Bobcat - A modern, feature-rich, cross-platform terminal emulator built with U++ framework.",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/linux/comments/v86m6o/why_doesnt_wezterm_get_any_attention_compared_to",
+    "name": "Why doesn't WezTerm get any attention? (compared to Kitty & Alacritty) : r/linux - Reddit",
+    "snippet": "On paper WezTerm seems to possess all the positive qualities of Alacritty and/or Kitty (GPU acellerated, written in Rust, multiplexing, image protocol, etc...) Alacritty vs Kitty : r/archlinux What's the best terminal emulator? and why is gnome-terminal (default in ubuntu), not sufficient? : r/linux More results from www.reddit.com",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/alacritty/alacritty-theme",
+    "name": "alacritty/alacritty-theme: Collection of Alacritty color schemes",
+    "snippet": "Alacritty Theme Collection of colorschemes for easy configuration of the Alacritty terminal emulator. Missing: architecture | Show results with: architecture",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.dlvhdr.me/posts/the-renaissance-of-the-command-line",
+    "name": "The Renaissance of the Command Line",
+    "snippet": "In fact, there's an explosion of new terminal emulators, some of them are kitty, alacritty and wezterm ... You can view the full code at my GitHub ...",
+    "host_name": "www.dlvhdr.me",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/alacritty/alacritty/issues/4793",
+    "name": "set environment variable TERM_PROGRAM to \"Alacritty\" · Issue #4793 - GitHub",
+    "snippet": "Many terminal emulators set the environment variable TERM_PROGRAM to a sensible value that can be used to uniquely identify them. Missing: architecture | Show results with: architecture",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://lobehub.com/bg/skills/elucidsoft-ori_term-design-pattern-review",
+    "name": "design-pattern-review - LobeHub",
+    "snippet": "Compare ori_term's current implementation in a specific domain against established terminal emulators (Alacritty, WezTerm, Ghostty, Crossterm, ...",
+    "host_name": "lobehub.com",
+    "rank": 7,
+    "date": "Mar 6, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://tmuxai.dev/terminal-compatibility",
+    "name": "Terminal Compatibility Matrix: Feature Comparison for Alacritty, Kitty, WezTerm & More",
+    "snippet": "Compare 9 terminal emulators across 12 features — TrueColor, ligatures, Sixel, Kitty graphics, OSC52 clipboard, hyperlinks, and more. ✓Full Support.",
+    "host_name": "tmuxai.dev",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to/dev_tips/why-your-terminal-is-boring-and-what-to-use-instead-26f",
+    "name": "Why your terminal is boring and what to use instead",
+    "snippet": "GPU rendering. Some terminals (like Kitty and Alacritty) use your GPU to render fonts and UI. It means snappier visuals, faster load times, and ...",
+    "host_name": "dev.to",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

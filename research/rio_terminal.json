@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/raphamorim/rio",
+    "name": "GitHub - raphamorim/rio: A hardware-accelerated GPU terminal emulator focusing to run in desktops and browsers.",
+    "snippet": "Development Notice: We are currently in the process of releasing Rio 0.3.0, which includes major performance improvements and architectural changes.",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://rioterm.com",
+    "name": "Rio Terminal: Meet Rio",
+    "snippet": "Fast and Fast · 24-bit true color · Images in Terminal · Cross-platform · Font ligatures · Splits · RetroArch shaders · Latest video update. Missing: webgpu | Show results with: webgpu",
+    "host_name": "rioterm.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@raphamorim/rio-terminal-a-native-and-web-terminal-application-powered-by-rust-webgpu-and-webassembly-76d03a8c99ed",
+    "name": "Rio terminal: A native and web terminal application powered by Rust, WebGPU and WebAssembly | by Raphael Amorim | Medium",
+    "snippet": "Rio terminal was created to run in Browsers and Desktop, allowing web users to create plugins for cross-platforms architectures.",
+    "host_name": "medium.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.omgubuntu.co.uk/2025/07/rio-terminal-emulator-ubuntu",
+    "name": "Rio is a Fast, WebGPU-Powered Terminal for Ubuntu",
+    "snippet": "Rio is described as a Rust-built, hardware-accelerated terminal emulator powered by WebGPU (itself, notable) with a focus on being “fast and efficient“.",
+    "host_name": "www.omgubuntu.co.uk",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/cdleon/awesome-terminals",
+    "name": "cdleon/awesome-terminals: Terminal Emulators - GitHub",
+    "snippet": "Rio - A hardware-accelerated GPU terminal emulator powered by WebGPU, focusing to run in desktops and browsers. PuTTY - SSH and telnet client, developed ...",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.x-cmd.com/install/rio",
+    "name": "Want GPU Terminal with Built-in Splits, Cross-Platform? Rio Rust+WebGPU, Native Splits and Tabs | X-CMD | rio",
+    "snippet": "Want a fast, good-looking terminal on macOS, Linux, Windows? Rio is Rust-built, WebGPU-rendered, with native splits and tabs—a cross-platform alternative to ...",
+    "host_name": "www.x-cmd.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://lobehub.com/de/skills/plurigrid-asi-rio-webgpu-tiles",
+    "name": "rio-webgpu-tiles | Skills Marketplace - LobeHub",
+    "snippet": "Key features include persistent vs transient tile lifecycles, a TileWorldState with high-precision time and automatic ID management, GPU buffers ...",
+    "host_name": "lobehub.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/nix-community/home-manager/blob/master/modules/programs/rio.nix",
+    "name": "home-manager/modules/programs/rio.nix at master - GitHub",
+    "snippet": "Enable Rio, a terminal built to run everywhere, as a native desktop applications by Rust/WebGPU or even in the browsers powered by WebAssembly/WebGPU.",
+    "host_name": "github.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://rioterm.com/docs/features",
+    "name": "Features | Rio Terminal",
+    "snippet": "Hints · Hyperlinks · IME Support · iTerm2 image protocol · Kitty keyboard protocol · RetroArch shaders ... Missing: webgpu browser",
+    "host_name": "rioterm.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.freshports.org/x11/rio",
+    "name": "x11/rio: Hardware-accelerated GPU terminal emulator powered by WebGPU - FreshPorts",
+    "snippet": "Rio is a terminal built to run everywhere, as a native desktop applications by Rust/WebGPU or even in the browser powered by WebAssembly/WebGPU.",
+    "host_name": "www.freshports.org",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

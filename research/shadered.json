@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://shadered.org/docs/tutorials.html",
+    "name": "Tutorials SHADERed 1.4.0 documentation",
+    "snippet": "To create a shader pass, click on the Project → Create → Shader Pass . A new dialog window will open and ask you to enter this shader pass' name, paths to your ... Read more",
+    "host_name": "shadered.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://shadered.org/docs/workspace.html",
+    "name": "Workspace — SHADERed 1.4.0 documentation",
+    "snippet": "Right clicking on a pipeline item will open a context menu with lots of options. Some of these options for shader pass are described here. If two shader passes ... Read more",
+    "host_name": "shadered.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/built-in-shader-examples.html",
+    "name": "HLSL shader examples in the Built-in Render Pipeline",
+    "snippet": "Choosing a render pipeline · Choose a render pipeline · Render pipeline feature comparison · Set up a render pipeline . Read more",
+    "host_name": "docs.unity3d.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://shadered.org/docs/commandline.html",
+    "name": "Command line interface — SHADERed 1.4.0 documentation",
+    "snippet": "Shader entry function (for HLSL ). --disassemble <file> , -dis <file>, Print the SPIR-V. --convert <file> , -con <file>, Convert the shader from HLSL to GLSL . Read more",
+    "host_name": "shadered.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/gamedev/comments/c6krer/shadered_a_tool_for_writing_and_testing_glsl_and",
+    "name": "a tool for writing and testing GLSL and HLSL shaders",
+    "snippet": "SHADERed supports both HLSL and GLSL (which is transpiled in background to HLSL since I am using D3D). You can use both languages in the same ... Read more",
+    "host_name": "www.reddit.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://discussions.unity.com/t/shadergraph-export/705633",
+    "name": "ShaderGraph export - Unity Engine",
+    "snippet": "20 Jun 2018 — Yes and no. Unity's shader graph explicitly does not support the older rendering pipelines , and using the exported shader doesn't solve that. Read more",
+    "host_name": "discussions.unity.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/dfranx/SHADERed",
+    "name": "Lightweight, cross-platform & full-featured shader IDE",
+    "snippet": "SHADERed is a lightweight tool for writing and debugging shaders . It is easy to use, open source, cross-platform (runs on Windows, Linux & Web). Read more",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "http://docs.shadered.org",
+    "name": "SHADERed — SHADERed 1.4.0 documentation",
+    "snippet": "SHADERed is a lightweight tool for writing and debugging shaders. It is easy to use, open source, cross-platform (runs on Windows, Linux & Web - HLSL shaders work on all platforms) and frequently updated with new features.",
+    "host_name": "docs.shadered.org",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pulsegeek.com/articles/slang-glsl-and-hlsl-shader-formats-compared",
+    "name": "Slang, GLSL, and HLSL Shader Formats Compared - PulseGeek",
+    "snippet": "Slang, GLSL, and HLSL dominate shader formats in emulation, but they favor different pipelines and tools. This list compares portability, backend behavior, and development workflows so you can ship consistent results without guesswork.",
+    "host_name": "pulsegeek.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/shellfu/shadered",
+    "name": "GitHub - shellfu/shadered: Shader Editor is a web-based",
+    "snippet": "Emphasizing ease of use and accessibility, ShaderEd supports the advanced GLSL3 shading language, allowing both beginners and seasoned graphics programmers to experiment with shader programming on the web.",
+    "host_name": "github.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

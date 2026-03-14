@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/JoelOtter/termloop",
+    "name": "JoelOtter/termloop: Terminal-based game engine for Go",
+    "snippet": "Termloop is a pure Go game engine for the terminal , built on top of the excellent Termbox. It provides a simple render loop for building games in the terminal.",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/godotengine/godot-proposals/issues/13140",
+    "name": "Add support for embedding custom code editors within the",
+    "snippet": "7 Sept 2025 — This will embed the specified editor as a subprocess. I'm not too aware of how the current game embedding solution works so I'm not even sure if ...",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/yig/GMU-CS425",
+    "name": "yig/GMU-CS425: A guide to making a game engine from",
+    "snippet": "How to write a renderer for modern graphics APIs : An explanation of why modern API's are designed the way they are, and how to manage the fast path. There are ...",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/hackclub/sprig",
+    "name": "hackclub/sprig: Learn to code by making games",
+    "snippet": "The Sprig game engine exposes a small construction kit for making tile-based games. This construction kit helps you focus on being creative instead of learning ...",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/gold-silver-copper/soft_ratatui",
+    "name": "gold-silver-copper/soft_ratatui: Software renderer for ratatui",
+    "snippet": "The best way to build a terminal app!! bevy game engine examples provided in the repo, so you can create your own game UI or world textures with ratatui ...",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/dmrokan/gdmatplot",
+    "name": "dmrokan/gdmatplot",
+    "snippet": "This native Godot extension embeds GNUPlot command line into the game engine by exploiting GNUPlot's flexibility for declaring custom graphical output terminals ...",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/xtermjs/xterm.js",
+    "name": "xtermjs/xterm.js: A terminal for the web",
+    "snippet": "Performant: Xterm.js is really fast and includes an optional GPU-accelerated renderer . Rich Unicode support: Supports CJK, emojis, and IMEs. Self-contained ...",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/Kuberwastaken/Kuberwastaken.github.io",
+    "name": "The Best Terminal-Inspired Portfolio Website on The Internet",
+    "snippet": "This project is the fruit of blood, sweat, and eye strain to showcase my skills, projects, and professional journey through an interactive terminal -style ...",
+    "host_name": "github.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/Canop/termimad",
+    "name": "Canop/termimad: A library to display rich (Markdown)",
+    "snippet": "Termimad is a set of cross-platform utilities dedicated to CLI and TUI apps,. leveraging Markdown to format terminal rendering, allowing separation of ...",
+    "host_name": "github.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/bevyengine/bevy/discussions/5043",
+    "name": "A Bevy Editor vision · bevyengine bevy · Discussion #5043",
+    "snippet": "Embedding the rendering of the Game process into the UI of the Editor is made possible by leveraging the platform's compositor API. This feature is available on ...",
+    "host_name": "github.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

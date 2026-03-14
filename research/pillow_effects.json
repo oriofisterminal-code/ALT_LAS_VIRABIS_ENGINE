@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://stackoverflow.com/questions/73088064/making-image-glow-at-certain-points-when-it-doesnt-get-any-values-in-real-time",
+    "name": "Making Image glow at certain points when it doesn't get",
+    "snippet": "2. Adding glowy effect to an image · 7. Changing the color of an image based on RGB value.",
+    "host_name": "stackoverflow.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://realpython.com/image-processing-with-the-python-pillow-library",
+    "name": "Image Processing With the Python Pillow Library",
+    "snippet": "In this step-by-step tutorial, you'll learn how to use the Python Pillow library to deal with images and perform image processing. You'll also explore using ...",
+    "host_name": "realpython.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pillow.readthedocs.io/en/stable/reference/Image.html",
+    "name": "Image module - Pillow (PIL Fork) 12.0.0 documentation",
+    "snippet": "The Image module provides a class with the same name which is used to represent a PIL image . The module also provides a number of factory functions.",
+    "host_name": "pillow.readthedocs.io",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://qiita.com/pashango2/items/145d858eff3c505c100a",
+    "name": "PIL/Pillow チートシート #Python",
+    "snippet": "Mar 6, 2017 — PIL / Pillow はコンパクトで高速な Python 用の画像ライブラリです。 よく使う処理をまとめました（随時更新） PIL と Pillow の違い 基本的に PIL を使う理由は ...",
+    "host_name": "qiita.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@revelyuution/image-manipulation-in-python-using-pillow-62eb68aa8f93",
+    "name": "Image Manipulation in Python using Pillow",
+    "snippet": "In Pillow (PIL), we can adjust the brightness and contrast of an image using the ImageEnhance module. In this code, we use the ImageEnhance.",
+    "host_name": "medium.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://liora.io/en/pillow-how-to-process-images-with-python",
+    "name": "Pillow: How to process images with Python",
+    "snippet": "Feb 19, 2026 — Learn how to use Pillow in Python to process images with ease, including editing, resizing, filtering, and saving common image formats.",
+    "host_name": "liora.io",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/Benashael/Image-Processing-with-PIL-",
+    "name": "Benashael/Image-Processing-with-PIL",
+    "snippet": "Processing images with the help of Python library called Pillow Library ( PIL ). Overview. Image processing and computer vision tasks include displaying, cropping ...",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.geeksforgeeks.org/python/python-pillow-tutorial",
+    "name": "Python Pillow Tutorial",
+    "snippet": "Jul 23, 2025 — Using image processing we can perform operations like enhancing the image, blurring the image, extracting text from images, and many more ...",
+    "host_name": "www.geeksforgeeks.org",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://auth0.com/blog/image-processing-in-python-with-pillow",
+    "name": "Image Processing in Python with Pillow",
+    "snippet": "Pillow allows you to enhance an image by adjusting its contrast, color, brightness, and sharpness using classes in the ImageEnhance module. Enhancing contrast.",
+    "host_name": "auth0.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/pulse/comprehensive-guide-image-processing-pil-python-imaging-himel-sarder-c91ff",
+    "name": "Comprehensive Guide to Image Processing with PIL",
+    "snippet": "Pillow simplifies image processing in Python , making it accessible for both beginners and experienced developers.",
+    "host_name": "www.linkedin.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

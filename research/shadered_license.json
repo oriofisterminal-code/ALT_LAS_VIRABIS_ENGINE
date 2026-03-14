@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://shadered.org",
+    "name": "SHADERed - Free and open source shader editor",
+    "snippet": "SHADERed is the most powerful shader IDE/editor . It is open-source, cross-platform & has features such as the shader debugger, compute shaders, plugin API, ...\nThe most powerful shader IDE free, open-source, cross-platform, feature-rich Download SHADERed v1.5.5 for: Windows 64bit or try the Lite version in your browser: Lite",
+    "host_name": "shadered.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/dfranx/SHADERed",
+    "name": "Lightweight, cross-platform & full-featured shader IDE",
+    "snippet": "SHADERed is a lightweight tool for writing and debugging shaders. It is easy to use, open source, cross-platform (runs on Windows, Linux & Web).",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://gamefromscratch.com/shadered-open-source-shader-editor",
+    "name": "ShaderED–Open Source Shader Editor",
+    "snippet": "Mar 1, 2020 — Today we are looking at ShaderED , an open source MIT licensed cross platform GLSL and HLSL shader editor. ... Exporter.",
+    "host_name": "gamefromscratch.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://flathub.org/en/apps/org.shadered.SHADERed",
+    "name": "Install SHADERed on Linux",
+    "snippet": "SHADERed is a lightweight tool for creating and testing HLSL and GLSL shaders. It is easy to use, open source, cross-platform (runs on Windows & Linux ...",
+    "host_name": "flathub.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://sourceforge.net/projects/shadered.mirror",
+    "name": "SHADERed download",
+    "snippet": "Mar 19, 2025 — It allows developers to write, debug, and test shaders in real-time, providing tools like a shader debugger, variable tracking, and code editing ...",
+    "host_name": "sourceforge.net",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/dfranx/SHADERed/blob/master/LICENSE",
+    "name": "MIT license - dfranx/SHADERed",
+    "snippet": "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger ...",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://shadered.org/tools",
+    "name": "Free & open-source tools and libraries",
+    "snippet": "SHADERed is the most powerful shader IDE/editor . It is open-source, cross-platform & has features such as the shader debugger, compute shaders, plugin API, ...",
+    "host_name": "shadered.org",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://freebsd.pkgs.org/14/freebsd-amd64/shadered-1.5.6~16960ca0ce.pkg.html",
+    "name": "shadered-1.5.6~16960ca0ce.pkg FreeBSD 14 Download",
+    "snippet": "Download shadered-1.5.6~16960ca0ce.pkg for FreeBSD 14 from FreeBSD repository.",
+    "host_name": "freebsd.pkgs.org",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://deepwiki.com/dfranx/SHADERed/5.1-building-shadered",
+    "name": "Building SHADERed | dfranx/SHADERed | DeepWiki",
+    "snippet": "This document provides comprehensive instructions for building SHADERed from source code on various platforms. SHADERed is a cross-platform shader IDE that offers a powerful environment for shader development, debugging, and visualization. For information about running SHADERed with command line options, see Command Line Options.",
+    "host_name": "deepwiki.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://gitee.com/YDusky/SHADERed",
+    "name": "YDusky/SHADERed - Gitee",
+    "snippet": "SHADERed is a lightweight tool for writing and debugging shaders. It is easy to use, open source, cross-platform (runs on Windows, Linux & Web). Table of Contents",
+    "host_name": "gitee.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

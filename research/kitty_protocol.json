@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://sw.kovidgoyal.net/kitty/graphics-protocol",
+    "name": "Terminal graphics protocol - kitty",
+    "snippet": "The terminal emulator must understand pixel data in three formats, 24-bit RGB, 32-bit RGBA and PNG . This is specified using the f key in the control data. f=32 ...\nThe goal of this specification is to create a flexible and performant protocol that allows the program running in the terminal, hereafter called the client, to render arbitrary pixel (raster) graphics to the screen of the terminal emulator.",
+    "host_name": "sw.kovidgoyal.net",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/KittyTerminal/comments/1j1pimn/kitty_terminal_graphics_protocol_cant_get",
+    "name": "Kitty terminal graphics protocol - can't get animations to work.",
+    "snippet": "Hello! So I've been trying to implement the terminal graphics protocol in one of my applications. Still images work fine, they get displayed ...",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://nick-black.com/dankwiki/index.php/Spriteful_TErminal_GrAphics_Protocol",
+    "name": "Spriteful TErminal GrAphics Protocol",
+    "snippet": "Jun 29, 2021 — STEGAP is my (incomplete!) proposal for a terminal graphics protocol facilitating bitmapped sprites combined with terminal glyphs and ...",
+    "host_name": "nick-black.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/71858289/kitty-graphics-protocol-not-working-in-kitty-only",
+    "name": "Kitty graphics protocol not working in kitty only",
+    "snippet": "The problem was, that kitty allows only 4096 bytes of image data to be sent at once. So you need to split it up in multiple escape codes to use it.",
+    "host_name": "stackoverflow.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/kovidgoyal/kitty/issues/8701",
+    "name": "Clarification about the graphics protocol · Issue #8701",
+    "snippet": "Jun 2, 2025 — It seems like an easy win for all terminals attempting to implement the graphics protocol would be to extend the spec (and Kitty ) to allow this.",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://hexdocs.pm/raxol/Raxol.Terminal.Graphics.KittyProtocol.html",
+    "name": "Raxol.Terminal.Graphics.KittyProtocol — Raxol v2.1.0 - Hex",
+    "snippet": "Kitty Graphics Protocol implementation for advanced terminal graphics . Provides support for efficient image transmission, transparency, animations, ...\nKitty Graphics Protocol implementation for advanced terminal graphics. Provides support for efficient image transmission, transparency, animations, and high-performance graphics rendering using the Kitty graphics protocol.",
+    "host_name": "hexdocs.pm",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=34553044",
+    "name": "There's also the kitty graphic protocol: https://sw.kovidgoyal",
+    "snippet": "The Kitty protocol starts with multiple formats: >> The terminal emulator must understand pixel data in three formats, 24-bit RGB, 32-bit RGBA and PNG .",
+    "host_name": "news.ycombinator.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://cran.r-project.org/web/packages/terminalgraphics/terminalgraphics.pdf",
+    "name": "terminalgraphics: Graphical Output in Terminals",
+    "snippet": "Nov 26, 2025 — The Terminal Graphics Protocol is not supported by many Terminal Emulators. The most notable terminal emulator supporting the protocol is Kitty . 16 pages",
+    "host_name": "cran.r-project.org",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/79606159/how-would-i-use-the-kitty-terminal-graphics-protocol-to-display-an-array-of-pixe",
+    "name": "How Would I use the Kitty Terminal Graphics Protocol to",
+    "snippet": "I want to draw individual pixels to represent my simulation instead of using full characters. Sixel looks to be an option for this but the Kitty Graphics ...",
+    "host_name": "stackoverflow.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/kovidgoyal/kitty/blob/2350952d054bcaf945aa975d1fbd897660960520/docs/graphics-protocol.rst",
+    "name": "kitty/docs/graphics-protocol.rst at  - GitHub",
+    "snippet": "The goal of this specification is to create a flexible and performant protocol that allows the program running in the terminal, hereafter called the client, to render arbitrary pixel (raster) graphics to the screen of the terminal emulator.",
+    "host_name": "github.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

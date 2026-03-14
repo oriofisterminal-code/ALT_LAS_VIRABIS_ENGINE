@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/ghostty-org/ghostty",
+    "name": "Ghostty is a fast, feature-rich, and cross-platform terminal",
+    "snippet": "Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration . - ghostty-org/ghostty.\nIn addition to being a standalone terminal emulator, Ghostty is a C-compatible library for embedding a fast, feature-rich terminal emulator in any 3rd party project.",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/ghostty-org",
+    "name": "Ghostty",
+    "snippet": "Ghostty is a fast, feature -rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration . Zig 46.5k 1.9k. Read more",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ghostty.org",
+    "name": "Ghostty",
+    "snippet": "Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration . Download Documentation. Read more",
+    "host_name": "ghostty.org",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://yyahn.com/wiki/Software/Ghostty",
+    "name": "Ghostty - YY Ahn",
+    "snippet": "Mar 1, 2026 — A GPU-accelerated terminal emulator by Mitchell Hashimoto (co-founder of HashiCorp). Written in Zig, with platform-native UI on macOS and Linux. Read more",
+    "host_name": "yyahn.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/Zig/comments/1hmxb42/ghostty_100_terminal_emulator_written_in_zig",
+    "name": "Ghostty 1.0.0: terminal emulator written in Zig",
+    "snippet": "In Zig , we use inline functions and the comptime feature which is much less error-prone. Many C functions implicitly allocate memory. You have ... Read more",
+    "host_name": "www.reddit.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ghostty.org/docs/about",
+    "name": "About Ghostty",
+    "snippet": "Ghostty is a terminal emulator that differentiates itself by being fast, feature-rich, and native. While there are many excellent terminal emulators ... Read more",
+    "host_name": "ghostty.org",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://debian.griffo.io/cn/install-latest-ghostty-in-debian.html",
+    "name": "安装最新的Ghostty Terminal Emulator 在Debian 上",
+    "snippet": "⚡ Key Features of Ghostty. GPU Acceleration . Uses OpenGL on Linux and Metal on macOS for hardware-accelerated rendering. Maintains 60fps under heavy load with ... Read more",
+    "host_name": "debian.griffo.io",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://lobehub.com/zh-TW/skills/neversight-skills_feed-ghostty-docs",
+    "name": "ghostty-docs",
+    "snippet": "Mar 5, 2026 — Ghostty is a fast, feature-rich cross-platform terminal emulator that leverages GPU acceleration and a native UI to deliver low-latency ... Read more",
+    "host_name": "lobehub.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://calmops.com/programming/ghostty-terminal-zig",
+    "name": "Ghostty Terminal: The Modern Terminal Built with Zig - Calmops",
+    "snippet": "Complete guide to Ghostty, the new high-performance terminal emulator built with Zig. Learn about its features, performance, and why developers are switching.",
+    "host_name": "calmops.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ghostty.org/docs/features",
+    "name": "Features - ghostty.org",
+    "snippet": "Features for terminal application developers are things like the Kitty graphics protocol, Kitty keyboard protocol, synchronized rendering, light/dark mode notifications, etc. These features allow terminal applications to do more than they could in other terminal emulators.",
+    "host_name": "ghostty.org",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/dankamongmen/notcurses",
+    "name": "dankamongmen/notcurses: blingful character graphics/TUI",
+    "snippet": "A library facilitating complex TUIs on modern terminal emulators, supporting vivid colors, multimedia, threads, and Unicode to the maximum degree possible.\nWhat it is: a library facilitating complex TUIs on modern terminal emulators, supporting vivid colors, multimedia, threads, and Unicode to the maximum degree possible. Things can be done with Notcurses that simply can't be done with NCURSES. It is furthermore fast as shit.",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=29450900",
+    "name": "Hacking the planet with Notcurses: a guide to TUIs (2020) [pdf]",
+    "snippet": "Dec 5, 2021 — Some people, possibly aliens, don't favor a dark terminal background. If the terminal background were white, and we had just used e.g. ...",
+    "host_name": "news.ycombinator.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.phoronix.com/news/Notcurses-3.0",
+    "name": "Notcurses 3.0 Released For Adding \"Bling\" To Your Terminal Apps",
+    "snippet": "Dec 2, 2021 — For those wanting to add some \"bling\" to your command-line programs to make some \"rad\" terminal apps, Notcurses 3.0 was released today for ...",
+    "host_name": "www.phoronix.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://notcurses.com",
+    "name": "notcurses",
+    "snippet": "notcurses manual pages (v3.0.17). notcurses(3)—a blingful TUI library. Executables (section 1). ncls—list files, displaying multimedia along with them\nAn error occurred while retrieving sharing information. Please try again later.",
+    "host_name": "notcurses.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/windows/comments/qzlce4/notcurses_2499_doing_things_youve_never_seen_on",
+    "name": "notcurses 2.4.99 doing things you've never seen on MSTerminal / windows 11",
+    "snippet": "while Microsoft Terminal isn't yet powerful enough to show off Notcurses' most advanced functionality (including bitmap graphics integrated ...",
+    "host_name": "www.reddit.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://nick-black.com/dankwiki/index.php/Notcurses",
+    "name": "Notcurses - dankwiki, the wiki of nick black",
+    "snippet": "Feb 3, 2024 — Notcurses is a library for building complex, vibrant textual user interfaces (TUIs) on modern terminal emulators.\nThe two primary environmental factors affecting notcurses performance are the terminal emulator and the configured fonts. For performance evaluation, I run notcurses-demo in each terminal three times.",
+    "host_name": "nick-black.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/dankamongmen/notcurses/issues/1506",
+    "name": "notcurses sample programs fail in some terminal emulators · Issue #1506",
+    "snippet": "Apr 5, 2021 — basically it means that a few special keys won't be recognized. i'm not sure whether the bug is in their terminfo files or in their code.",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.phoronix.com/news/Notcurses-3.0.10-Release",
+    "name": "Notcurses Is Still Alive For Ramping Up \"Terminal Bling\" With Complex TUIs",
+    "snippet": "Oct 2, 2024 — For those wanting to build really nifty and complex text user interfaces (TUIs) for terminal applications, Notcurses is one of the options ...",
+    "host_name": "www.phoronix.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/datasets/bigcode/commits_ft/viewer/lua",
+    "name": "bigcode/commits_ft · Datasets at Hugging Face",
+    "snippet": "We're on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "host_name": "huggingface.co",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://deepwiki.com/dankamongmen/notcurses",
+    "name": "dankamongmen/notcurses | DeepWiki",
+    "snippet": "It goes beyond traditional terminal libraries by providing vivid colors, multimedia support, advanced Unicode handling, and pixel-based graphics while maintaining high performance.",
+    "host_name": "deepwiki.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

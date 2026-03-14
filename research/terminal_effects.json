@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/ChrisBuilds/terminaltexteffects",
+    "name": "TerminalTextEffects (TTE) is a terminal visual effects",
+    "snippet": "TerminalTextEffects (TTE ) is a terminal visual effects engine. TTE can be installed as a system application to produce effects in your terminal, or as a Python ...",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pypi.org/project/terminaltexteffects/0.4.0",
+    "name": "terminaltexteffects",
+    "snippet": "3 Nov 2023 — TerminalTextEffects is written in Python and does not require any 3rd party modules. Terminal interactions use standard ANSI terminal sequences ...",
+    "host_name": "pypi.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://chrisbuilds.github.io/terminaltexteffects/showroom",
+    "name": "Effects Showroom - TerminalTextEffects Docs",
+    "snippet": "The effects shown below represent the built-in library of effects and their default configuration. Beams Creates beams which travel over the canvas ...",
+    "host_name": "chrisbuilds.github.io",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://terminaltrove.com/terminaltexteffects",
+    "name": "terminaltexteffects - Inline Visual Effects in the Terminal.",
+    "snippet": "Terminal Text Effects (TTE ) is a CLI and library to create beautiful visual effects in the terminal. TTE requires no dependencies to work.",
+    "host_name": "terminaltrove.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://python.plainenglish.io/5-python-libraries-to-give-your-terminal-an-instant-glow-up-820b9ef2fb26",
+    "name": "5 Python Libraries to Give Your Terminal an Instant Glow-Up",
+    "snippet": "4 Nov 2025 — These are five essential Python libraries to enhance your command-line interface with style, color, and functionality.",
+    "host_name": "python.plainenglish.io",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.freshports.org/devel/py-terminaltexteffects",
+    "name": "TerminalTextEffects (TTE) is a terminal visual effects engine",
+    "snippet": "27 Sept 2024 — TTE can be installed as a system application to produce effects in your terminal , or as a Python library to enable effects within your Python ...",
+    "host_name": "www.freshports.org",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.ctms.me/posts/2024-05-30-cli-tool-terminaltexteffects",
+    "name": "Making the command line fun - terminaltexteffects",
+    "snippet": "30 May 2024 — TerminalTextEffects (TTE ) is a terminal visual effects engine. TTE can be installed as a system application to produce effects in your terminal, or as a Python ...",
+    "host_name": "blog.ctms.me",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/basecamp/omarchy/issues/4263",
+    "name": "missing module TerminalTextEffects after update #4263",
+    "snippet": "14 Jan 2026 — After updating omarchy to the latest v, FSR TerminalTextEffects module is missing when screensaver kicks in? I have no idea if this is a skill ...",
+    "host_name": "github.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://libraries.io/pypi/hakcer",
+    "name": "hakcer 1.2.4 on PyPI",
+    "snippet": "11 Nov 2025 — Drop this library into ANY Python CLI tool and instantly get animated ASCII banners with 29 different terminal effects and 9 color themes. Think ...",
+    "host_name": "libraries.io",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://aur.archlinux.org/packages/python-terminaltexteffects-git",
+    "name": "AUR (en) - python-terminaltexteffects-git - Arch Linux",
+    "snippet": "29 May 2024 — TerminalTextEffects (TTE ) is a terminal visual effects engine. Upstream URL: https://github.com/ChrisBuilds/terminaltexteffects. Licenses: MIT.",
+    "host_name": "aur.archlinux.org",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

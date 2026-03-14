@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://tomscii.sig7.se/2020/11/How-Zutty-works",
+    "name": "How Zutty works: Rendering a terminal with an OpenGL Compute Shader",
+    "snippet": "... terminal emulator built on exactly this architecture. It is called Zutty and here comes a high-level overview of how its GPU-based rendering works. (Mind ...",
+    "host_name": "tomscii.sig7.se",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47155772",
+    "name": "[flagged] Attyx – tiny and fast GPU-accelerated terminal emulator written in Zig",
+    "snippet": "26 Feb 2026 — in this case framebuffer stores structs that contain text (char), its styles and dirtiness. all chars are rasterized into atlas (sprite, if ...",
+    "host_name": "news.ycombinator.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/5262951/what-is-state-of-the-art-for-text-rendering-in-opengl-as-of-version-4-1",
+    "name": "What is state-of-the-art for text rendering in OpenGL as of version 4.1? [closed]",
+    "snippet": "Closed. This question needs to be more focused. It is not currently accepting answers.             Want to improve this question? Guide the asker to update ...",
+    "host_name": "stackoverflow.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dzone.com/articles/hardware-accelerated-opengl-rendering-in-a-linux-container",
+    "name": "Hardware-Accelerated OpenGL Rendering in a Linux Container",
+    "snippet": "20 Aug 2022 — This article will show you how to solve the problem with remote display on Windows when rendering with hardware OpenGL acceleration in a Linux container.",
+    "host_name": "dzone.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@evanwallace/easy-scalable-text-rendering-on-the-gpu-c3f4d782c5ac",
+    "name": "Easy Scalable Text Rendering on the GPU | by Evan Wallace",
+    "snippet": "This post describes the text rendering algorithm I used on thetamath.com, a GPU-powered 2D equation renderer I wrote for fun last December.",
+    "host_name": "medium.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/cdleon/awesome-terminals/blob/master/README.md",
+    "name": "awesome-terminals/README.md at master",
+    "snippet": "Wave Terminal - Wave is an open-source, AI-native terminal built for seamless developer workflows with inline rendering, a modern UI, and persistent sessions.",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/linux/comments/18u770h/gpu_accelerated_terminal_emulators_such_as_kitty",
+    "name": "GPU accelerated terminal emulators such as Kitty, Alacritty and Wezterm : r/linux",
+    "snippet": "It's primarily for interactive use, in that text rendering will be more responsive to your input and \"feels\" better due to improved throughput ( ...",
+    "host_name": "www.reddit.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/77963418/opengl-rendering-to-framebuffer-with-two-different-programs-does-not-work-correc",
+    "name": "OpenGL rendering to framebuffer with two different programs does not work correctly with NVidia GeForce RTX 2080",
+    "snippet": "I wrote a test suite using LWJGL and Clojure to test OpenGL rendering using frame buffers. The following program is supposed to render two ...",
+    "host_name": "stackoverflow.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to/christianparpart/look-into-a-terminal-emulator-s-text-stack-3poe",
+    "name": "A Look into a terminal emulator's text stack",
+    "snippet": "7 Sept 2021 — Text rendering in a virtual terminal emulator can be as simple as just iterating over each grid cell's character, mapping it to a Font's bitmap ...",
+    "host_name": "dev.to",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://bootlin.com/doc/training/graphics/graphics-slides.pdf",
+    "name": "Understanding the Linux Graphics Stack training",
+    "snippet": "• Replaced the XFree86 Acceleration Architecture (XAA). • Reduces driver boilerplate. ▷ Glamor provides 2D acceleration for the DDX using OpenGL 3D rendering.",
+    "host_name": "bootlin.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

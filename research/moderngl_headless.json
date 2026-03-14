@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/moderngl/moderngl",
+    "name": "moderngl/moderngl: Modern OpenGL binding for Python - GitHub",
+    "snippet": "ModernGL is a Python wrapper over OpenGL Core. ModernGL simplifies the creation of graphics applications like scientific simulations, games or user interfaces.",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://moderngl.readthedocs.io/en/stable/the_guide/getting_started/first_rendering/rendering.html",
+    "name": "Standalone rendering - ModernGL 5.12.0 documentation",
+    "snippet": "To display the rendering result, we use the Pillow (PIL) library that comes with Python. Let's return the texture from the GPU memory to RAM and call the PIL.",
+    "host_name": "moderngl.readthedocs.io",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/73240765/how-to-get-render-data-from-headless-context-in-moderngl",
+    "name": "How to get render data from (headless) context in ModernGL - Stack Overflow",
+    "snippet": "Headless in moderngl doesn't provide a default framebuffer. You need to make one. Copy. ctx = create_context(standalone=True) # 100x100 ... How do I render multiple objects with different textures in python-moderngl Moderngl: Render VAO with multiple shaders - python More results from stackoverflow.com Missing: shader | Show results with: shader",
+    "host_name": "stackoverflow.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pypi.org/project/moderngl/5.4.1",
+    "name": "moderngl - PyPI",
+    "snippet": "With the original OpenGL API you have to write a couple of lines to achieve a simple task like compiling a shader or running a computation on the GPU. With ...",
+    "host_name": "pypi.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/szabolcsdombi/headless-moderngl-experiment",
+    "name": "szabolcsdombi/headless-moderngl-experiment: Headless 3D rendering with python - GitHub",
+    "snippet": "Headless 3D rendering with python. Rendering to a Pillow image using ModernGL. Requirements: pip install -r requirements.txt Running the script python main.py",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://moderngl.readthedocs.io/_/downloads/en/latest/pdf",
+    "name": "[PDF] ModernGL Documentation",
+    "snippet": "To display the rendering result, we use the Pillow (PIL) library that comes with Python. Let's return the texture from the GPU memory to RAM and ...",
+    "host_name": "moderngl.readthedocs.io",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=LFbePt8i0DI",
+    "name": "Shaders - Pygame & ModernGL Tutorial - YouTube",
+    "snippet": "Shaders aren't natively supported in Pygame, but with ModernGL and ... python #pygame #gamedev. Missing: headless render texture pillow",
+    "host_name": "www.youtube.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.scribd.com/document/744806216/moderngl-readthedocs-io-en-5-6-1",
+    "name": "Moderngl Readthedocs Io en 5.6.1 | PDF | Integer (Computer Science) | Shader - Scribd",
+    "snippet": "It can be the source of a texture access from a Shader, or it can be used as a render target. A Texture object cannot be instantiated directly, it requires a ...",
+    "host_name": "www.scribd.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blubberquark.tumblr.com/post/185013752945/using-moderngl-for-post-processing-shaders-with",
+    "name": "Using modernGL for post-processing shaders with PyGame - Blubberquark Software",
+    "snippet": "In this tutorial, we will use shaders for scaling and post-processing a 2D PyGame game. We will not cover actual 3D graphics or rendering 2D ...",
+    "host_name": "blubberquark.tumblr.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://moderngl.readthedocs.io/_/downloads/en/5.8.2/pdf",
+    "name": "[PDF] ModernGL Documentation",
+    "snippet": "You can define your own shader program to render stuff. This could complicate things, but also provides freedom on how you render your data.",
+    "host_name": "moderngl.readthedocs.io",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

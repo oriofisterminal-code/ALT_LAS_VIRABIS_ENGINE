@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.reddit.com/r/gamedev/comments/cjj7ju/deciding_on_an_engine_for_2d_game_with_layout",
+    "name": "Deciding on an engine for 2D game with layout like",
+    "snippet": "I want to make a game with a similar layout and graphics style to Stardew Valley (although conceptually very different), and I am trying to choose the best ... Read more",
+    "host_name": "www.reddit.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://retrostylegames.com/blog/game-art-design-like-stardew-valley",
+    "name": "Video Games Similar to Stardew Valley",
+    "snippet": "Feb 19, 2024 — Explore RPGs such as Stardew Valley . Virtual farming, rich storytelling, and a variety of game art and design. Uncover hidden gems!",
+    "host_name": "retrostylegames.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.gridsagegames.com/blog/2020/11/exploring-concept-terminal-roguelike-overmap",
+    "name": "Exploring the Concept of a Terminal Roguelike \"Overmap\"",
+    "snippet": "Nov 9, 2020 — Exploring how to build a minimap alternative designed for a traditional terminal roguelike .",
+    "host_name": "www.gridsagegames.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.quora.com/Which-way-is-better-to-make-a-game-like-Stardew-Valley-with-JavaScript-for-web-or-with-a-game-engine-for-desktop",
+    "name": "Which way is better to make a game like Stardew Valley",
+    "snippet": "Which way is better to make a game like Stardew Valley , with JavaScript for web or with a game engine for desktop? All related (35). Read more",
+    "host_name": "www.quora.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/GameRant/posts/a-new-steam-game-looks-like-stardew-valley-but-with-vibrant-3d-graphics-and-its-/1324847292534943",
+    "name": "A new Steam game looks like Stardew Valley, but with",
+    "snippet": "A new Steam game looks like Stardew Valley, but with vibrant 3D graphics , and it's technically playable right now. Read more!",
+    "host_name": "www.facebook.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://forums.unrealengine.com/t/making-a-game-like-stardew-valley/58253",
+    "name": "Making a game like stardew valley",
+    "snippet": "Mar 14, 2016 — So any pointers on how one gets started with such thing? I don'y see any blueprint for 2d rpg :slight_smile: only 2d scroller.",
+    "host_name": "forums.unrealengine.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/artemshchirov/pydew-valley",
+    "name": "Python 🌾 Pydew Valley 🌾 Pygame",
+    "snippet": "A Stardew Valley style game in Python and Pygame. This includes farming and foraging, a day and night cycle, weather effects and a merchant. Read more",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.nexusmods.com/stardewvalley/mods/13614",
+    "name": "Stardew Valley - Roguelike at Stardew Valley Nexus - Nexus Mods",
+    "snippet": "With this mod we bring a new experience to Stardew Valley. Explore and fight your way through an infinitely deep mine. Are you able to reach the bottom? Can you reach the bottom faster than everyone else? Find out with the online leaderboard! After each run through, you can upload your stats online to compare with the world.",
+    "host_name": "www.nexusmods.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/roguelikedev/comments/1bm80zw/which_game_engine_do_you_guys_usually_use_and_how",
+    "name": "Which game engine do you guys usually use? And how  - Reddit",
+    "snippet": "Which game engine do you guys usually use? And how common are terminal games? Hey guys, so I want to start developing some games and I love this type of style that it's used in the games on this subreddit.",
+    "host_name": "www.reddit.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/PurpleKingdomGames/roguelike-starterkit",
+    "name": "GitHub - PurpleKingdomGames/roguelike-starterkit: Terminal",
+    "snippet": "This library is not currently published (coming soon), so you'll need to do that yourself to use it. Download the repo (even as a zip), and do: sbt publishLocal Then add the following dependency to your project (alongside the usual indigo ones): \"io.indigoengine\" %%% \"roguelike-starterkit\" % \"0.1.0-SNAPSHOT\" Everything can be accessed via this impo...",
+    "host_name": "github.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

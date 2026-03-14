@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://opensource.com/article/18/1/domterminal",
+    "name": "An introduction to the DomTerm terminal emulator for Linux",
+    "snippet": "30 Jan 2018 — DomTerm is a modern terminal emulator that uses a browser engine as a \"GUI toolkit.\" This enables some neat features, such as embeddable graphics and links.",
+    "host_name": "opensource.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://domterm.org/Settings.html",
+    "name": "Settings (DomTerm - a terminal emulator and console using DOM and JavaScript)",
+    "snippet": "If the boolean value is true, use the xterm. js terminal emulator. If value is dom , canvas , or webgl select that xterm. js “renderer”.",
+    "host_name": "domterm.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.tecmint.com/domterm-a-terminal-emulator-and-console-for-linux",
+    "name": "DomTerm - A terminal Emulator and Console for Linux",
+    "snippet": "2 Jul 2018 — DomTerm is a free open-source feature-rich, modern terminal emulator and screen multiplexer (like tmux or GNU screen), which is based on web technologies.",
+    "host_name": "www.tecmint.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://domterm.org/To-do.html",
+    "name": "a terminal emulator and console using DOM and JavaScript",
+    "snippet": "Port backend to native MS-Windows (without WSL). Allow loading JavaScript extension code. Improve integration for selected applications: fish and other shells.",
+    "host_name": "domterm.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/xtermjs/xterm.js/issues/5172",
+    "name": "HTML in output (proof-of-concept) · Issue #5172 · xtermjs/xterm.js",
+    "snippet": "29 Sept 2024 — My current test-bed uses xterm.js embedded in DomTerm. DomTerm provides \"safety-scrubbing\" of the HTML that most people will want, and some ...",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/rust/comments/1kjcar5/building_a_terminal_browser_is_it_feasible",
+    "name": "Building a terminal browser - is it feasible? : r/rust",
+    "snippet": "Writing the HTML and CSS parser shouldn't be too hard, but the Javascript VM is quite daunting. How would I make it so that JS can interact with ...",
+    "host_name": "www.reddit.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/18720218/get-a-browser-rendered-htmljavascript",
+    "name": "get a browser rendered html+javascript - linux",
+    "snippet": "I need a comandline tool (or Javascript/PHP, but i think commandline is the one way) for render and get the rendered content of URL, but the ...",
+    "host_name": "stackoverflow.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to/saisandeepvaddi/how-to-create-web-based-terminals-38d",
+    "name": "How to create web-based terminals",
+    "snippet": "29 Oct 2019 — This article gives bare-bones details about how to build a terminal using web technologies and use it in the browser.",
+    "host_name": "dev.to",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://per.bothner.com/tmp/DomTerm-txjs-plain/Terminology.html",
+    "name": "Top (DomTerm - a terminal emulator and console using DOM and JavaScript) - Per Bothner",
+    "snippet": "It runs in a browser engine, which is the core part of a web browser that loads and displays web pages, and processes JavaScript.",
+    "host_name": "per.bothner.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://xtermjs.org",
+    "name": "Xterm.js",
+    "snippet": "A command-line tool for sharing terminal over the web, with fully-featured terminal emulation based on xterm.js.",
+    "host_name": "xtermjs.org",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

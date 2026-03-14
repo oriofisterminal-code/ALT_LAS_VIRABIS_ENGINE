@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/artemshchirov/pydew-valley",
+    "name": "artemshchirov/pydew-valley: 🌾 Tiled Stardew Valley style game written in Python and Pygame.",
+    "snippet": "A Stardew Valley style game in Python and Pygame. This includes farming and foraging, a day and night cycle, weather effects and a merchant.",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/tuananohut/pydew_valley",
+    "name": "tuananohut/pydew_valley: Stardew Valley clone",
+    "snippet": "Pydew Valley is a clone of Stardew Valley. This game is a type of farming simulation. Asset pack: https://cupnooble.itch.io/sprout-lands-asset-pack",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/artemshchirov/pydew-valley/blob/main/README.md",
+    "name": "README.md - artemshchirov/pydew-valley",
+    "snippet": "A Stardew Valley style game in Python and Pygame. This includes farming and foraging, a day and night cycle, weather effects and a merchant.",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/MXD-K1/py-stardew_valley",
+    "name": "Py-StarDew Valley - Learning Project",
+    "snippet": "This project is inspired by the Clear Code YouTube tutorial on creating a Stardew Valley-inspired game using Python and Pygame. It serves as a learning exercise ...",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/clear-code-projects/PyDew-Valley",
+    "name": "clear-code-projects/PyDew-Valley: Proejct files for a Stardew Valley inspired game in Python",
+    "snippet": "Proejct files for a Stardew Valley inspired game in Python - clear-code-projects/PyDew-Valley.",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/sloukit/pydew-valley-uzh",
+    "name": "sloukit/pydew-valley-uzh: Mod of Pydew Valley for an experimental study in Psychology",
+    "snippet": "PyDew Valley is a project originally created by ClearCode in Python using pygame-ce. ... This project requires Python 3.12 or above. Clone this repository: git ...",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/yungtyyler/pydew-valley-pygame",
+    "name": "All credit for this pygame application goes to Clear Code on YouTube, along with FreeCodeAcademy.",
+    "snippet": "All credit for this pygame application goes to Clear Code on YouTube, along with FreeCodeAcademy. - yungtyyler/pydew-valley-pygame.",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/Jiggly-Balls/Dew-Valley",
+    "name": "Jiggly-Balls/Dew-Valley: A stardew valley rip off made in Python using Pygame",
+    "snippet": "A stardew-valley inspired game made by following this tutorial. This repo has all the features as the tutorial shows but along with that I have added some ...",
+    "host_name": "github.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/samincgs/pydew-valley",
+    "name": "Stardew Valley clone made using pygame in Python - GitHub",
+    "snippet": "This project is a simplified recreation of one of my favorite games, Stardew Valley, developed using Python and the Pygame library. It utilizes Object oriented principles and inheritance to create organized and easy to understand code.",
+    "host_name": "github.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.freecodecamp.org/news/create-stardew-valley-using-python-and-pygame",
+    "name": "Create Stardew Valley Using Python and Pygame - freeCodeCamp.org",
+    "snippet": "We just published a full course on the freeCodeCamp.org YouTube channel that will teach you how to create a Stardew Valley game clone using Python and Pygame. The game you will create has features such as farming, foraging, a day and night cycle, weather effects, a merchant, and more.",
+    "host_name": "www.freecodecamp.org",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.reddit.com/r/gamedev/comments/5x92x8/is_htmljs_via_electron_a_viable_solution_for_2d",
+    "name": "Is HTML/JS via Electron a viable solution for 2D desktop",
+    "snippet": "Developing a game in JavaScript and using something like Electron to create an executable for windows/mac/linux seems like a great way to get started in game ... Read more",
+    "host_name": "www.reddit.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/77611155/how-to-disable-antialiasing-for-webgpu",
+    "name": "how to disable antialiasing for webgpu - html5 canvas",
+    "snippet": "In WebGPU if you want antialiasing like webgl you have to do it manually by creating your own multisampled texture, rendering to it, and resolving it to the ... Read more",
+    "host_name": "stackoverflow.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@treeform/making-2d-games-with-webgl-html5-2164e2996d59",
+    "name": "Making 2d games with webGL & HTML5. | by treeform",
+    "snippet": "Electron “Shell”. It's really easy to package your HTML5 game into an executable for Windows, Mac and Linux. I highly recommend this for ... Read more",
+    "host_name": "medium.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/playcanvas/engine",
+    "name": "PlayCanvas Engine",
+    "snippet": "PlayCanvas is an open-source game engine . It uses HTML5 and WebGL to run games and other interactive 3D content in any mobile or desktop browser. Read more",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.quora.com/Is-ElectronJS-a-really-good-choice-for-a-desktop-trading-software",
+    "name": "Is ElectronJS a really good choice for a desktop trading",
+    "snippet": "Electron is a decent choice for building desktop apps , but for video streaming and surveillance apps there may be some better options: Pros of ... Read more",
+    "host_name": "www.quora.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net/publication/316105344_Implementing_WebGL_and_HTML5_in_Macromolecular_Visualization_and_Modern_Computer-Aided_Drug_Design",
+    "name": "Implementing WebGL and HTML5 in Macromolecular",
+    "snippet": "With HTML5 feature set and tremendous performance gains of JavaScript, web-browsers have now become more powerful in integrating GPU accelerated image ... Read more",
+    "host_name": "www.researchgate.net",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=21346991",
+    "name": "I'm bullish on Electron. I think it's just a couple of technical",
+    "snippet": "MS has already proven that canvas is faster and better than HTML for text when they converted the terminal to canvas and it got an order of magnitude faster. Read more",
+    "host_name": "news.ycombinator.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackblitz.com/@NeoAlchemy/collections/html5-canvas-and-typescript-2d-games",
+    "name": "HTML5 Canvas and TypeScript 2D Games by NeoAlchemy",
+    "snippet": "old school 2D games that are small and useful for learning game development.",
+    "host_name": "stackblitz.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.slideshare.net/slideshow/html5-game-development-with-canvas/49689446",
+    "name": "Html5 Game Development with Canvas | PPTX",
+    "snippet": "This document provides an overview of using HTML5 Canvas for game development. It discusses how Canvas allows 2D drawing directly in the browser using ...",
+    "host_name": "www.slideshare.net",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/thelunchbox/electron-game",
+    "name": "A base for making node.js games with canvas and electron",
+    "snippet": "You can use it exactly the same way you would use a 2d context retrieved from a canvas object, but there are some other functions added to help you as well. It is initialized in main.js using the createRenderer(root) function.",
+    "host_name": "github.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

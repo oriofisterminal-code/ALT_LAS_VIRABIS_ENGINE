@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.reddit.com/r/opengl/comments/6h0iv8/headless_3d_rendering_with_python",
+    "name": "Headless 3D rendering with python : r/opengl - Reddit",
+    "snippet": "I noticed you created something called ModernGL and I had some questions. It appears you still have some dependencies on PyOpenGL within your ... OpenGL on a headless server? : r/linux [Help] OpenGL code works fine without GLSL shaders, does not render primitives with GLSL shaders More results from www.reddit.com",
+    "host_name": "www.reddit.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/moderngl/moderngl",
+    "name": "moderngl/moderngl: Modern OpenGL binding for Python - GitHub",
+    "snippet": "ModernGL is a Python wrapper over OpenGL Core. ModernGL simplifies the creation of graphics applications like scientific simulations, games or user interfaces.",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/68298698/how-can-i-use-opengl-to-render-to-memory-without-requiring-any-windowing-system",
+    "name": "How can I use OpenGL to render to memory without requiring any windowing system library? - Stack Overflow",
+    "snippet": "Depending on the operating system you're using and the availability of drivers, you can do pure, headless, GPU accelerated OpenGL rendering using EGL. python - PyOpenGL: Rendering... Well... Anything really opengl - PyOpenGL headless rendering More results from stackoverflow.com",
+    "host_name": "stackoverflow.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://moderngl.readthedocs.io/en/5.6.4/the_guide/basic.html",
+    "name": "Creating a Context — ModernGL 5.6.4 documentation",
+    "snippet": "The Context object makes us able to create OpenGL resources. ModernGL can only create headless contexts (no window), but it can also detect and use contexts ...",
+    "host_name": "moderngl.readthedocs.io",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://forums.developer.nvidia.com/t/headless-and-non-headless-opengl-at-the-same-time/81412",
+    "name": "headless and non-headless OpenGL at the same time - Linux - NVIDIA Developer Forums",
+    "snippet": "I have written a QT gui application that can also be run in a command-line server mode. My workstation is configured for normal desktop gui usage. Missing: python shader",
+    "host_name": "forums.developer.nvidia.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://api.arcade.academy/en/3.3.3/tutorials/compute_shader/index.html",
+    "name": "Compute Shader — Python Arcade 3.3.3",
+    "snippet": "In this tutorial, the vertex shader will be run for each star's 12 float long stretch of raw padded data in self.ssbo_current . Each execution will output clean ...",
+    "host_name": "api.arcade.academy",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/szabolcsdombi/headless-moderngl-experiment",
+    "name": "szabolcsdombi/headless-moderngl-experiment: Headless 3D rendering with python - GitHub",
+    "snippet": "Headless 3D rendering with python. Rendering to a Pillow image using ModernGL. Requirements: pip install -r requirements.txt Running the script python main.py",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pypi.org/project/moderngl/5.4.1",
+    "name": "moderngl - PyPI",
+    "snippet": "ModernGL is capable of rendering using a standalone_context as well. Rendering to a window only requires a valid OpenGL context. Can ModernGL create a Window?",
+    "host_name": "pypi.org",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://community.khronos.org/t/frag-shader-without-vertex-shader/54057",
+    "name": "Frag shader without vertex shader? - OpenGL - Khronos Forums",
+    "snippet": "I want to write a shader program that has one instance of a fragment shader and no vertex shader. My understanding is that this should work. Only running a vertex shader - OpenGL Headless OpenGL Rendering using ssh and X11 forwarding More results from community.khronos.org Missing: python headless",
+    "host_name": "community.khronos.org",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blogs.igalia.com/elima/2016/10/06/example-run-an-opengl-es-compute-shader-on-a-drm-render-node",
+    "name": "Example: Run a headless OpenGL (ES) compute shader via DRM render-nodes",
+    "snippet": "The simplest way to embed and run an OpenGL-ES compute shader in your C program on Linux, without the need of any GUI window or connection to the X (or Wayland ... Missing: python | Show results with: python",
+    "host_name": "blogs.igalia.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/kovidgoyal/kitty/issues/6250",
+    "name": "Issue #6250 · kovidgoyal/kitty",
+    "snippet": "May 6, 2566 BE — Describe the bug. Lighter colors are distorted on semi- transparent kitty windows. To Reproduce Steps to reproduce the behavior (GNOME, ... Read more\nMay 6, 2023 — Describe the bug. Lighter colors are distorted on semi-transparent kitty windows. To Reproduce Steps to reproduce the behavior (GNOME, ...",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://sw.kovidgoyal.net/kitty/graphics-protocol",
+    "name": "Terminal graphics protocol - kitty",
+    "snippet": "The graphics should integrate with the text, in particular it should be possible to draw graphics below as well as above the text, with alpha blending . The ... Read more\nThe graphics should integrate with the text, in particular it should be possible to draw graphics below as well as above the text, with alpha blending. The ...",
+    "host_name": "sw.kovidgoyal.net",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/KittyTerminal/comments/1d033s7/how_to_set_kitty_terminal_to_be_transparent",
+    "name": "How to set kitty terminal to be transparent? : r/KittyTerminal",
+    "snippet": "In the kitty .config file there should be a property named opacity. If you are on wayland, changing that works fine. But you can try with picom. Read more\nI already tried everything I could find on Google but nothing seems to work, maybe I'm to stupid for linux but could someone tell me step by step how to ...",
+    "host_name": "www.reddit.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/kovidgoyal/kitty/issues/8869",
+    "name": "Fixing color fringing on light transparent backgrounds while",
+    "snippet": "Jul 31, 2568 BE — This means the three image layers will need to be pre-rendered to textures by the graphics shader and then those three textures will be blended ... Read more\nJul 31, 2025 — I can think of two approaches to solve this: rewriting the cell and graphics shaders so that all colors are blended in a single shader. This ...",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://bbs.archlinux.org/viewtopic.php?id=245110",
+    "name": "[SOLVED] kitty terminal transparency causes text not to",
+    "snippet": "Mar 20, 2562 BE — The kitty terminal was working fine with background transparency . But now when I open kitty with background_opacity set to something other than 1, fonts are ... Read more",
+    "host_name": "bbs.archlinux.org",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://cran.r-project.org/web/packages/terminalgraphics/terminalgraphics.pdf",
+    "name": "terminalgraphics: Graphical Output in Terminals",
+    "snippet": "Nov 26, 2568 BE — The Terminal Graphics Protocol is not supported by many Terminal Emulators. The most notable terminal emulator supporting the protocol is Kitty . Read more 16 pages",
+    "host_name": "cran.r-project.org",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://itsfoss.com/kitty-customization",
+    "name": "I Made Kitty Terminal Even More Awesome by Using These",
+    "snippet": "Kitty is an excellent terminal and offers you a variety of customization options though its config file. Here are the config changes I prefer.",
+    "host_name": "itsfoss.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://hexdocs.pm/raxol/Raxol.Terminal.Graphics.KittyProtocol.html",
+    "name": "Raxol.Terminal.Graphics.KittyProtocol",
+    "snippet": "Provides support for efficient image transmission, transparency , animations, and high-performance graphics rendering using the Kitty graphics protocol . Features. Read more",
+    "host_name": "hexdocs.pm",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://sw.kovidgoyal.net/kitty/conf",
+    "name": "kitty.conf - Kovid's software projects",
+    "snippet": "kitty is highly customizable, everything from keyboard shortcuts, to rendering frames-per-second. See below for an overview of all customization possibilities. Read more",
+    "host_name": "sw.kovidgoyal.net",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://gustawdaniel.com/notes/how-to-add-transparency-to-kitty",
+    "name": "How to add transparency to kitty",
+    "snippet": "How to add transparency to kitty. In your ~/.config/kitty/kitty.conf add: background_opacity 0.5 dynamic_background_opacity yes.",
+    "host_name": "gustawdaniel.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

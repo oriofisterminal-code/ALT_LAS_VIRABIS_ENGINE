@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/xtermjs/xterm.js",
+    "name": "xtermjs/xterm.js: A terminal for the web - GitHub",
+    "snippet": "Xterm.js is a frontend component that enables applications to bring fully-featured terminals to their users in the browser. It's used by popular projects such ...",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://xtermjs.org",
+    "name": "Xterm.js",
+    "snippet": "A command-line tool for sharing terminal over the web, with fully-featured terminal emulation based on xterm.js.",
+    "host_name": "xtermjs.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.opcito.com/blogs/browser-based-terminals-with-xtermjs-and-electronjs",
+    "name": "Browser-based terminals with Xterm.js and Electron.js - Opcito",
+    "snippet": "Learn to build browser-based terminals using Xterm.js and Electron.js. Enhance remote access, DevOps workflows, and developer productivity.",
+    "host_name": "www.opcito.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://unix.stackexchange.com/questions/552343/are-there-any-terminal-emulators-that-can-render-html",
+    "name": "Are there any terminal emulators that can render html? - Unix & Linux Stack Exchange",
+    "snippet": "The idea is to render buttons and other interactive widgets like file trees in the command line, and being able to interact with them with the mouse. Missing: CSS | Show results with: CSS",
+    "host_name": "unix.stackexchange.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/12905726/whats-the-best-way-to-simulate-a-dos-or-terminal-screen-in-a-web-page",
+    "name": "What's the best way to simulate a DOS or Terminal screen in a web page? - Stack Overflow",
+    "snippet": "The easy way would be to have a large textarea element taking up most of the screen, with a small text input element below it. Are there any javascript libraries that can render terminal output in a browser? How to create web based terminal using xterm.js to ssh into a system on local network More results from stackoverflow.com",
+    "host_name": "stackoverflow.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@mei33.pw/a-simple-example-of-a-terminal-web-emulator-cd54576013bf",
+    "name": "A simple example of a terminal web emulator | by mei33 - Medium",
+    "snippet": "We don't even need to calculate the width of the block — we can just create one with one invisible symbol inside and move it with CSS required ... Missing: browser | Show results with: browser",
+    "host_name": "medium.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://opensource.com/article/18/1/domterminal",
+    "name": "An introduction to the DomTerm terminal emulator for Linux - Opensource.com",
+    "snippet": "DomTerm is a modern terminal emulator that uses a browser engine as a \"GUI toolkit.\" This enables some neat features, such as embeddable graphics and links.",
+    "host_name": "opensource.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://terminal.jcubic.pl",
+    "name": "jQuery Terminal: JavaScript Web Based Terminal Emulator",
+    "snippet": "jQuery Terminal is Free and Open Source JavaScript library for creating command line interpreters in your applications.",
+    "host_name": "terminal.jcubic.pl",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://anderse.wordpress.com/2014/04/18/css-and-javascript-retro-terminal-emulator-demo",
+    "name": "CSS and JavaScript (retro) terminal emulator demo - Anders Evenrud's Blog",
+    "snippet": "All graphics including effects are done using CSS (no images). Terminal emulator is written in plain JavaScript. It works best in chrome, but should run in any ...",
+    "host_name": "anderse.wordpress.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/KittyTerminal/comments/1fsu2pi/render_htmlcssjavascript_like_in_jupyter_inside",
+    "name": "Render html/css/javascript like in Jupyter inside terminal/neovim : r/KittyTerminal - Reddit",
+    "snippet": "Implement some sort of jupyter notebook output (graphs, tables, widgets, etc...) inside kitty terminal/neovim. It would be cool to keep using the repl. [Feedback/ Advice] Built a terminal-style website with TypeScript, HTML, and CSS Create terminal GUI with html? : r/webdev More results from www.reddit.com",
+    "host_name": "www.reddit.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

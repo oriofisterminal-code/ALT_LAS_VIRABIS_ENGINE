@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://tianyaschool.medium.com/combining-webassembly-with-webgl-high-performance-graphics-processing-387f7a633b5c",
+    "name": "Combining WebAssembly with WebGL High-Performance",
+    "snippet": "Optimizing WebGL Rendering . Efficient Shaders: Write concise GLSL code to minimize shader computation. Avoid complex logic in fragment shaders, ...\nWrite vertex shaders (for vertex coordinates and transformations) and fragment shaders (for pixel colors and textures) using GLSL (OpenGL Shading Language). Compile and link shaders into a WebGL program.",
+    "host_name": "tianyaschool.medium.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/55373364/can-glsl-shaders-be-compiled-to-webassemly-wasm-with-unity",
+    "name": "Can glsl shaders be compiled to Webassemly/wasm with",
+    "snippet": "Shaders are not compiled into WebAssembly . Shaders are written in Cg / HLSL and when you export Unity translates the shaders into GLSL and embeds the GLSL in ...",
+    "host_name": "stackoverflow.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.freecodecamp.org/news/how-to-use-webgl-shaders-in-webassembly-1e6c5effc813",
+    "name": "How to use WebGL shaders in WebAssembly",
+    "snippet": "28 Dec 2017 — We've gone through a mini “Hello World!”-style project to show how to load textures and apply GLSL shaders to them in WebAssembly . The ...",
+    "host_name": "www.freecodecamp.org",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.logrocket.com/implement-webassembly-webgl-viewer-using-rust",
+    "name": "Implement a WebAssembly WebGL viewer using Rust",
+    "snippet": "4 Jul 2023 — We'll write a small Rust program that uses WebGL to render a triangle, compile it down to WebAssembly , and then run the program in the browser using JavaScript.",
+    "host_name": "blog.logrocket.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://rust-tutorials.github.io/triangle-from-scratch/web_stuff/web_gl_with_bare_wasm.html",
+    "name": "WebGL with bare WASM - Triangle From Scratch",
+    "snippet": "Create a vertex shader ; Create a fragment shader; Create a program, connect the two shaders, then link, then use. Get the location of the vertex_position ...",
+    "host_name": "rust-tutorials.github.io",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://hackernoon.com/migrating-from-webgl-to-webgpu",
+    "name": "Migrating from WebGL to WebGPU",
+    "snippet": "20 Dec 2023 — Shader Conversion . For those who are planning to convert their projects from WebGL to WebGPU, it's important to know that there are tools for ...",
+    "host_name": "hackernoon.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/gpuweb/gpuweb/discussions/1384",
+    "name": "Feedback from WGSL shader conversion and Clustered",
+    "snippet": "One doing a conversion of some large-ish GLSL shaders to WGSL at the start of December and the Clustered shading demo from the end of the year.",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to/timclicks/create-something-beautiful-this-weekend-write-your-first-shader-and-put-it-on-the-web-with-webgl-3gc",
+    "name": "Create something beautiful this weekend! Write your first",
+    "snippet": "18 Mar 2023 — Simple tool to load GLSL shaders on HTML Canvas using WebGL . GlslCanvas is JavaScript Library that helps you easily load GLSL Fragment and ...",
+    "host_name": "dev.to",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://forum.babylonjs.com/t/how-does-babylon-do-glsl-webgl/54868",
+    "name": "How does Babylon do: GLSL -> WebGL - Questions",
+    "snippet": "19 Nov 2024 — We will download a 2MB WASM compiler to transpile from GLSL to WGSL . Is this exposed somewhere? If not, where can I find the function/workflow ...",
+    "host_name": "forum.babylonjs.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://uds5501.github.io/mindpalace/2025/03/01/opengl-webgl-porting.html",
+    "name": "My experiments with WASM and OpenGL | Uddeshya’s Musings",
+    "snippet": "The VBO stores the vertices, indices and the texture coordinates. The shader then uses these attributes to render the object. Your shader (written in glsl) will expect inputs supplied by the VAO. My vertex shader (the one that’s responsible for transforming the vertices) looked like this -",
+    "host_name": "uds5501.github.io",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

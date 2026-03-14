@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/ghostty-org/ghostty",
+    "name": "Ghostty is a fast, feature-rich, and cross-platform terminal",
+    "snippet": "In addition to being a standalone terminal emulator, Ghostty is a C-compatible library for embedding a fast, feature-rich terminal emulator in any 3rd party ...",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ghostty.org/docs/about",
+    "name": "About Ghostty",
+    "snippet": "The core of Ghostty is a cross-platform, C-ABI compatible library called libghostty . libghostty provides the core terminal emulation, font handling, and ...",
+    "host_name": "ghostty.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ghostty.org/docs/config/reference",
+    "name": "Option Reference - Configuration",
+    "snippet": "This is a reference of all Ghostty configuration options. These options are ordered roughly by how common they are to be used and grouped with related options.",
+    "host_name": "ghostty.org",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://mitchellh.com/writing/libghostty-is-coming",
+    "name": "Libghostty Is Coming",
+    "snippet": "Sep 22, 2025 — My answer to this is libghostty : a cross-platform, minimal dependency library that exposes a C API so feature-rich, correct, and fast terminal ...",
+    "host_name": "mitchellh.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/neovim/comments/1hpv03c/have_you_tried_ghostty_and_have_you_switched_to",
+    "name": "Have you tried Ghostty, and have you switched to using it",
+    "snippet": "My main terminal app is Alacritty in mac and just downloaded Ghostty to try it out. Seems like very quick and have sane out of the box ...",
+    "host_name": "www.reddit.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.x-cmd.com/install/ghostty",
+    "name": "Speed vs Features vs Native? Ghostty Delivers All Three",
+    "snippet": "Ghostty is also designed as a C-compatible library ( libghostty ) for embedding a fast, feature-rich terminal in third-party projects. The macOS app itself is a ...",
+    "host_name": "www.x-cmd.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ghostty.org/docs/install/binary",
+    "name": "Binaries and Packages - Install",
+    "snippet": "To install, download the .dmg file, open it, and drag the Ghostty application to your Applications folder. This is the same process as installing many typical ...",
+    "host_name": "ghostty.org",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://thenewstack.io/ghostty-will-get-you-excited-about-using-a-terminal-again",
+    "name": "Ghostty Will Get You Excited About Using a Terminal Again",
+    "snippet": "Jan 18, 2025 — Although Mitchell Hashimoto's Ghostty is still in the early stages of development, it's already a fantastic terminal app that shows promise.",
+    "host_name": "thenewstack.io",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docsmith.aigne.io/docs/ghostty/en/libghostty-ed730d",
+    "name": "libghostty API",
+    "snippet": "libghostty is a C-compatible library for embedding the Ghostty terminal emulator functionality in other applications. It provides a comprehensive API for ...",
+    "host_name": "docsmith.aigne.io",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/ghostty-org/ghostty/discussions/2350",
+    "name": "Project Sustainability, Helping Contributors and Upstreams",
+    "snippet": "Oct 2, 2024 — The Ghostty project is also comprised of libghostty which enables other projects to embed Ghostty , and I want to libghostty to be actively used ...",
+    "host_name": "github.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

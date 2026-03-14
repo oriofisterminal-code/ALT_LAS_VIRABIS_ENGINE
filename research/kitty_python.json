@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://stackoverflow.com/questions/79606159/how-would-i-use-the-kitty-terminal-graphics-protocol-to-display-an-array-of-pixe",
+    "name": "How Would I use the Kitty Terminal Graphics Protocol to display an",
+    "snippet": "The payload should be the ASCII code of the characters from 0 to 255 for r, g, and b. For example, ~ would be 126 and i would be 151. Missing: embed | Show results with: embed",
+    "host_name": "stackoverflow.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/kovidgoyal/kitty/issues/8701",
+    "name": "Clarification about the graphics protocol · Issue #8701 - GitHub",
+    "snippet": "It seems like an easy win for all terminals attempting to implement the graphics protocol would be to extend the spec (and Kitty) to allow this. Missing: python embed",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://sw.kovidgoyal.net/kitty/graphics-protocol",
+    "name": "Terminal graphics protocol - kitty - Kovid Goyal",
+    "snippet": "A flexible and performant protocol that allows the program running in the terminal, hereafter called the client, to render arbitrary pixel (raster) graphics to ... Missing: embed | Show results with: embed",
+    "host_name": "sw.kovidgoyal.net",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/KittyTerminal/comments/1m5jntd/creating_data_visualization_library_for_kitty",
+    "name": "Creating data visualization library for kitty graphics protocol - Reddit",
+    "snippet": "Hi I want to build a data visualization library that takes advantage of kitty graphics protocol to create rich charts in the terminal. Missing: embed | Show results with: embed",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/58138638/how-to-display-graphical-images-in-kitty-terminal-using-python",
+    "name": "How to display graphical images in kitty-terminal using Python",
+    "snippet": "The term-image library (docs) supports Kitty's graphics protocol (as well as iTerm2's protocol, with a fallback to colored unicode block ...",
+    "host_name": "stackoverflow.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/kovidgoyal/kitty",
+    "name": "kitty - the fast, feature-rich, cross-platform, GPU based terminal",
+    "snippet": "If you live in the terminal, kitty is made for you! Cross-platform, fast, feature-rich, GPU based. - kovidgoyal/kitty.",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pypi.org/project/textual-kitty",
+    "name": "textual-kitty - PyPI",
+    "snippet": "textual-kitty offers both a Rich renderable and a Textual Widget that leverage the Terminal Graphics Protocol (TGP) protocol to display images ... Missing: embed | Show results with: embed",
+    "host_name": "pypi.org",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch%3Fv%3DbOJTonu4Crg",
+    "name": "Beyond ASCII Art: Display Real Images in (Kitty) Terminals with Rust",
+    "snippet": "In this coding session, I explore the Terminal Graphics Protocol (TGP). Together with you I investigate how to display images directly in ... Missing: python API embed",
+    "host_name": "www.youtube.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item%3Fid%3D34553044",
+    "name": "There's also the kitty graphic protocol: https://sw.kovidgoyal.net/kitty",
+    "snippet": "The Kitty protocol starts with multiple formats: >> The terminal emulator must understand pixel data in three formats, 24-bit RGB, 32-bit RGBA and PNG. Missing: python embed",
+    "host_name": "news.ycombinator.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://community.tmpdir.org/t/the-kitty-terminal/1277",
+    "name": "The kitty terminal - Tools - TMPDIR",
+    "snippet": "Apparently Kitty has a graphics protocol that is also supported by Kitty, Ghostty, and to a lesser degree WezTerm. Top level main file is ...",
+    "host_name": "community.tmpdir.org",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

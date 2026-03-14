@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/Gaetz/SDL-OpenGL",
+    "name": "Gaetz/SDL-OpenGL: Basic game engine structure",
+    "snippet": "Basic game engine structure, using SDL2 and OpenGL . VSCode, compiled with scripts or cmake. A tetris game example is provided. - Gaetz/SDL-OpenGL.",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/soumik12345/Scratch-Engine",
+    "name": "soumik12345/Scratch-Engine: A Game",
+    "snippet": "A Game Engine made with SDL and OpenGL in C ++. Contribute to soumik12345/Scratch-Engine development by creating an account on GitHub.",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/kbrawley95/VSCode-OpenGL-Game-Engine",
+    "name": "OpenGL Game Engine Development in Visual Studio Code",
+    "snippet": "This repo contains the source from my OpenGL Game Engine tutorials using SDL & Visual Studio Code. Tailored at those who are new to graphics programming.",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/jonof/jfbuild",
+    "name": "jonof/jfbuild: Port of the Build game engine by Ken Silverman",
+    "snippet": "This is the source code for my port of Ken Silverman's Build game engine to make the engine functional on modern hardware and operating systems.",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/xavimarin35/TonicEngine",
+    "name": "3D Game Engine using OpenGL, SDL and ImGui",
+    "snippet": "Tonic Engine is a 3D Game Engine developed in C & C++ made by Pol Casaú and Xavi Marín, students of CITM in Barcelona during our Game Design and Development ...",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/fedexist/SDLOpenGL",
+    "name": "fedexist/SDLOpenGL: Simple SDL Engine with 2D and",
+    "snippet": "SDLOpenGL is a mini-graphic engine developed for the Computer Graphics course in Computer Engineering - Unige. It's written in C++ and uses OpenGL and SDL2 for ...",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/renehorstmann/some",
+    "name": "renehorstmann/some: Sdl2 OpenGL Mini Engine.",
+    "snippet": "A small C game engine , that can be compiled to Desktop, Android, Web, ... Using SDL2 , OpenGL3.3, OpenGLES3.0, WebGL2.0 to be platform independent.",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/topics/game-engine?l=c&o=desc&s=updated",
+    "name": "game-engine · GitHub Topics",
+    "snippet": "Cross-platform, Nim-based terminal game and app engine for the terminal and the web. Build with Markdown and Nim-based scripting that compiles to native!",
+    "host_name": "github.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/9640615/some-thoughts-on-sdl-qt-opengl-for-a-game-engine",
+    "name": "Some thoughts on SDL + Qt + OpenGL for a Game Engine",
+    "snippet": "I'm looking into writing a game engine using OpenGL + SDL + Qt. The reason why I want to use SDL with all of this is because of its context creation and OpenGL ...",
+    "host_name": "stackoverflow.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/kaminskyalexander/GLEngine",
+    "name": "kaminskyalexander/GLEngine: OpenGL and SDL2 game",
+    "snippet": "OpenGL and SDL2 game engine written in C ++. Features ECS architecture, 3D model loading and rendering, text rendering, collision detection and physics ...",
+    "host_name": "github.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

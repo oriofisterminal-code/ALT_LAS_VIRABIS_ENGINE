@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://stackoverflow.com/questions/79606159/how-would-i-use-the-kitty-terminal-graphics-protocol-to-display-an-array-of-pixe",
+    "name": "How Would I use the Kitty Terminal Graphics Protocol to display an array of pixels in C?",
+    "snippet": "I want to draw individual pixels to represent my simulation instead of using full characters. Sixel looks to be an option for this but the Kitty Graphics ...",
+    "host_name": "stackoverflow.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/Python/comments/zv6vb6/termgame_terminalbased_graphical_game_engine",
+    "name": "Termgame: terminal-based, graphical game engine written in, and for, Python - Reddit",
+    "snippet": "This engine uses colored whitespace to act as pixels and can clear the screen without flashing to allow realtime animation and user input. Termgame: terminal-based, graphical game engine : r/gameenginedevs - Reddit Here is my progress so far on my python game engine for the terminal, after almost a month ... More results from www.reddit.com Missing: kitty | Show results with: kitty",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/liamg/darktile/issues/315",
+    "name": "Feature request: Kitty terminal graphics protocol · Issue #315 · liamg/darktile - GitHub",
+    "snippet": "As a faster, more efficient and generally better alternative to sixels, kitty designed and implemented a custom protocol for graphics. Missing: pixel python",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://sw.kovidgoyal.net/kitty/graphics-protocol",
+    "name": "Terminal graphics protocol - kitty - Kovid Goyal",
+    "snippet": "A flexible and performant protocol that allows the program running in the terminal, hereafter called the client, to render arbitrary pixel (raster) graphics to ... Missing: sprite | Show results with: sprite",
+    "host_name": "sw.kovidgoyal.net",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://lib.rs/rendering",
+    "name": "Rendering — list of Rust libraries/crates // Lib.rs",
+    "snippet": "rasteroid. turn images / videos into inline content for you terminal (iterm / kitty / sixel). v0.1.8 120 #terminal-graphics #sixel #terminal #kitty #iterm ...\nConvert pixel art images to ANSI terminal art (Rust port). v0.3.12 bin+lib ... Pixel art siege engine editor/animator/creator. v0.1.2 app #sprite ...",
+    "host_name": "lib.rs",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://youtrack.jetbrains.com/projects/IJPL/issues/IJPL-196803/Request-for-Sixel-and-Kitty-Image-Protocol-Support-in-Integrated-Terminals",
+    "name": "Request for Sixel and Kitty Image Protocol Support in Integrated Terminals : IJPL-196803",
+    "snippet": "Kitty Graphics Protocol: A more modern ... Missing: pixel sprite python",
+    "host_name": "youtrack.jetbrains.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=X7l7tBWkDig",
+    "name": "How to create and use sprites in Pyxel? | Pyxel tutorial - 2 - YouTube",
+    "snippet": "Pyglet is perhaps the BEST Game Engine for Python. Dreams of Code•88K ... “How do you start Pixel Art?”…Here's what I did! Brandon James ... Missing: terminal kitty",
+    "host_name": "www.youtube.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://nick-black.com/dankwiki/index.php/Spriteful_TErminal_GrAphics_Protocol",
+    "name": "Spriteful TErminal GrAphics Protocol - dankwiki, the wiki of nick black",
+    "snippet": "STEGAP is my (incomplete!) proposal for a terminal graphics protocol facilitating bitmapped sprites combined with terminal glyphs and ...",
+    "host_name": "nick-black.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=41046107",
+    "name": "A (not so) small library for terminal based game development - Hacker News",
+    "snippet": "With the Windows terminal stack just now merging Sixel support and good clients available on other platforms quick cross platform but ... Missing: pixel art sprite animation kitty",
+    "host_name": "news.ycombinator.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@atnoforgamedev/aseprite-piskel-and-pixel-art-tools-a-game-developers-guide-to-2d-art-525792428486",
+    "name": "🎨 Aseprite, Piskel, and Pixel Art Tools — A Game",
+    "snippet": "2. Click \"Create Sprite\" · 3. Set your canvas size (start with 16x16 or 32x32) · 4. Use the left toolbar for ...",
+    "host_name": "medium.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

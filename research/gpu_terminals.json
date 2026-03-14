@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/wezterm/wezterm",
+    "name": "GitHub - wezterm/wezterm: A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
+    "snippet": "Wez's Terminal. WezTerm Icon A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust.",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/cdleon/awesome-terminals",
+    "name": "cdleon/awesome-terminals: Terminal Emulators - GitHub",
+    "snippet": "Wayst - A simple terminal emulator. Wezterm - A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust. https ...",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/topics/terminal-emulator?l=rust",
+    "name": "terminal-emulator · GitHub Topics",
+    "snippet": "WIP: GPU-accelerated terminal emulator in Rust with Metal rendering. Building for zero input latency and smooth performance. Week 1 complete - basic PTY, zoom ...",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/alacritty/alacritty",
+    "name": "alacritty/alacritty: A cross-platform, OpenGL terminal emulator. - GitHub",
+    "snippet": "Alacritty is a modern terminal emulator that comes with sensible defaults, but allows for extensive configuration. By integrating with other applications, ... Missing: python | Show results with: python",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/unpluggedcoder/awesome-rust-tools",
+    "name": "unpluggedcoder/awesome-rust-tools: Harness the power of Rust. Those fast productivity tools based on Rust. - GitHub",
+    "snippet": "rio — A hardware-accelerated GPU terminal emulator focusing to run in desktops and browsers. rust-parallel — Fast command line app in rust/tokio to execute ...",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/kovidgoyal/kitty",
+    "name": "GitHub - kovidgoyal/kitty: If you live in the terminal, kitty is made for you! Cross-platform, fast, feature-rich, GPU based.",
+    "snippet": "If you live in the terminal, kitty is made for you! Cross-platform, fast, feature-rich, GPU based. - kovidgoyal/kitty.",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/rust-unofficial/awesome-rust",
+    "name": "rust-unofficial/awesome-rust: A curated list of Rust code and resources. - GitHub",
+    "snippet": "Rio - A hardware-accelerated GPU terminal emulator powered by WebGPU, focusing to run in desktops and browsers. rkik - CLI tool designed for stateless and ...",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/topics/terminal-emulator?o=desc&s=forks",
+    "name": "terminal-emulator · GitHub Topics",
+    "snippet": "A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust. rust terminal serial terminal-emulators ...",
+    "host_name": "github.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/sts10/rust-command-line-utilities",
+    "name": "A curated list of command-line utilities written in Rust - GitHub",
+    "snippet": "Wezterm: A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust GitHub Repo stars GitHub last release.",
+    "host_name": "github.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/wulkan",
+    "name": "Napoleon Wulkan wulkan - GitHub",
+    "snippet": "Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration. Zig. greentea-gc-bench ...",
+    "host_name": "github.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

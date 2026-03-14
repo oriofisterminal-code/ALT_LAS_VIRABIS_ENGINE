@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/xtermjs/xterm.js",
+    "name": "xtermjs/xterm.js: A terminal for the web - GitHub",
+    "snippet": "Terminal apps just work: Xterm.js works with most terminal apps such as bash , vim , and tmux , including support for curses-based apps and mouse events.",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://bestofjs.org/projects/xtermjs",
+    "name": "Xterm.js - Best of JS",
+    "snippet": "Terminal apps just work: Xterm.js works with most terminal apps such as bash , vim , and tmux , including support for curses-based apps and mouse events.",
+    "host_name": "bestofjs.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://xtermjs.org",
+    "name": "Xterm.js",
+    "snippet": "A command-line tool for sharing terminal over the web, with fully-featured terminal emulation based on xterm.js. Missing: webgl canvas",
+    "host_name": "xtermjs.org",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=27131659",
+    "name": "I wrote the terminal canvas renderers in VS Code that has been called out a few",
+    "snippet": "- Cost of implementation and maintenance is much higher with canvas. This is particularly the case with WebGL, there have been very few contributions to xterm. Missing: game iframe",
+    "host_name": "news.ycombinator.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/xtermjs/xterm.js/issues/4175",
+    "name": "Poor performance when terminal+canvas renderer is on a very wide container · Issue #4175 · xtermjs/xterm.js - GitHub",
+    "snippet": "Maybe try the webgl renderer? Secondly JS has a processing penalty of being 2-4x slower than a compiled language (the numbers are just rough ... Missing: embedded iframe",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.npmjs.com/package/@xterm/addon-canvas",
+    "name": "@xterm/addon-canvas - npm",
+    "snippet": "An addon for xterm.js that enables a canvas-based renderer using a 2d context to draw. This addon requires xterm.js v5+. Missing: embedded iframe",
+    "host_name": "www.npmjs.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://xtermjs.org/docs/guides/security",
+    "name": "Security - Xterm.js",
+    "snippet": "If you have decided to integrate a terminal component into your application, you have to be aware of basic access rules and their security implications. Your ... Missing: webgl canvas",
+    "host_name": "xtermjs.org",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/62964456/how-to-integrate-webgl-into-existing-game-which-is-using-canvas-and-2d-context-d",
+    "name": "How to integrate WebGL into existing game which is using canvas and 2D context.drawImage? - Stack Overflow",
+    "snippet": "There was a few things I needed to add for my code for this to work First I needed to make textures of the spritesheets I use for the ...",
+    "host_name": "stackoverflow.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://codesandbox.io/examples/package/xterm-addon-webgl",
+    "name": "xterm-addon-webgl examples - CodeSandbox",
+    "snippet": "Use this online xterm-addon-webgl playground to view and fork xterm-addon-webgl example apps and templates on CodeSandbox. Click any example below to run it ...",
+    "host_name": "codesandbox.io",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.opcito.com/blogs/browser-based-terminals-with-xtermjs-and-electronjs",
+    "name": "Browser-based terminals with Xterm.js and Electron.js - Opcito",
+    "snippet": "Learn to build browser-based terminals using Xterm.js and Electron.js. Enhance remote access, DevOps workflows, and developer productivity.",
+    "host_name": "www.opcito.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]
