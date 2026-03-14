@@ -156,9 +156,10 @@ SİSTEM HATALARI (E300-E399):
 |--------|---------------|------------|-------|
 | **Base** | Undertale | Pixel art, 2D rendering | ✅ Tamamlandı |
 | **+ Lights** | Hyper Light Drifter | Dinamik ışıklandırma | 🔄 Kısmen hazır |
-| **+ Glow** | Celeste | Bloom/post-processing | 📋 Planlanıyor |
+| **+ Normal Maps** | Octopath Traveler | 2D normal mapping | ❌ Eksik |
+| **+ Glow** | Celeste | Bloom/post-processing | ❌ Eksik |
 | **+ Particles** | Stardew Valley | Parçacık efektleri | 🔄 Kısmen hazır |
-| **+ Shadows** | Hollow Knight | Gölge sistemi | 📋 Planlanıyor |
+| **+ Shadows** | Hollow Knight | Dinamik gölge sistemi | ❌ Eksik |
 
 ### Detaylı Özellikler
 
@@ -168,24 +169,34 @@ SİSTEM HATALARI (E300-E399):
 - [ ] Light occlusion by walls
 - [ ] Day/night cycle support
 
-**v0.5.2 - Post-Processing** (Celeste tarzı)
-- [ ] Bloom/glow effect
+**v0.5.2 - Normal Mapping** (Octopath Traveler tarzı) ❌ EKSİK
+- [ ] 2D sprite normal map generation
+- [ ] Dynamic lighting on sprites
+- [ ] Depth effect on pixel art
+- [ ] Normal map editor tool
+- [ ] Sprite depth calculation
+
+**v0.5.3 - Post-Processing** (Celeste tarzı) ❌ EKSİK
+- [ ] Bloom/glow effect (framebuffer)
 - [ ] Screen-space ambient occlusion
-- [ ] Color grading
+- [ ] Color grading LUT
 - [ ] Chromatic aberration
 - [ ] Vignette effect
+- [ ] CRT scanlines (retro option)
 
-**v0.5.3 - Particle System** (Stardew Valley tarzı)
+**v0.5.4 - Particle System** (Stardew Valley tarzı)
 - [ ] Particle emitters
 - [ ] Weather effects (rain, snow)
 - [ ] Ambient particles (dust, leaves)
 - [ ] Interactive particles
 
-**v0.5.4 - Shadow System** (Hollow Knight tarzı)
-- [ ] Dynamic shadows
-- [ ] Soft shadow edges
+**v0.5.5 - Dynamic Shadows** (Hollow Knight tarzı) ❌ EKSİK
+- [ ] Real-time shadow rendering
+- [ ] Soft shadow edges (PCF filtering)
 - [ ] Character shadows
 - [ ] Environmental shadows
+- [ ] Shadow cascade for large maps
+- [ ] Shadow occlusion
 
 ### Diğer v0.5 Özellikler
 
