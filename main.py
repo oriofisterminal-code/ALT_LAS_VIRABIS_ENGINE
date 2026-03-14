@@ -19,6 +19,7 @@ from Source.Scenes.dialogue_scene import DialogueScene
 
 
 def main():
+    """Initialize and run the game."""
     content = ContentLoader()
     content.load_all()
 

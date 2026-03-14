@@ -1,1 +1,43 @@
-bearlibterminal>=0.15.0
+# ALT_LAS Engine Dependencies
+# Terminal-based rendering with Sixel/Kitty graphics support
+
+# ============================================
+# CORE RENDERING
+# ============================================
+
+# Image processing for sprite loading
+Pillow>=10.0.0
+
+# ============================================
+# GPU RENDERING (Optional - for shader effects)
+# ============================================
+
+# Modern OpenGL wrapper - enables GPU shaders
+# MIT License - https://github.com/moderngl/moderngl
+moderngl>=5.8.0
+
+# Headless OpenGL context - required for moderngl standalone
+# MIT License - https://github.com/moderngl/glcontext
+glcontext>=2.3.0
+
+# ============================================
+# OPTIONAL ENHANCEMENTS
+# ============================================
+
+# Note: Terminal rendering uses native ANSI/TrueColor escape codes
+# Sixel and Kitty protocols are supported directly without external dependencies
+# Notcurses can be installed optionally for enhanced features:
+# pip install notcurses  # (requires libnotcurses-dev system package)
+
+# NumPy for advanced effects (optional)
+# numpy>=1.20.0
+
+# ============================================
+# DEVELOPMENT (Optional)
+# ============================================
+
+# Testing
+# pytest>=7.0.0
+
+# Type checking
+# mypy>=1.0.0

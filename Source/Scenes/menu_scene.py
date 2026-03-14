@@ -4,7 +4,7 @@ Main menu with options: New Game, Continue, Settings, Quit.
 """
 
 from Source.Scenes.base_scene import BaseScene
-from Source.Rendering.layer_manager import LayerManager, LAYER_UI
+from Source.Rendering.layer_manager import draw_text, LAYER_UI
 
 
 MENU_OPTIONS = ["New Game", "Continue", "Settings", "Quit"]
@@ -55,20 +55,23 @@ class MenuScene(BaseScene):
                 self.state_manager.change_scene("map")
         elif option == "Quit":
             if self.engine:
-                self.engine.shutdown()
+                self.engine.is_running = False
 
     def update(self, dt: float) -> None:
         pass
 
     def render(self) -> None:
+        width = self.engine.width if self.engine else 80
+        height = self.engine.height if self.engine else 25
+
         start_y = 3
         for i, line in enumerate(TITLE_ART):
-            x = (self.engine.width - len(line)) // 2 if self.engine else 20
-            LayerManager.draw_text(x, start_y + i, line, color="#ff4444", layer=LAYER_UI)
+            x = (width - len(line)) // 2
+            draw_text(x, start_y + i, line, color="#ff4444", layer=LAYER_UI)
 
         menu_y = start_y + len(TITLE_ART) + 2
         for i, option in enumerate(MENU_OPTIONS):
-            x = (self.engine.width - len(option) - 4) // 2 if self.engine else 35
+            x = (width - len(option) - 4) // 2
             if i == 1 and not self._has_save:
                 color = "#555555"
                 prefix = "  "
@@ -78,10 +81,10 @@ class MenuScene(BaseScene):
             else:
                 color = "white"
                 prefix = "  "
-            LayerManager.draw_text(x, menu_y + i * 2, f"{prefix}{option}", color=color, layer=LAYER_UI)
+            draw_text(x, menu_y + i * 2, f"{prefix}{option}", color=color, layer=LAYER_UI)
 
-        footer_y = (self.engine.height - 1) if self.engine else 24
-        LayerManager.draw_text(
+        footer_y = height - 1
+        draw_text(
             2, footer_y, "[Z] Select  [Arrow Keys] Navigate",
             color="#666666", layer=LAYER_UI
         )
