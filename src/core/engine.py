@@ -31,6 +31,9 @@ else:
 
 from src.render.layers import create_layer_manager, get_layer_manager
 from src.render.terminal_detect import get_terminal_capability, RenderMode
+from src.core.logging_system import (
+    LogManager, LogLevel, ErrorCode, LoadingScreen, init_logging, get_log
+)
 
 if TYPE_CHECKING:
     from src.core.state import StateManager
@@ -181,20 +184,48 @@ class GameEngine:
         self._input_handler = None
         self._layer_manager = None
         self._window_manager = None
+        
+        # Logging system
+        self._log: Optional[LogManager] = None
+        self._loading_screen: Optional[LoadingScreen] = None
 
     def initialize(self) -> None:
         """Initialize engine systems based on mode."""
+        # Initialize logging first
+        self._init_logging()
+        
+        # Show loading screen
+        self._loading_screen = LoadingScreen()
+        self._loading_screen.start()
+        
+        self._loading_screen.update(0.1, "Motor başlatılıyor...")
+        
         if self.mode == EngineMode.TERMINAL:
             self._init_terminal_mode()
         else:
             self._init_window_mode()
         
+        self._loading_screen.update(0.9, "Son hazırlıklar...")
         self.is_running = True
         self._last_time = time.time()
+        
+        self._loading_screen.finish()
+    
+    def _init_logging(self) -> None:
+        """Initialize the logging system."""
+        log_level = LogLevel.DEBUG if os.getenv('ALT_LAS_DEBUG') else LogLevel.INFO
+        self._log = init_logging(
+            level=log_level,
+            enable_file=True,
+            enable_console=True,
+            log_dir="logs"
+        )
+        self._log.info(f"ALT_LAS Engine başlatılıyor - Mode: {self.mode.name}")
 
     def _init_terminal_mode(self) -> None:
         """Initialize terminal-based rendering."""
-        print("[Engine] Initializing Terminal Mode...")
+        self._log.info("Terminal Mode başlatılıyor...")
+        self._loading_screen.update(0.2, "Terminal algılanıyor...")
         
         capability = get_terminal_capability()
         self._render_mode = capability.render_mode
@@ -203,28 +234,33 @@ class GameEngine:
         self.width = min(self.width, term_size[0])
         self.height = min(self.height, term_size[1])
 
+        self._loading_screen.update(0.4, "Render katmanları oluşturuluyor...")
         self._layer_manager = create_layer_manager(self.width, self.height)
         self._layer_manager.initialize()
         
+        self._loading_screen.update(0.5, "Input sistemi hazırlanıyor...")
         self._input_handler = TerminalInputHandler()
         self._input_handler.initialize()
 
         sys.stdout.write(f"\x1b]0;{self.title}\x07")
         sys.stdout.flush()
         
-        print(f"[Engine] Terminal: {self.width}x{self.height}, Mode: {self._render_mode.value}")
+        self._log.success(f"Terminal: {self.width}x{self.height}, Mode: {self._render_mode.value}")
 
     def _init_window_mode(self) -> None:
         """Initialize window-based rendering."""
-        print("[Engine] Initializing Window Mode...")
+        self._log.info("Window Mode başlatılıyor...")
+        self._loading_screen.update(0.2, "Pencere sistemi yükleniyor...")
         
         try:
             from src.window.manager import get_window_manager
             from src.window.input import get_window_input_handler
             
+            self._loading_screen.update(0.3, "Window Manager oluşturuluyor...")
             self._window_manager = get_window_manager()
             if not self._window_manager.initialize():
-                print("[Engine] Window init failed, falling back to terminal")
+                self._log.error("Window başlatılamadı, terminal mode'a geçiliyor", ErrorCode.E001_GPU_INIT_FAILED)
+                self._loading_screen.add_error("GPU/Window başlatılamadı")
                 self.mode = EngineMode.TERMINAL
                 self._init_terminal_mode()
                 return
@@ -232,14 +268,16 @@ class GameEngine:
             self.width = self._window_manager.width
             self.height = self._window_manager.height
             
+            self._loading_screen.update(0.6, "Input sistemi hazırlanıyor...")
             self._input_handler = get_window_input_handler()
             self._input_handler.initialize()
             
-            print(f"[Engine] Window: {self.width}x{self.height}")
+            self._log.success(f"Window: {self.width}x{self.height}")
             
         except ImportError as e:
-            print(f"[Engine] Window modules not available: {e}")
-            print("[Engine] Falling back to terminal mode")
+            self._log.error(f"Window modülleri bulunamadı: {e}", ErrorCode.E005_VERTEX_ARRAY_ERROR)
+            self._log.info("Terminal mode'a geçiliyor")
+            self._loading_screen.add_error(f"Import hatası: {e}")
             self.mode = EngineMode.TERMINAL
             self._init_terminal_mode()
 
@@ -357,6 +395,9 @@ class GameEngine:
 
     def shutdown(self) -> None:
         """Clean up and restore terminal."""
+        if self._log:
+            self._log.info("Engine kapatılıyor...")
+        
         self.is_running = False
         
         if self.mode == EngineMode.WINDOW and self._window_manager:
@@ -366,3 +407,10 @@ class GameEngine:
         
         if self._input_handler:
             self._input_handler.shutdown()
+        
+        if self._log:
+            self._log.success("Engine başarıyla kapatıldı")
+            # Show final stats
+            stats = self._log.get_stats()
+            if stats['total_logs'] > 0:
+                print(f"\n📊 Log İstatistikleri: {stats['total_logs']} mesaj")

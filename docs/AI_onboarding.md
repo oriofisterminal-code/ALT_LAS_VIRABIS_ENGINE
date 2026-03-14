@@ -47,77 +47,40 @@ ALT_LAS_ENGINE/
 
 ---
 
-## 🕐 Son Yapılanlar (v0.3.0)
+## 🕐 Son Yapılanlar (v0.3.1) ✅
 
 | Tarih | İşlem | Durum |
 |-------|-------|-------|
-| 14.03.2025 | Terminal mode korundu (AI/MCP için) | ✅ |
-| 14.03.2025 | Boş Source/ klasörü silindi | ✅ |
-| 14.03.2025 | MCP server import'ları düzeltildi | ✅ |
-| 14.03.2025 | Demo level oluşturuldu | ✅ |
-| 14.03.2025 | Graphics demo scene eklendi | ✅ |
-| 14.03.2025 | README.md güncellendi | ✅ |
-| 14.03.2025 | ROADMAP.md oluşturuldu | ✅ |
+| 14.03.2025 | LogLevel Enum (6 seviye) | ✅ |
+| 14.03.2025 | ErrorCode Enum (E001-E399) | ✅ |
+| 14.03.2025 | LogManager sınıfı (Console + File) | ✅ |
+| 14.03.2025 | LoadingScreen (Progress + ASCII + Tips) | ✅ |
+| 14.03.2025 | SecurityMasker (IP, API key maskeleme) | ✅ |
+| 14.03.2025 | Engine entegrasyonu | ✅ |
+| 14.03.2025 | ROADMAP.md güncellendi | ✅ |
 
 ### GitHub Durumu
 ```
 Repository: evpozipo-arch/ALT_LAS_ENGINE
-Branch: devin/1773441551-alt-las-engine
-Son Commit: 195b932 (Demo level and graphics test scene)
+Branch: master (devin/1773441551-alt-las-engine merged)
+Son Commit: 917be5d (Merge PR #4)
+Current Version: v0.3.1
 ```
 
 ---
 
-## 🔄 Devam Eden İş (v0.3.1)
+## 🔄 Sonraki Adım (v0.4.0)
 
-### Logging & Debug System
+### AI Code Editor Tools
 
-**Karar Verildi (14.03.2025 Toplantısı):**
-
-Aşağıdaki sistem `src/core/logging_system.py` olarak implement edilecek:
-
-```python
-# Log Seviyeleri
-class LogLevel(Enum):
-    DEBUG    = 10  # Geliştirici detayları
-    INFO     = 20  # Normal işlemler
-    SUCCESS  = 25  # Başarılı işlemler (yeşil)
-    WARNING  = 30  # Dikkat gerekli
-    ERROR    = 40  # Hata oluştu
-    CRITICAL = 50  # Sistem çöküyor
-
-# Hata Kodları
-class ErrorCode(Enum):
-    E001_GPU_INIT_FAILED      = "GPU başlatılamadı"
-    E002_SHADER_COMPILE_ERROR = "Shader derleme hatası"
-    E100_TEXTURE_LOAD_FAILED  = "Texture yüklenemedi"
-    E200_FILE_NOT_FOUND       = "Dosya bulunamadı"
-    # ... (ROADMAP.md'de tam liste)
-
-# LogManager
-class LogManager:
-    - Console output (renkli + emoji)
-    - File logging (10MB rotasyon)
-    - Security masking (IP, API key)
-    - Error callbacks
-
-# LoadingScreen  
-class LoadingScreen:
-    - Progress bar
-    - ASCII art
-    - Tips sistemi
-    - Error handling
-```
-
-**Toplantı Katılımcıları ve Sorumlulukları:**
-| Uzman | Sorumlu Alan |
-|-------|--------------|
-| Mehmet (Muhasebeci) | Log seviyeleri, maliyet analizi |
-| Kemal (İnşaat Müh.) | Loading ekranı, progress |
-| Deniz (Grafik Tasarımcı) | Renkler, ASCII art |
-| Feyza (Test) | Hata kodları |
-| Burak (Dedektif) | Güvenlik maskeleme |
-| Ayşe (Kütüphaneci) | Dosya arşivleme |
+**Planlanan MCP Tools:**
+| Tool | Açıklama |
+|------|----------|
+| `read_file` | Proje dosyasını oku |
+| `write_file` | Yeni dosya oluştur |
+| `edit_file` | Dosya düzenle |
+| `run_python` | Python çalıştır |
+| `git_commit` | Git commit |
 
 ---
 
@@ -205,14 +168,13 @@ from Source.Core.content_loader import ContentLoader
 
 ---
 
-## 📋 Sonraki Adımlar
+## 📋 Sonraki Adımlar (v0.4.0)
 
-1. **Logging System** - `src/core/logging_system.py` oluştur
-2. **Error Codes** - Feyza'nın listediği kodları implement et
-3. **Loading Screen** - Kemal'in progress bar'ını ekle
-4. **Console Colors** - Deniz'in ANSI renklerini uygula
-5. **File Rotation** - Ayşe'nin arşiv sistemini kur
-6. **Security Masking** - Burak'ın maskeleme pattern'lerini ekle
+1. **AI Code Editor Tools** - MCP tools ile tam proje kontrolü
+2. **read_file/write_file** - Dosya okuma/yazma MCP tools
+3. **run_python** - Python kod çalıştırma tool'u
+4. **git_commit** - Git entegrasyonu
+5. **search_code** - Codebase arama tool'u
 
 ---
 
@@ -221,6 +183,7 @@ from Source.Core.content_loader import ContentLoader
 | Dosya | Açıklama |
 |-------|----------|
 | `src/core/engine.py` | Ana motor, dual mode |
+| `src/core/logging_system.py` | Logging & Debug System (v0.3.1) |
 | `src/window/manager.py` | SDL2/GLFW window |
 | `src/game/demo_scene.py` | Grafik test sahnesi |
 | `src/render/adapter.py` | GPU render adapter |

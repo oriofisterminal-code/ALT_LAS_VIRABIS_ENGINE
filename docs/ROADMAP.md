@@ -6,12 +6,13 @@
 |---------|------|-------------|
 | v0.1.0 | Initial | Basic terminal rendering |
 | v0.2.0 | Atlas_001 | GPU shaders, battle system |
-| v0.3.0 | Current | Dual mode (Terminal + Window) |
-| v0.3.1 | Next | Logging & Debug System |
+| v0.3.0 | 14.03.2025 | Dual mode (Terminal + Window) |
+| v0.3.1 | 14.03.2025 | Logging & Debug System ✅ |
+| v0.4.0 | Planned | AI Code Editor Tools |
 
 ---
 
-## Current Status: v0.3.0
+## Current Status: v0.3.1
 
 ### Completed Features
 - [x] GPU Shader Pipeline (GLSL)
@@ -25,10 +26,18 @@
 - [x] Light/Particle Effects
 - [x] Demo Level (graphics test)
 - [x] Project cleanup (Source/ removed)
+- [x] **Logging System (v0.3.1)**
+  - [x] LogLevel Enum (6 seviye: DEBUG→CRITICAL)
+  - [x] ErrorCode Enum (E001-E399 kategorize kodlar)
+  - [x] LogManager (Console + File + Security masking)
+  - [x] LoadingScreen (Progress bar + ASCII art + Tips)
+  - [x] ANSIColor (Renkli terminal çıktıları)
+  - [x] SecurityMasker (IP, API key, password maskeleme)
+  - [x] FileRotatingHandler (10MB rotasyon, 30 gün)
 
 ---
 
-## v0.3.1 - Logging & Debug System (NEXT)
+## v0.3.1 - Logging & Debug System ✅ COMPLETED
 
 ### Toplantı Kararları (14.03.2025)
 
@@ -175,7 +184,8 @@ SİSTEM HATALARI (E300-E399):
 | Empty Source/ folder removed | Done | ✅ Completed |
 | Import paths standardized | Done | ✅ Completed |
 | Terminal mode kept for AI/MCP | Done | ✅ Completed |
-| Logging system | High | 🔄 In Progress |
+| Logging system | High | ✅ Completed (v0.3.1) |
+| Engine logging integration | Medium | ✅ Completed (v0.3.1) |
 
 ---
 
