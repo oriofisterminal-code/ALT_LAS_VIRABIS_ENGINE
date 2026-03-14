@@ -8,6 +8,9 @@ This module contains the core engine components:
 - save: Save/load game system
 - command_queue: Command processing for MCP/API
 - logging_system: Logging and debug system (v0.3.1)
+- event_bus: Event-driven communication system (ported from VirabisCore)
+- damage_system: Sophisticated damage pipeline (ported from VirabisCore)
+- state_machine: Entity state machine and AI (ported from VirabisCore)
 """
 
 from src.core.engine import GameEngine, EngineMode
