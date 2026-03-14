@@ -1,0 +1,23 @@
+{
+  "name": "Test",
+  "version": "1.0.0",
+  "author": "Virabis Team",
+  "description": "Test feature for validation",
+  "capabilities": ["testing", "validation"],
+  "dependencies": [],
+  "resources": {
+    "init_time_ms": 10,
+    "memory_mb": 2,
+    "cpu_percent": 1
+  },
+  "lifecycle": {
+    "async_init": false,
+    "lazy_load": false,
+    "auto_shutdown": false,
+    "priority": 50
+  },
+  "events": {
+    "publishes": ["TestStarted", "TestCompleted"],
+    "subscribes": []
+  }
+}

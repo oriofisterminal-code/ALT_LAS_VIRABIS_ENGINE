@@ -1,0 +1,10 @@
+{
+  "name": "",
+  "version": "invalid-version",
+  "capabilities": [],
+  "resources": {
+    "init_time_ms": -100,
+    "memory_mb": -50,
+    "cpu_percent": 150
+  }
+}
