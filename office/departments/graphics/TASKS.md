@@ -11,8 +11,8 @@ Görevler bu sırayla işlenecektir:
 | Sıra | ID | Görev | Öncelik | Durum |
 |------|-----|-------|---------|-------|
 | 1 | GFX-001 | Normal Mapping | 🔴 Yüksek | ✅ Tamamlandı |
-| 2 | GFX-002 | Post-Processing (Bloom) | 🔴 Yüksek | 📋 Sırada |
-| 3 | GFX-003 | Dynamic Shadows | 🟡 Orta | 📋 Planlanıyor |
+| 2 | GFX-002 | Post-Processing (Bloom) | 🔴 Yüksek | ✅ Tamamlandı |
+| 3 | GFX-003 | Dynamic Shadows | 🟡 Orta | 📋 Sırada |
 | 4 | GFX-004 | Sprite Animation | 🟡 Orta | 📋 Planlanıyor |
 | 5 | GFX-005 | Parallax Backgrounds | 🟢 Düşük | 📋 Planlanıyor |
 

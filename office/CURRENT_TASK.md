@@ -2,19 +2,19 @@
 
 > Son güncelleme: 14 Mart 2025
 > Departman: Graphics
-> Görev ID: GFX-002
+> Görev ID: GFX-003
 
 ---
 
 ## 🎯 Aktif Görev
 
-### GFX-002: Post-Processing (Bloom/Glow)
+### GFX-003: Dynamic Shadows
 
 | Alan | Bilgi |
 |------|-------|
 | **Departman** | Graphics |
-| **Referans Oyun** | Celeste |
-| **Öncelik** | Yüksek |
+| **Referans Oyun** | Hollow Knight |
+| **Öncelik** | Orta |
 | **Durum** | 📋 PLANLANIYOR |
 | **Başlangıç** | - |
 | **Bitiş Tahmini** | - |
@@ -23,10 +23,10 @@
 
 ## 📝 Görev Açıklaması
 
-Framebuffer tabanlı bloom/glow post-processing efekti oluşturulacak. Bu sistem:
-- Bright pixel'leri ayıklayıp blur uygulayacak
-- Orijinal görüntü ile birleştirecek
-- Ayarlanabilir intensity ve threshold sağlayacak
+Gerçek zamanlı dinamik gölge sistemi oluşturulacak. Bu sistem:
+- Işık kaynaklarından gölge haritaları üretecek
+- PCF soft shadows ile yumuşak kenarlar sağlayacak
+- Karakter ve ortam gölgelerini destekleyecek
 
 ---
 
@@ -43,16 +43,25 @@ Framebuffer tabanlı bloom/glow post-processing efekti oluşturulacak. Bu sistem
 
 ---
 
-## 📋 Alt Görevler
+## ✅ Tamamlanan Görevler
 
-| ID | Görev | Sorumlu | Durum |
-|----|-------|---------|-------|
-| GFX-002-1 | Framebuffer sistemi | Kemal | ⬜ |
-| GFX-002-2 | Brightness extraction shader | Kemal | ⬜ |
-| GFX-002-3 | Gaussian blur shader | Kemal | ⬜ |
-| GFX-002-4 | Bloom composite shader | Kemal | ⬜ |
-| GFX-002-5 | Post-process manager | Deniz | ⬜ |
-| GFX-002-6 | Demo entegrasyonu | Selin | ⬜ |
+### GFX-001: Normal Mapping ✅
+| Dosya | Durum |
+|-------|-------|
+| `src/render/normal_map.vert` | ✅ |
+| `src/render/normal_map.frag` | ✅ |
+| `src/render/normal_mapper.py` | ✅ |
+| `src/render/normal_renderer.py` | ✅ |
+
+### GFX-002: Post-Processing (Bloom) ✅
+| Dosya | Durum |
+|-------|-------|
+| `src/render/framebuffer.py` | ✅ |
+| `src/render/post_vertex.vert` | ✅ |
+| `src/render/bright_extract.frag` | ✅ |
+| `src/render/blur.frag` | ✅ |
+| `src/render/bloom.frag` | ✅ |
+| `src/render/post_process.py` | ✅ |
 
 ---
 
@@ -60,20 +69,11 @@ Framebuffer tabanlı bloom/glow post-processing efekti oluşturulacak. Bu sistem
 
 ```
 src/render/
-├── framebuffer.py      # FBO yönetimi
-├── bloom.frag         # Bloom shader
-├── blur.frag          # Gaussian blur
-├── bright_extract.frag # Brightness extraction
-└── post_process.py    # Post-process pipeline
+├── shadow_map.py       # Shadow map manager
+├── shadow_depth.vert   # Shadow depth vertex shader
+├── shadow_depth.frag   # Shadow depth fragment shader
+└── shadow_resolve.frag # Shadow resolve shader
 ```
-
----
-
-## 🔗 Bağımlılıklar
-
-- [x] ModernGL context
-- [x] Framebuffer support (GL 3.3)
-- [x] GFX-001 Normal Mapping (tamamlandı)
 
 ---
 
@@ -86,32 +86,12 @@ Toplam İlerleme: 0%
 
 ---
 
-## ✅ Önceki Görev Tamamlandı
-
-**GFX-001: Normal Mapping** ✅
-
-| Dosya | Durum |
-|-------|-------|
-| `src/render/normal_map.vert` | ✅ Oluşturuldu |
-| `src/render/normal_map.frag` | ✅ Oluşturuldu |
-| `src/render/normal_mapper.py` | ✅ Oluşturuldu |
-| `src/render/normal_renderer.py` | ✅ Oluşturuldu |
-| `assets/normal_maps/README.md` | ✅ Oluşturuldu |
-
----
-
-## 📝 Notlar
-
-Henüz başlanmadı. İlk toplantı yapılacak.
-
----
-
 ## 🚀 Sonraki Adım
 
 **Toplantı çağrısı yapılacak!**
 - Tarih: Belirlenecek
 - Katılımcılar: Grafik ekibi
-- Gündem: Bloom post-processing planlaması
+- Gündem: Dynamic Shadows planlaması
 
 ---
 

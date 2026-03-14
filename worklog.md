@@ -26,6 +26,29 @@ Stage Summary:
 ## Work History
 
 ---
+Task ID: GFX-002
+Agent: Super Z (Graphics Dept)
+Task: Post-Processing (Bloom) Implementation
+
+Work Log:
+- Toplanti yapildi (2025-03-14_bloom_kickoff.md)
+- Plan olusturuldu ve onaylandi (GFX-002_plan.md)
+- framebuffer.py olusturuldu (FBO wrapper)
+- post_vertex.vert olusturuldu (fullscreen quad)
+- bright_extract.frag olusturuldu (threshold extraction)
+- blur.frag olusturuldu (Gaussian blur, 9x9 kernel)
+- bloom.frag olusturuldu (composite + tone mapping)
+- post_process.py olusturuldu (pipeline manager)
+- Test sonuclari kaydedildi (GFX-002_test.md)
+
+Stage Summary:
+- ✅ GFX-002 Post-Processing tamamlandi
+- Bloom efekti calisiyor (Celeste tarzı)
+- 4 tone mapping modu: None, Reinhard, Filmic, ACES
+- Performance: 60 FPS stable
+- Sonraki gorev: GFX-003 Dynamic Shadows
+
+---
 Task ID: GFX-001
 Agent: Super Z (Graphics Dept)
 Task: Normal Mapping System Implementation
