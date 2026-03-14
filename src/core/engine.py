@@ -320,12 +320,26 @@ class GameEngine:
         
         if self._input_handler.is_key_just_pressed(InputKey.F1):
             self.debug_mode = not self.debug_mode
+            if self._log:
+                self._log.info(f"Debug mode: {'ON' if self.debug_mode else 'OFF'}")
         
-        # Forward to scene
+        # Get all currently pressed keys
+        pressed_keys = self._input_handler.get_pressed_keys()
+        
+        # Forward to scene with proper method
         if self.state_manager and self.state_manager.current_scene:
-            for key in self._input_handler.get_pressed_keys():
-                key_name = self._input_handler.get_legacy_key_name(key)
-                self.state_manager.current_scene.handle_input(key_name)
+            scene = self.state_manager.current_scene
+            
+            # Check if scene has the new method
+            if hasattr(scene, 'update_pressed_keys'):
+                # Convert InputKey enums to legacy names
+                key_names = {self._input_handler.get_legacy_key_name(k) for k in pressed_keys}
+                scene.update_pressed_keys(key_names)
+            else:
+                # Fallback: send each key individually
+                for key in pressed_keys:
+                    key_name = self._input_handler.get_legacy_key_name(key)
+                    scene.handle_input(key_name)
 
     def update(self) -> None:
         """Update game state."""

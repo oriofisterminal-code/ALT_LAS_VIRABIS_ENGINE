@@ -152,21 +152,32 @@ class WindowGame:
         if self.input_handler.is_key_just_pressed(InputKey.F1):
             self.debug_mode = not self.debug_mode
             print(f"[WindowGame] Debug mode: {'ON' if self.debug_mode else 'OFF'}")
+            if self.scene and hasattr(self.scene, '_show_debug_info'):
+                self.scene._show_debug_info()
+
+        # Get currently pressed keys
+        pressed_keys = self.input_handler.get_pressed_keys()
+        
+        # Debug: show pressed keys
+        if self.debug_mode and pressed_keys:
+            key_names = [self.input_handler.get_legacy_key_name(k) for k in pressed_keys]
+            # print(f"[Input] Pressed: {key_names}")
 
         # Track key states for scene
-        for key in self.input_handler.get_pressed_keys():
+        for key in pressed_keys:
             key_name = self.input_handler.get_legacy_key_name(key)
             if key_name not in self._keys_down:
                 self._keys_down.add(key_name)
+                # print(f"[Input] New key down: {key_name}")
                 if self.scene and hasattr(self.scene, 'handle_key'):
                     self.scene.handle_key(key_name.replace('TK_', ''), True)
 
         # Check for released keys
-        released = self._keys_down - set(
-            self.input_handler.get_legacy_key_name(k) for k in self.input_handler.get_pressed_keys()
-        )
+        current_key_names = {self.input_handler.get_legacy_key_name(k) for k in pressed_keys}
+        released = self._keys_down - current_key_names
         for key_name in released:
             self._keys_down.discard(key_name)
+            # print(f"[Input] Key released: {key_name}")
             if self.scene and hasattr(self.scene, 'handle_key'):
                 self.scene.handle_key(key_name.replace('TK_', ''), False)
 

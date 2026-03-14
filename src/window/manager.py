@@ -201,6 +201,9 @@ class WindowManager:
         """Handle keyboard events."""
         key_name = self._normalize_key_name(key)
         
+        # Debug logging
+        # print(f"[Window] Key event: raw={key}, normalized={key_name}, action={action}")
+        
         if action == 'PRESS':
             self._keys_pressed[key_name] = True
             if self._on_key_press:

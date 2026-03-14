@@ -280,11 +280,54 @@ class GraphicsDemoScene:
         return tuple(int(hex_color[i:i+2], 16) / 255.0 for i in (0, 2, 4))
 
     def handle_key(self, key: str, pressed: bool) -> None:
-        """Handle keyboard input."""
+        """Handle keyboard input from main_window.py."""
+        # key comes as 'W', 'A', etc. (without TK_ prefix from main_window.py)
         if pressed:
             self._keys_pressed.add(key)
+            print(f"[Demo] Key pressed: {key}")  # Debug
         else:
             self._keys_pressed.discard(key)
+            print(f"[Demo] Key released: {key}")  # Debug
+    
+    def handle_input(self, key: str) -> None:
+        """Handle keyboard input from engine."""
+        # Convert TK_ format to simple format
+        key_map = {
+            'TK_W': 'W', 'TK_A': 'A', 'TK_S': 'S', 'TK_D': 'D',
+            'TK_UP': 'UP', 'TK_DOWN': 'DOWN', 'TK_LEFT': 'LEFT', 'TK_RIGHT': 'RIGHT',
+            'TK_Z': 'Z', 'TK_X': 'X', 'TK_RETURN': 'ENTER', 'TK_SPACE': 'SPACE',
+            'TK_F1': 'F1', 'TK_F2': 'F2', 'TK_F3': 'F3', 'TK_ESCAPE': 'ESC',
+        }
+        
+        simple_key = key_map.get(key, key.replace('TK_', ''))
+        self._keys_pressed.add(simple_key)
+        
+        # Handle special keys
+        if simple_key == 'F1':
+            self._show_debug_info()
+    
+    def update_pressed_keys(self, pressed_keys: set) -> None:
+        """Update the set of currently pressed keys (called every frame)."""
+        # Convert TK_ format keys to simple format
+        key_map = {
+            'TK_W': 'W', 'TK_A': 'A', 'TK_S': 'S', 'TK_D': 'D',
+            'TK_UP': 'UP', 'TK_DOWN': 'DOWN', 'TK_LEFT': 'LEFT', 'TK_RIGHT': 'RIGHT',
+            'TK_Z': 'Z', 'TK_X': 'X', 'TK_RETURN': 'ENTER', 'TK_SPACE': 'SPACE',
+        }
+        
+        # Update pressed keys set
+        self._keys_pressed.clear()
+        for key in pressed_keys:
+            simple_key = key_map.get(key, key.replace('TK_', ''))
+            self._keys_pressed.add(simple_key)
+    
+    def _show_debug_info(self) -> None:
+        """Show debug information."""
+        print(f"\n[Demo Debug] === INFO ===")
+        print(f"  Player: ({self._player_pos[0]:.1f}, {self._player_pos[1]:.1f})")
+        print(f"  Time: {self.time:.1f}s")
+        print(f"  Particles: {len(self._particles)}")
+        print(f"  Keys pressed: {self._keys_pressed}")
 
     def update(self, dt: float) -> None:
         """Update scene state."""
