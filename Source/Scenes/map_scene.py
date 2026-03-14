@@ -1,12 +1,12 @@
-"""
-ALT_LAS Engine - Map Scene
-Renders the world map, handles player movement, NPC interaction, triggers.
-"""
-
+"""Map Scene - Renders world map, handles movement, NPC interaction, triggers."""
+import time
 from Source.Scenes.base_scene import BaseScene
-from Source.Rendering.layer_manager import LayerManager, LAYER_MAP, LAYER_ENTITIES, LAYER_UI
+from Source.Rendering.layer_manager import (
+    draw_char, draw_text, draw_sprite, LAYER_MAP, LAYER_ENTITIES, LAYER_UI
+)
+from Source.Rendering.terminal_detect import get_render_mode, RenderMode
 from Source.Rendering.viewport import Viewport
-from Source.Physics.collision import CollisionMap, CollisionSystem, TILE_WALL, TILE_WATER, TILE_TRIGGER
+from Source.Physics.collision import CollisionMap, CollisionSystem
 from Source.Physics.movement import MovementSystem
 from Source.Entities.entity import EntityManager
 from Source.Entities.player import Player
@@ -14,13 +14,21 @@ from Source.Entities.npc import NPC
 from Source.Logic.dialogue_engine import DialogueEngine
 from Source.Core.content_loader import ContentLoader
 from Source.Core.save_manager import SaveManager
-import time
 
+# ASCII fallback characters for tiles
 TILE_CHARS = {
-    0: (".", "#333333"),
-    1: ("#", "#808080"),
-    2: ("~", "#4444ff"),
-    3: (".", "#333333"),
+    0: (".", "#333333"),  # Empty/Floor
+    1: ("#", "#808080"),  # Wall
+    2: ("~", "#4444ff"),  # Water
+    3: ("T", "#ffff00"),  # Trigger
+}
+
+# Default sprite mappings for tile types
+TILE_SPRITES = {
+    0: "Tiles/floor_stone.png",
+    1: "Tiles/wall_brick.png",
+    2: "Tiles/water.png",
+    3: "Tiles/trigger.png",
 }
 
 
@@ -33,7 +41,7 @@ class MapScene(BaseScene):
         self.player = Player(x=5, y=5)
         self.entity_manager = EntityManager()
         self.collision_system = CollisionSystem()
-        self.movement: MovementSystem = MovementSystem(self.collision_system)
+        self.movement = MovementSystem(self.collision_system)
         self.dialogue = DialogueEngine()
         self.viewport = None
         self.save_manager = SaveManager()
@@ -41,13 +49,17 @@ class MapScene(BaseScene):
         self._map_data = None
         self._current_map_name = ""
         self._keybindings = None
-        self._interaction_target = None
-        self._move_time = 0.0
+        self._tile_sprites: dict[int, str] = {}
+        self._use_sprites = False
 
     def on_enter(self) -> None:
         if self.engine:
             self.viewport = Viewport(self.engine)
             self._keybindings = self.engine.keybindings
+            # Check if we should use sprites
+            render_mode = get_render_mode()
+            self._use_sprites = render_mode in (RenderMode.SIXEL, RenderMode.KITTY)
+
         self.entity_manager.add(self.player)
         self.collision_system.register_entity(
             self.player.entity_id, self.player.x, self.player.y
@@ -55,6 +67,7 @@ class MapScene(BaseScene):
         self.collision_system.set_trigger_callback(self._on_trigger)
         self.dialogue.set_action_callback(self._on_dialogue_action)
         self.dialogue.set_game_flags(self.player.flags)
+
         if not self._current_map_name:
             self.load_map("start_room")
 
@@ -62,37 +75,59 @@ class MapScene(BaseScene):
         data = self.content.get_map(map_name)
         if not data:
             return
+
         self._map_data = data
         self._current_map_name = map_name
+
+        # Load tile sprites from map data
+        self._tile_sprites = {}
+        tile_sprites_data = data.get("tile_sprites", {})
+        for tile_id, sprite_path in tile_sprites_data.items():
+            self._tile_sprites[int(tile_id)] = sprite_path
+
+        # Use default sprites for missing tiles
+        for tile_id, default_sprite in TILE_SPRITES.items():
+            if tile_id not in self._tile_sprites:
+                self._tile_sprites[tile_id] = default_sprite
+
         w = data.get("width", 20)
         h = data.get("height", 15)
+
         self._collision_map = CollisionMap(w, h)
         tiles = data.get("tiles", [])
+
         for row_idx, row in enumerate(tiles):
             for col_idx, tile_val in enumerate(row):
                 self._collision_map.set_tile(col_idx, row_idx, tile_val)
+
         for trigger in data.get("triggers", []):
             self._collision_map.set_trigger(
                 trigger["x"], trigger["y"], trigger["event"]
             )
+
         self.collision_system.set_collision_map(self._collision_map)
+
         if self.viewport:
             self.viewport.set_map_bounds(w, h)
+
         self.entity_manager.clear()
         self.entity_manager.add(self.player)
         self.collision_system.register_entity(
             self.player.entity_id, self.player.x, self.player.y
         )
+
         spawn = data.get("player_spawn")
         if spawn:
             self.player.set_position(spawn["x"], spawn["y"])
             self.collision_system.update_entity_position(
                 self.player.entity_id, spawn["x"], spawn["y"]
             )
+
         for npc_data in data.get("npcs", []):
             npc = NPC.from_data(npc_data)
             self.entity_manager.add(npc)
             self.collision_system.register_entity(npc.entity_id, npc.x, npc.y)
+
         if self.viewport:
             self.viewport.follow(self.player.x, self.player.y)
             self.viewport.camera.snap_to_target()
@@ -101,13 +136,16 @@ class MapScene(BaseScene):
         if self.dialogue.is_active:
             self.dialogue.handle_input(key)
             return
+
         kb = self._keybindings or {}
         move_keys = kb.get("movement", {})
         direction = None
+
         for dir_name, keys in move_keys.items():
             if key in keys:
                 direction = dir_name
                 break
+
         if direction:
             result = self.movement.try_move(
                 self.player.entity_id, self.player.x, self.player.y,
@@ -115,6 +153,7 @@ class MapScene(BaseScene):
             )
             if result:
                 self.player.set_position(result[0], result[1])
+
         actions = kb.get("actions", {})
         if key == actions.get("interact"):
             self._interact()
@@ -186,31 +225,52 @@ class MapScene(BaseScene):
     def _render_map(self) -> None:
         if not self._collision_map or not self.viewport:
             return
+
         for wy in range(self._collision_map.height):
             for wx in range(self._collision_map.width):
                 if not self.viewport.is_visible(wx, wy):
                     continue
+
                 sx, sy = self.viewport.world_to_screen(wx, wy)
                 tile = self._collision_map.get_tile(wx, wy)
+
+                if self._use_sprites:
+                    # Try to render sprite
+                    sprite_path = self._tile_sprites.get(tile)
+                    if sprite_path:
+                        success = draw_sprite(sx, sy, sprite_path, layer=LAYER_MAP)
+                        if success:
+                            continue
+
+                # Fallback to ASCII
                 char, color = TILE_CHARS.get(tile, ("?", "white"))
-                LayerManager.draw_char(sx, sy, char, color=color, layer=LAYER_MAP)
+                draw_char(sx, sy, char, color=color, layer=LAYER_MAP)
 
     def _render_entities(self) -> None:
         if not self.viewport:
             return
+
         for entity in self.entity_manager.get_all():
             if not entity.visible:
                 continue
             if not self.viewport.is_visible(entity.x, entity.y):
                 continue
+
             sx, sy = self.viewport.world_to_screen(entity.x, entity.y)
-            LayerManager.draw_char(
-                sx, sy, entity.char, color=entity.color, layer=LAYER_ENTITIES
-            )
+
+            # Check for sprite
+            sprite_path = getattr(entity, "sprite", None)
+            if self._use_sprites and sprite_path:
+                success = draw_sprite(sx, sy, sprite_path, layer=LAYER_ENTITIES)
+                if success:
+                    continue
+
+            # Fallback to ASCII
+            draw_char(sx, sy, entity.char, color=entity.color, layer=LAYER_ENTITIES)
 
     def _render_hud(self) -> None:
         h = self.engine.height if self.engine else 25
-        LayerManager.draw_text(
+        draw_text(
             1, h - 1,
             f"HP:{self.player.hp}/{self.player.max_hp} "
             f"LV:{self.player.level} "

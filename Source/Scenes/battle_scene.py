@@ -5,7 +5,7 @@ Wraps the BattleSystem into a scene for the state manager.
 
 from Source.Scenes.base_scene import BaseScene
 from Source.Logic.battle_system import BattleSystem, BattleActor
-from Source.Rendering.layer_manager import LayerManager, LAYER_UI
+from Source.Rendering.layer_manager import draw_text, LAYER_UI
 from Source.Entities.player import Player
 
 
@@ -41,7 +41,7 @@ class BattleScene(BaseScene):
         self.battle.update(dt)
 
     def render(self) -> None:
-        LayerManager.draw_text(
+        draw_text(
             2, 1, "--- BATTLE ---", color="red", layer=LAYER_UI
         )
         self.battle.render()

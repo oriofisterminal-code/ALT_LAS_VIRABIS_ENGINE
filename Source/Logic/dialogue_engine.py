@@ -6,7 +6,7 @@ Dialogues are loaded from JSON, not hardcoded.
 
 import time
 from typing import Optional
-from Source.Rendering.layer_manager import LayerManager, LAYER_UI
+from Source.Rendering.layer_manager import draw_text, draw_box, LAYER_UI
 
 
 class DialogueNode:
@@ -136,20 +136,20 @@ class DialogueEngine:
     def render(self) -> None:
         if not self._is_active or not self._current_node:
             return
-        LayerManager.draw_box(
+        draw_box(
             self.box_x, self.box_y, self.box_w, self.box_h,
             border_color="#aaaaaa", fill_color="#111111", layer=LAYER_UI
         )
         node = self._current_node
         if node.speaker:
-            LayerManager.draw_text(
+            draw_text(
                 self.box_x + 2, self.box_y,
                 f" {node.speaker} ", color="#ffff00", layer=LAYER_UI
             )
         max_text_w = self.box_w - 4
         lines = self._wrap_text(self._displayed_text, max_text_w)
         for i, line in enumerate(lines[:self.box_h - 2]):
-            LayerManager.draw_text(
+            draw_text(
                 self.box_x + 2, self.box_y + 1 + i,
                 line, color="white", layer=LAYER_UI
             )
@@ -158,7 +158,7 @@ class DialogueEngine:
             for i, choice in enumerate(node.choices):
                 prefix = "> " if i == self._selected_choice else "  "
                 color = "#ffff00" if i == self._selected_choice else "#aaaaaa"
-                LayerManager.draw_text(
+                draw_text(
                     self.box_x + 2, cy + i,
                     f"{prefix}{choice.get('text', '')}",
                     color=color, layer=LAYER_UI
