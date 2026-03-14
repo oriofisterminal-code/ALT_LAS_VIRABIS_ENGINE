@@ -9,25 +9,27 @@
 Pillow>=10.0.0
 
 # ============================================
-# GPU RENDERING (Optional - for shader effects)
+# GPU RENDERING
 # ============================================
 
 # Modern OpenGL wrapper - enables GPU shaders
 # MIT License - https://github.com/moderngl/moderngl
 moderngl>=5.8.0
 
-# Headless OpenGL context - required for moderngl standalone
-# MIT License - https://github.com/moderngl/glcontext
-glcontext>=2.3.0
+# Window system with OpenGL context (SDL2/GLFW/Pygame backends)
+# MIT License - https://github.com/moderngl/moderngl-window
+moderngl-window>=2.4.0
 
 # ============================================
 # OPTIONAL ENHANCEMENTS
 # ============================================
 
-# Note: Terminal rendering uses native ANSI/TrueColor escape codes
-# Sixel and Kitty protocols are supported directly without external dependencies
-# Notcurses can be installed optionally for enhanced features:
-# pip install notcurses  # (requires libnotcurses-dev system package)
+# Note: moderngl-window supports multiple backends:
+# - SDL2 (default on Windows, recommended)
+# - GLFW (good Linux support)
+# - Pygame2 (Python-native)
+# Install SDL2: pip install pysdl2
+# Install GLFW: pip install glfw
 
 # NumPy for advanced effects (optional)
 # numpy>=1.20.0

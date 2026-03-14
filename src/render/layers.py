@@ -4,10 +4,24 @@ Rendering layers with ASCII/Sixel/Kitty fallback and GPU support.
 Integrates with RenderAdapter for shader effects.
 """
 import sys
+import os
 from typing import Optional, Dict, List
 from enum import IntEnum
 from src.render.terminal_detect import RenderMode, get_terminal_capability
 from src.render.sprites import Sprite, get_sprite_loader
+
+# Windows terminal setup
+if sys.platform == 'win32':
+    try:
+        from src.terminal.windows import init_windows_terminal, clear_screen, is_vt_enabled
+        _windows_terminal_initialized = init_windows_terminal()
+    except ImportError:
+        _windows_terminal_initialized = False
+else:
+    _windows_terminal_initialized = True
+    def clear_screen():
+        sys.stdout.write("\x1b[2J\x1b[H")
+        sys.stdout.flush()
 
 
 class Layer(IntEnum):
@@ -78,11 +92,16 @@ class LayerManager:
     def initialize(self) -> None:
         if self._initialized:
             return
+        # Hide cursor, clear screen, move to home
         sys.stdout.write("\x1b[?25l\x1b[2J\x1b[H")
         sys.stdout.flush()
         self._cursor_hidden = True
         self._try_init_gpu()
         self._initialized = True
+        # Print terminal info
+        if sys.platform == 'win32':
+            print(f"[ALT_LAS] Windows Terminal initialized (VT: {_windows_terminal_initialized})")
+        print(f"[ALT_LAS] Render mode: {self._render_mode.value}, Color depth: {self._capability.color_depth}")
 
     def _try_init_gpu(self) -> None:
         try:
@@ -163,6 +182,7 @@ class LayerManager:
         sys.stdout.flush()
 
     def _render_ascii(self) -> None:
+        # Move cursor to home position (works with VT mode)
         sys.stdout.write("\x1b[H")
         for y in range(self.height):
             for x in range(self.width):
