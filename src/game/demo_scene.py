@@ -1,13 +1,15 @@
 """
 ALT_LAS Engine - Graphics Demo Scene
-Tests all GPU rendering features: shaders, lights, particles, sprites.
+Tests all GPU rendering features: shaders, lights, particles, sprites, normal maps.
 Runs in Window mode with moderngl.
+
+Version: v0.5.0+ (Normal Mapping Support)
 """
 
 import math
 import time
 import array
-from typing import Optional, List, Tuple
+from typing import Optional, List, Tuple, Dict, Any
 
 # Try to import moderngl
 try:
@@ -29,7 +31,18 @@ except ImportError:
 class GraphicsDemoScene:
     """
     Demo scene to showcase GPU rendering capabilities.
-    Tests: Sprites, Lighting, Particles, Water effects, Shaders.
+    Tests: Sprites, Lighting, Particles, Water effects, Shaders, Normal Maps.
+    
+    Features:
+    - Dynamic point lights (up to 8)
+    - Normal mapping for 2D sprites
+    - Particle system
+    - Multiple shader modes
+    
+    Controls:
+    - WASD/Arrows: Move player
+    - F1: Toggle debug mode
+    - F2: Cycle shader modes (normal, lit, normals)
     """
 
     def __init__(self, ctx, width: int = 960, height: int = 544):
@@ -50,11 +63,18 @@ class GraphicsDemoScene:
 
         # Key states
         self._keys_pressed = set()
+        
+        # Normal mapping mode
+        self._shader_mode = 0  # 0: normal, 1: lit, 2: debug normals
+        self._debug_mode = False
+        self._ambient_light = 0.3
 
         # OpenGL resources
         self._program = None
+        self._normal_program = None  # Normal mapping shader
         self._quad_vao = None
         self._textures: dict = {}
+        self._normal_maps: dict = {}  # Normal map textures
 
     def initialize(self) -> bool:
         """Initialize OpenGL resources."""

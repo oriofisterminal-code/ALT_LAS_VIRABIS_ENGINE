@@ -2,18 +2,18 @@
 
 > Son güncelleme: 14 Mart 2025
 > Departman: Graphics
-> Görev ID: GFX-001
+> Görev ID: GFX-002
 
 ---
 
 ## 🎯 Aktif Görev
 
-### GFX-001: Normal Mapping Sistemi
+### GFX-002: Post-Processing (Bloom/Glow)
 
 | Alan | Bilgi |
 |------|-------|
 | **Departman** | Graphics |
-| **Referans Oyun** | Octopath Traveler |
+| **Referans Oyun** | Celeste |
 | **Öncelik** | Yüksek |
 | **Durum** | 📋 PLANLANIYOR |
 | **Başlangıç** | - |
@@ -23,10 +23,10 @@
 
 ## 📝 Görev Açıklaması
 
-2D sprite'lar için normal map sistemi oluşturulacak. Bu sistem sayesinde:
-- Sprite'lar ışıkla etkileşime girecek
-- Depth (derinlik) etkisi yaratılacak
-- Dinamik aydınlatma sprite'larda görünecek
+Framebuffer tabanlı bloom/glow post-processing efekti oluşturulacak. Bu sistem:
+- Bright pixel'leri ayıklayıp blur uygulayacak
+- Orijinal görüntü ile birleştirecek
+- Ayarlanabilir intensity ve threshold sağlayacak
 
 ---
 
@@ -47,11 +47,12 @@
 
 | ID | Görev | Sorumlu | Durum |
 |----|-------|---------|-------|
-| GFX-001-1 | Normal map shader yazma | ? | ⬜ |
-| GFX-001-2 | Normal map generator tool | ? | ⬜ |
-| GFX-001-3 | Sprite depth calculation | ? | ⬜ |
-| GFX-001-4 | Demo scene entegrasyonu | ? | ⬜ |
-| GFX-001-5 | Test ve dokümantasyon | ? | ⬜ |
+| GFX-002-1 | Framebuffer sistemi | Kemal | ⬜ |
+| GFX-002-2 | Brightness extraction shader | Kemal | ⬜ |
+| GFX-002-3 | Gaussian blur shader | Kemal | ⬜ |
+| GFX-002-4 | Bloom composite shader | Kemal | ⬜ |
+| GFX-002-5 | Post-process manager | Deniz | ⬜ |
+| GFX-002-6 | Demo entegrasyonu | Selin | ⬜ |
 
 ---
 
@@ -59,20 +60,20 @@
 
 ```
 src/render/
-├── normal_map.frag    # Yeni shader
-├── normal_map.vert    # Yeni vertex shader
-└── normal_mapper.py   # Normal map generator
-
-assets/normal_maps/    # Oluşturulan normal map'ler
+├── framebuffer.py      # FBO yönetimi
+├── bloom.frag         # Bloom shader
+├── blur.frag          # Gaussian blur
+├── bright_extract.frag # Brightness extraction
+└── post_process.py    # Post-process pipeline
 ```
 
 ---
 
 ## 🔗 Bağımlılıklar
 
-- [ ] ModernGL context
-- [ ] PIL/Pillow for image processing
-- [ ] Mevcut shader sistemi
+- [x] ModernGL context
+- [x] Framebuffer support (GL 3.3)
+- [x] GFX-001 Normal Mapping (tamamlandı)
 
 ---
 
@@ -82,6 +83,20 @@ assets/normal_maps/    # Oluşturulan normal map'ler
 Toplam İlerleme: 0%
 ████████░░░░░░░░░░░░░░░░░░░░░░░░░░ 0%
 ```
+
+---
+
+## ✅ Önceki Görev Tamamlandı
+
+**GFX-001: Normal Mapping** ✅
+
+| Dosya | Durum |
+|-------|-------|
+| `src/render/normal_map.vert` | ✅ Oluşturuldu |
+| `src/render/normal_map.frag` | ✅ Oluşturuldu |
+| `src/render/normal_mapper.py` | ✅ Oluşturuldu |
+| `src/render/normal_renderer.py` | ✅ Oluşturuldu |
+| `assets/normal_maps/README.md` | ✅ Oluşturuldu |
 
 ---
 
@@ -96,7 +111,7 @@ Henüz başlanmadı. İlk toplantı yapılacak.
 **Toplantı çağrısı yapılacak!**
 - Tarih: Belirlenecek
 - Katılımcılar: Grafik ekibi
-- Gündem: Normal mapping planlaması
+- Gündem: Bloom post-processing planlaması
 
 ---
 

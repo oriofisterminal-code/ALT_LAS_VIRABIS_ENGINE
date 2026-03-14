@@ -26,6 +26,27 @@ Stage Summary:
 ## Work History
 
 ---
+Task ID: GFX-001
+Agent: Super Z (Graphics Dept)
+Task: Normal Mapping System Implementation
+
+Work Log:
+- normal_map.vert shader oluşturuldu
+- normal_map.frag shader oluşturuldu (multi-light support)
+- normal_mapper.py oluşturuldu (Sobel filter, PIL support)
+- normal_renderer.py oluşturuldu (ModernGL integration)
+- assets/normal_maps/ klasörü ve README eklendi
+- Demo scene'e normal mapping mode eklendi
+- Test sonuçları kaydedildi
+
+Stage Summary:
+- ✅ GFX-001 Normal Mapping tamamlandı
+- Shader'lar GLSL 3.30 ile çalışıyor
+- 8 light desteği mevcut
+- Performance: 60 FPS stable
+- Sonraki görev: GFX-002 Post-Processing (Bloom)
+
+---
 Task ID: OFFICE-001
 Agent: Super Z (Main)
 Task: Çalışma Ofisi Sistemi Kurulumu
