@@ -123,12 +123,15 @@ class WindowInputHandler:
         self._key_just_released.clear()
         
         if self._window_manager:
-            self._window_manager.poll_events()
-            
-            # Check for close
-            if self._window_manager.should_close:
-                self._key_states.add(InputKey.CLOSE)
-                self._key_just_pressed.add(InputKey.CLOSE)
+            try:
+                self._window_manager.poll_events()
+                
+                # Check for close
+                if self._window_manager.should_close:
+                    self._key_states.add(InputKey.CLOSE)
+                    self._key_just_pressed.add(InputKey.CLOSE)
+            except Exception:
+                pass
     
     def is_key_down(self, key: InputKey) -> bool:
         """Check if key is currently held down."""
