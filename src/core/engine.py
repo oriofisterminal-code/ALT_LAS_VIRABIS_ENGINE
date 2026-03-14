@@ -8,27 +8,37 @@ import json
 import time
 import os
 import sys
-import select
-import termios
-import tty
-from typing import Optional
+from typing import Optional, TYPE_CHECKING
 
-from Source.Rendering.layer_manager import create_layer_manager, get_layer_manager
-from Source.Rendering.terminal_detect import get_terminal_capability, RenderMode
+# Platform-specific imports
+if sys.platform == 'win32':
+    import msvcrt
+    HAS_TERMIOS = False
+else:
+    import select
+    import termios
+    import tty
+    HAS_TERMIOS = True
+
+from src.render.layers import create_layer_manager, get_layer_manager
+from src.render.terminal_detect import get_terminal_capability, RenderMode
+
+if TYPE_CHECKING:
+    from src.core.state import StateManager
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 def load_config() -> dict:
     """Load game configuration from JSON file."""
-    config_path = os.path.join(BASE_DIR, "Config", "config.json")
+    config_path = os.path.join(BASE_DIR, "config", "settings.json")
     with open(config_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 def load_keybindings() -> dict:
     """Load keybindings from JSON file."""
-    kb_path = os.path.join(BASE_DIR, "Config", "keybindings.json")
+    kb_path = os.path.join(BASE_DIR, "config", "keys.json")
     with open(kb_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -42,6 +52,11 @@ class InputHandler:
 
     def initialize(self) -> None:
         """Set up terminal for raw input."""
+        if sys.platform == 'win32':
+            # Windows: No special setup needed for msvcrt
+            return
+
+        # Unix/Linux: Set up raw terminal mode
         if sys.stdin.isatty():
             fd = sys.stdin.fileno()
             self._old_settings = termios.tcgetattr(fd)
@@ -49,18 +64,31 @@ class InputHandler:
 
     def shutdown(self) -> None:
         """Restore terminal settings."""
+        if sys.platform == 'win32':
+            # Windows: No cleanup needed
+            return
+
+        # Unix/Linux: Restore terminal settings
         if self._old_settings and sys.stdin.isatty():
             fd = sys.stdin.fileno()
             termios.tcsetattr(fd, termios.TCSADRAIN, self._old_settings)
 
     def has_input(self) -> bool:
         """Check if input is available."""
+        if sys.platform == 'win32':
+            # Windows: Use msvcrt.kbhit()
+            return msvcrt.kbhit() != 0
+
+        # Unix/Linux: Use select
         if sys.stdin.isatty():
             return select.select([sys.stdin], [], [], 0)[0] != []
         return False
 
     def read(self) -> str:
         """Read a key press and return key name."""
+        if sys.platform == 'win32':
+            return self._read_windows()
+
         if not sys.stdin.isatty():
             return ""
 
@@ -119,6 +147,61 @@ class InputHandler:
         }
 
         return key_map.get(char, f"TK_{ord(char)}" if char.isprintable() else "")
+
+    def _read_windows(self) -> str:
+        """Read a key on Windows using msvcrt."""
+        if not msvcrt.kbhit():
+            return ""
+
+        char = msvcrt.getch()
+
+        # Special keys (arrow keys, function keys)
+        if char == b'\x00' or char == b'\xe0':
+            if msvcrt.kbhit():
+                special = msvcrt.getch()
+                # Windows arrow key codes
+                special_map = {
+                    b'H': "TK_UP",
+                    b'P': "TK_DOWN",
+                    b'M': "TK_RIGHT",
+                    b'K': "TK_LEFT",
+                    b';': "TK_F1",
+                    b'<': "TK_F2",
+                    b'=': "TK_F3",
+                    b'?': "TK_F5",
+                    b'@': "TK_F6",
+                    b'A': "TK_F7",
+                    b'B': "TK_F8",
+                    b'C': "TK_F9",
+                    b'D': "TK_F10",
+                }
+                return special_map.get(special, "TK_UNKNOWN")
+            return "TK_UNKNOWN"
+
+        # Regular keys
+        try:
+            decoded = char.decode('utf-8')
+        except UnicodeDecodeError:
+            return "TK_UNKNOWN"
+
+        key_map = {
+            '\r': "TK_RETURN",
+            '\n': "TK_RETURN",
+            ' ': "TK_SPACE",
+            'w': "TK_W", 'W': "TK_W",
+            'a': "TK_A", 'A': "TK_A",
+            's': "TK_S", 'S': "TK_S",
+            'd': "TK_D", 'D': "TK_D",
+            'z': "TK_Z", 'Z': "TK_Z",
+            'x': "TK_X", 'X': "TK_X",
+            'i': "TK_I", 'I': "TK_I",
+            'q': "TK_Q", 'Q': "TK_Q",
+            'e': "TK_E", 'E': "TK_E",
+            '\x1b': "TK_ESCAPE",
+            '\x03': "TK_CLOSE",  # Ctrl+C
+        }
+
+        return key_map.get(decoded, f"TK_{ord(decoded)}" if decoded.isprintable() else "TK_UNKNOWN")
 
 
 class GameEngine:
@@ -197,7 +280,7 @@ class GameEngine:
 
         if self.debug_mode:
             fps_display = int(1.0 / self.delta_time) if self.delta_time > 0 else 0
-            from Source.Rendering.layer_manager import Layer
+            from src.render.layers import Layer
             self._layer_manager.draw_text(
                 0, 0,
                 f"FPS:{fps_display} DT:{self.delta_time:.3f} Mode:{self._render_mode.value}",

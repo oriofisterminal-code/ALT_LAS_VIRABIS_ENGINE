@@ -213,7 +213,7 @@ class EffectsManager:
 
     def spawn_particle(self, x: float, y: float, **kwargs) -> None:
         """Spawn a single particle."""
-        from Source.Effects.particles import Particle
+        from src.render.particles import Particle
         p = Particle(x, y, **kwargs)
         self._particles.append(p)
 

@@ -5,7 +5,7 @@ Works with both graphics and ASCII rendering modes.
 """
 
 from typing import Optional, Tuple
-from Source.Rendering.layer_manager import LayerManager, get_layer_manager
+from src.render.layers import LayerManager, get_layer_manager
 
 
 class Camera:

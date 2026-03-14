@@ -3,7 +3,7 @@ ALT_LAS Engine - Player Entity
 The player character with stats, inventory, flags, and sprite support.
 """
 
-from Source.Entities.entity import Entity
+from src.game.entity import Entity
 
 
 class Player(Entity):

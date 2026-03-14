@@ -6,7 +6,7 @@ Dialogues are loaded from JSON, not hardcoded.
 
 import time
 from typing import Optional
-from Source.Rendering.layer_manager import draw_text, draw_box, LAYER_UI
+from src.render.layers import draw_text, draw_box, LAYER_UI
 
 
 class DialogueNode:

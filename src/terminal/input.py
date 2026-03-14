@@ -6,10 +6,17 @@ Supports both terminal raw mode and native window input.
 
 import sys
 import os
-import select
 import time
 from typing import Optional, Set
 from enum import Enum, auto
+
+# Platform-specific imports
+if sys.platform == 'win32':
+    import msvcrt
+    HAS_SELECT = False
+else:
+    import select
+    HAS_SELECT = True
 
 
 class InputKey(Enum):
@@ -59,6 +66,12 @@ class NativeInputHandler:
         if self._initialized:
             return True
 
+        if sys.platform == 'win32':
+            # Windows: No special terminal setup needed for msvcrt
+            self._initialized = True
+            return True
+
+        # Unix/Linux: Set up raw terminal mode
         if sys.stdin.isatty():
             try:
                 import termios
@@ -74,6 +87,12 @@ class NativeInputHandler:
 
     def shutdown(self) -> None:
         """Restore terminal settings."""
+        if sys.platform == 'win32':
+            # Windows: No special cleanup needed
+            self._initialized = False
+            return
+
+        # Unix/Linux: Restore terminal settings
         if self._old_settings and sys.stdin.isatty():
             try:
                 import termios
@@ -120,12 +139,20 @@ class NativeInputHandler:
 
     def _has_input(self) -> bool:
         """Check if input is available."""
+        if sys.platform == 'win32':
+            # Windows: Use msvcrt.kbhit()
+            return msvcrt.kbhit() != 0
+
+        # Unix/Linux: Use select
         if sys.stdin.isatty():
             return select.select([sys.stdin], [], [], 0)[0] != []
         return False
 
     def _read_terminal_key(self) -> InputKey:
         """Read a key from terminal and normalize."""
+        if sys.platform == 'win32':
+            return self._read_windows_key()
+
         if not sys.stdin.isatty():
             return InputKey.UNKNOWN
 
@@ -185,6 +212,61 @@ class NativeInputHandler:
         }
 
         return char_map.get(char, InputKey.UNKNOWN)
+
+    def _read_windows_key(self) -> InputKey:
+        """Read a key on Windows using msvcrt."""
+        if not msvcrt.kbhit():
+            return InputKey.UNKNOWN
+
+        char = msvcrt.getch()
+
+        # Special keys (arrow keys, function keys)
+        if char == b'\x00' or char == b'\xe0':
+            if msvcrt.kbhit():
+                special = msvcrt.getch()
+                # Windows arrow key codes
+                special_map = {
+                    b'H': InputKey.UP,
+                    b'P': InputKey.DOWN,
+                    b'M': InputKey.RIGHT,
+                    b'K': InputKey.LEFT,
+                    b';': InputKey.F1,      # F1
+                    b'<': InputKey.F2,      # F2
+                    b'=': InputKey.F3,      # F3
+                    b'?': InputKey.F5,      # F5
+                    b'@': InputKey.F6,      # F6
+                    b'A': InputKey.F7,      # F7
+                    b'B': InputKey.F8,      # F8
+                    b'C': InputKey.F9,      # F9
+                    b'D': InputKey.F10,     # F10
+                }
+                return special_map.get(special, InputKey.UNKNOWN)
+            return InputKey.UNKNOWN
+
+        # Regular keys
+        try:
+            decoded = char.decode('utf-8')
+        except UnicodeDecodeError:
+            return InputKey.UNKNOWN
+
+        char_map = {
+            '\r': InputKey.ENTER,
+            '\n': InputKey.ENTER,
+            ' ': InputKey.SPACE,
+            'w': InputKey.W, 'W': InputKey.W,
+            'a': InputKey.A, 'A': InputKey.A,
+            's': InputKey.S, 'S': InputKey.S,
+            'd': InputKey.D, 'D': InputKey.D,
+            'z': InputKey.Z, 'Z': InputKey.Z,
+            'x': InputKey.X, 'X': InputKey.X,
+            'q': InputKey.Q, 'Q': InputKey.Q,
+            'e': InputKey.E, 'E': InputKey.E,
+            'i': InputKey.I, 'I': InputKey.I,
+            '\x1b': InputKey.ESCAPE,
+            '\x03': InputKey.CLOSE,  # Ctrl+C
+        }
+
+        return char_map.get(decoded, InputKey.UNKNOWN)
 
     def is_key_down(self, key: InputKey) -> bool:
         """Check if key is currently held down."""

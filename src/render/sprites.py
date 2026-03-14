@@ -16,7 +16,7 @@ try:
 except ImportError:
     PIL_AVAILABLE = False
 
-from Source.Rendering.terminal_detect import RenderMode, get_render_mode
+from src.render.terminal_detect import RenderMode, get_render_mode
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 TEXTURES_DIR = os.path.join(BASE_DIR, "Content", "Textures")

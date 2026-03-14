@@ -3,7 +3,7 @@ ALT_LAS Engine - NPC Entity
 Non-player characters with dialogue references and simple AI.
 """
 
-from Source.Entities.entity import Entity
+from src.game.entity import Entity
 
 
 class NPC(Entity):

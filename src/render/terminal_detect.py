@@ -50,6 +50,18 @@ class TerminalCapability:
         colorterm = os.environ.get("COLORTERM", "").lower()
         term = self._term.lower()
 
+        # Windows Terminal supports truecolor
+        if sys.platform == 'win32':
+            wt_session = os.environ.get("WT_SESSION", "")
+            if wt_session:
+                self._truecolor_supported = True
+                self._color_depth = 24
+                return
+            # Windows Console with virtual terminal sequences
+            # Windows 10+ supports 24-bit color
+            self._color_depth = 8  # Default to 256 color on Windows
+            return
+
         if colorterm in ("truecolor", "24bit"):
             self._truecolor_supported = True
             self._color_depth = 24
@@ -80,6 +92,10 @@ class TerminalCapability:
 
     def _query_sixel_capability(self) -> bool:
         """Query terminal for Sixel capability using DA1 request."""
+        # Windows doesn't support Sixel protocol
+        if sys.platform == 'win32':
+            return False
+
         try:
             if not sys.stdout.isatty():
                 return False
@@ -87,12 +103,12 @@ class TerminalCapability:
             try:
                 import tty
                 import termios
+                import select
                 fd = sys.stdin.fileno()
                 old_settings = termios.tcgetattr(fd)
                 tty.setraw(fd)
                 sys.stdout.write("\x1b[c")
                 sys.stdout.flush()
-                import select
                 if select.select([sys.stdin], [], [], 0.1)[0]:
                     response = sys.stdin.read(100)
                     if "4" in response or ";" in response:

@@ -3,9 +3,9 @@ ALT_LAS Engine - Dialogue Scene (Standalone)
 For cutscenes or dialogue sequences outside of map context.
 """
 
-from Source.Scenes.base_scene import BaseScene
-from Source.Logic.dialogue_engine import DialogueEngine
-from Source.Core.content_loader import ContentLoader
+from src.game.base_scene import BaseScene
+from src.game.dialogue_engine import DialogueEngine
+from src.core.content_loader import ContentLoader
 
 
 class DialogueScene(BaseScene):

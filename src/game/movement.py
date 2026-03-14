@@ -4,7 +4,7 @@ Handles grid-based entity movement with collision checking.
 """
 
 from typing import Optional
-from Source.Physics.collision import CollisionSystem
+from src.game.collision import CollisionSystem
 
 
 DIRECTION_MAP = {

@@ -6,8 +6,8 @@ Integrates with RenderAdapter for shader effects.
 import sys
 from typing import Optional, Dict, List
 from enum import IntEnum
-from Source.Rendering.terminal_detect import RenderMode, get_terminal_capability
-from Source.Rendering.sprite_loader import Sprite, get_sprite_loader
+from src.render.terminal_detect import RenderMode, get_terminal_capability
+from src.render.sprites import Sprite, get_sprite_loader
 
 
 class Layer(IntEnum):
@@ -86,12 +86,12 @@ class LayerManager:
 
     def _try_init_gpu(self) -> None:
         try:
-            from Source.Terminal.adapter import get_render_adapter
+            from src.terminal.adapter import get_render_adapter
             self._render_adapter = get_render_adapter()
             if self._render_adapter.initialize():
                 self._use_gpu = self._render_adapter.is_gpu_active
                 if self._use_gpu:
-                    from Source.Effects.manager import EffectsManager
+                    from src.render.manager import EffectsManager
                     self._effects_manager = EffectsManager()
         except ImportError:
             self._use_gpu, self._render_adapter = False, None

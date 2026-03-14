@@ -5,12 +5,12 @@ Supports both ASCII and sprite-based rendering.
 """
 
 from typing import Optional
-from Source.Rendering.layer_manager import (
+from src.render.layers import (
     draw_text, draw_char, draw_box, draw_bar, draw_sprite,
     LAYER_UI, LAYER_EFFECTS
 )
-from Source.Rendering.terminal_detect import get_render_mode, RenderMode
-from Source.Logic.battle_entities import BattleActor, Projectile, BulletPattern
+from src.render.terminal_detect import get_render_mode, RenderMode
+from src.game.battle_entities import BattleActor, Projectile, BulletPattern
 
 PHASE_MENU = "menu"
 PHASE_DODGE = "dodge"

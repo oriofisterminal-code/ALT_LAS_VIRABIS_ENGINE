@@ -3,8 +3,8 @@ ALT_LAS Engine - Menu Scene
 Main menu with options: New Game, Continue, Settings, Quit.
 """
 
-from Source.Scenes.base_scene import BaseScene
-from Source.Rendering.layer_manager import draw_text, LAYER_UI
+from src.game.base_scene import BaseScene
+from src.render.layers import draw_text, LAYER_UI
 
 
 MENU_OPTIONS = ["New Game", "Continue", "Settings", "Quit"]
@@ -30,7 +30,7 @@ class MenuScene(BaseScene):
 
     def on_enter(self) -> None:
         if self.engine:
-            from Source.Core.save_manager import SaveManager
+            from src.core.save_manager import SaveManager
             sm = SaveManager()
             self._has_save = sm.slot_exists("autosave")
 

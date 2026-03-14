@@ -12,16 +12,19 @@ from typing import Optional, Tuple, List
 from enum import Enum, auto
 
 # Local imports
-from Source.Terminal.context import GLContext, create_headless_context, MODERNGL_AVAILABLE
-from Source.Rendering.terminal_detect import RenderMode, get_terminal_capability
+from src.terminal.context import GLContext, create_headless_context, MODERNGL_AVAILABLE
+from src.render.terminal_detect import RenderMode, get_terminal_capability
 
 # Try to import PIL
 try:
-    from PIL import Image, ImageDraw, ImageFilter, ImageEnhance
+    from PIL import Image, ImageDraw, ImageFilter, ImageEnhance, ImageChops
     PIL_AVAILABLE = True
 except ImportError:
     PIL_AVAILABLE = False
     Image = None
+    ImageFilter = None
+    ImageEnhance = None
+    ImageChops = None
 
 
 class RenderBackend(Enum):
@@ -231,7 +234,7 @@ class RenderAdapter:
 
     def apply_pil_effects(self, image: "Image.Image") -> "Image.Image":
         """Apply light/glow effects using PIL (fallback mode)."""
-        if not PIL_AVAILABLE:
+        if not PIL_AVAILABLE or ImageChops is None:
             return image
 
         result = image.copy()
@@ -244,17 +247,17 @@ class RenderAdapter:
                 int(self._ambient_light[2] * 255),
                 255
             ))
-            # Multiply blend mode approximation
-            result = ImageChops.multiply(result, overlay) if 'ImageChops' in dir() else result
+            # Multiply blend mode
+            result = ImageChops.multiply(result, overlay)
 
         # Apply glow effect
-        if self._glow_enabled:
+        if self._glow_enabled and ImageFilter is not None and ImageEnhance is not None:
             # Create bloom by blurring bright areas
             glow_layer = result.filter(ImageFilter.GaussianBlur(radius=5))
             enhancer = ImageEnhance.Brightness(glow_layer)
             glow_layer = enhancer.enhance(1.5)
             # Add glow to original
-            result = ImageChops.add(result, glow_layer) if 'ImageChops' in dir() else result
+            result = ImageChops.add(result, glow_layer)
 
         return result
 

@@ -1,19 +1,19 @@
 """Map Scene - Renders world map, handles movement, NPC interaction, triggers."""
 import time
-from Source.Scenes.base_scene import BaseScene
-from Source.Rendering.layer_manager import (
+from src.game.base_scene import BaseScene
+from src.render.layers import (
     draw_char, draw_text, draw_sprite, LAYER_MAP, LAYER_ENTITIES, LAYER_UI
 )
-from Source.Rendering.terminal_detect import get_render_mode, RenderMode
-from Source.Rendering.viewport import Viewport
-from Source.Physics.collision import CollisionMap, CollisionSystem
-from Source.Physics.movement import MovementSystem
-from Source.Entities.entity import EntityManager
-from Source.Entities.player import Player
-from Source.Entities.npc import NPC
-from Source.Logic.dialogue_engine import DialogueEngine
-from Source.Core.content_loader import ContentLoader
-from Source.Core.save_manager import SaveManager
+from src.render.terminal_detect import get_render_mode, RenderMode
+from src.render.viewport import Viewport
+from src.game.collision import CollisionMap, CollisionSystem
+from src.game.movement import MovementSystem
+from src.game.entity import EntityManager
+from src.game.player import Player
+from src.game.npc import NPC
+from src.game.dialogue_engine import DialogueEngine
+from src.core.content_loader import ContentLoader
+from src.core.save_manager import SaveManager
 
 # ASCII fallback characters for tiles
 TILE_CHARS = {

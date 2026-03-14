@@ -3,10 +3,10 @@ ALT_LAS Engine - Battle Scene
 Wraps the BattleSystem into a scene for the state manager.
 """
 
-from Source.Scenes.base_scene import BaseScene
-from Source.Logic.battle_system import BattleSystem, BattleActor
-from Source.Rendering.layer_manager import draw_text, LAYER_UI
-from Source.Entities.player import Player
+from src.game.base_scene import BaseScene
+from src.game.battle_system import BattleSystem, BattleActor
+from src.render.layers import draw_text, LAYER_UI
+from src.game.player import Player
 
 
 class BattleScene(BaseScene):
